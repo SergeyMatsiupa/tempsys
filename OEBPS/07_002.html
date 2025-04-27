@@ -1,0 +1,605 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Aufbau und Verwaltung des Produktsortiments" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Aufbau und Verwaltung des Produktsortiments" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Aufbau und Verwaltung des Produktsortiments</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u7.2">7.2    Attribute pflegen und in Attributsets gruppieren</h2>
+        <p class="standard">Bevor ich auf die Anlage der Produkte zu sprechen komme, muss ich Ihnen zuerst eine Einführung in die Attribute<a class="indexanchor" id="i07_22"/> und Attributsets geben. Attribute und Attributsets bilden nämlich die Basis der Produkte, und ohne Attribute können Sie keine Produkte anlegen. Doch was genau hat es mit den Attributen und Attributsets auf sich?</p>
+        
+            <h3 class="t3" id="u7.2.1">7.2.1    Attribute<a class="indexanchor" id="i07_23"/></h3>
+            <p class="standard">Bei den Attributen handelt es sich im Prinzip um nichts anderes als Produkteigenschaften. Attribute beschreiben ein Produkt und ermöglichen es Ihnen als Shop-Betreiber, bestimmte Werte bei einem Produkt zu speichern. Eine Produkteigenschaft kann beispielsweise die Farbe oder Größe sein. Attribute bilden aber auch Bilder, oder Downloads zu einem Produkt ab. Immer dann, wenn Sie bei einem Produkt eine Information speichern möchten, brauchen Sie ein Attribut. Magento bietet hierfür eine sehr mächtige und komfortable Oberfläche, die ich Ihnen im Detail vorstellen möchte. Sofern Sie das noch nicht getan haben, melden Sie sich bitte am Magento-Backend an, und klicken Sie auf <span class="screenelement smallcaps">Shops</span> • <span class="screenelement smallcaps">Attribute</span> • <span class="screenelement smallcaps">Produkt</span>. Daraufhin listet Magento alle im System vorhandenen Attribute auf; im Standard handelt es sich um knapp 50 Einträge, wie Sie in <span class="crossreference "><a href="07_002.html#b7.11">Abbildung 7.11</a></span> sehen können.</p>
+            <div class="imagebox "><a href="img-b7.11.html" id="b7.11"><img alt="Magento verfügt von Haus aus über knapp 50 Produktattribute." id="img-b7.11" src="bilderklein/kleinabbilund-7-11.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 7.11</b>    Magento verfügt von Haus aus über knapp 50 Produktattribute.</p>
+            <p class="standard">Diese Attribute werden Sie nicht löschen und auch nur begrenzt bearbeiten können, da es sich um systemrelevante Attribute handelt. Diese benötigt Magento, vereinfacht gesagt, um korrekt zu funktionieren. Lassen Sie uns daher auch nicht die bereits existierenden Attribute im Detail durchkauen, sondern ein neues Attribut anlegen. Klicken Sie hierfür auf den Button <span class="screenelement smallcaps">Neues Attribut hinzufügen</span>. Daraufhin öffnet sich eine neue Eingabemaske (siehe <span class="crossreference "><a href="07_002.html#b7.12">Abbildung 7.12</a></span>) mit einer Menge Optionen, auf die ich jetzt im Detail eingehe.</p>
+            <div class="imagebox "><a href="img-b7.12.html" id="b7.12"><img alt="Bevor Sie ein Attribut speichern können, müssen Sie Informationen zum Verhalten und der Darstellung hinterlegen." id="img-b7.12" src="bilderklein/kleinabbilund-7-12.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 7.12</b>    Bevor Sie ein Attribut speichern können, müssen Sie Informationen zum Verhalten und der Darstellung hinterlegen.</p>
+            <p class="standard">Als erste Information müssen Sie einen Namen für das Attribut hinterlegen. Die Eigenschaft <span class="screenelement smallcaps">Standard Label</span> gibt Ihnen hierfür keine Einschränkungen und Limitierungen vor. Beachten Sie bei der Vergabe des Namens, dass es sich um eine externe Bezeichnung handelt, sprich, das Label wird nicht nur im Backend, sondern auch im Frontend ausgegeben. Wählen Sie aus diesem Grund eine aussagekräftige Bezeichnung für Ihr Attribut. Da später bei der Anlage der Produkte eine Eigenschaft, also ein Attribut, das Material sein wird, hinterlege ich an dieser Stelle bei dem Feld <span class="screenelement smallcaps">Standard Label</span> den Wert <span class="italic">Material</span>.</p>
+            <div class="box_standard">
+                <h6 class="boxheading">Attribute sind gleichzusetzen mit Eigenschaften</h6>
+                <p class="standard">Anstelle von <span class="italic">Attributen</span> könnte ich an dieser Stelle auch von <span class="italic">Produkteigenschaften</span> sprechen. Letztendlich sind mit Attributen auch nur Eigenschaften gemeint, die ein Produkt näher beschreiben. Je besser und genauer Sie dabei ein Produkt beschreiben, d. h. Informationen auch auf Attribute aufteilen, desto besser lassen sich die Produkte im Frontend filtern und durchsuchen. Aus diesem Grund ist es äußerst wichtig, sich im Vorfeld ausreichend Gedanken über die benötigten Attribute und deren Aufbau zu machen.</p>
+            </div>
+            <p class="standard">Nachdem Sie dem Attribut einen Namen gegeben haben, müssen Sie den Eingabetyp spezifizieren. Den Eingabetyp spezifizieren Sie im nächsten Feld mit dem Namen<a class="indexanchor" id="i07_24"/> <span class="screenelement smallcaps">Katalog-Eingabetyp für Shop-Besitzer</span>. Zugegebenermaßen handelt es sich hierbei wieder um eine etwas kompliziertere Übersetzung, als nötig gewesen wäre. Den Zusatz »für Shop-Besitzer« können Sie sich gedanklich an dieser Stelle zumindest sparen. Der Eingabetyp ist relativ wichtig und sollte gut gewählt werden, da dieser das Verhalten und die Möglichkeiten des Attributs beeinflusst. Haben Sie zudem einen Eingabetyp gewählt und das Attribut gespeichert, werden Sie anschließend den Eingabetyp auch nicht mehr ändern können. Dies gilt übrigens auch für die Systemattribute. Ist der Eingabetyp gewählt, das Attribut gespeichert, so lässt sich eine nachträgliche Änderung des Eingabetyps nicht mehr vornehmen.</p>
+            <p class="standard">Magento lässt Ihnen die Wahl zwischen den folgenden Eingabetypen, die ich Ihnen gern im Detail erklären möchte.</p>
+            
+                <h4 class="t4" id="u7.2.1.1">Textfeld<a class="indexanchor" id="i07_25"/></h4>
+                <p class="standard">Das Textfeld ist der einfachste und primitivste Eingabetyp. Angenommen, Sie legen das Attribut »Material« an und wählen den Eingabetyp Textfeld, dann können Sie später bei der Produktanlage bei jedem neuen oder bestehenden Produkt einfach einen simplen Text hinterlegen. Der Text kann beliebig sein, und Sie können bei dem einen Produkt z. B. Aluminium hinterlegen, bei dem nächsten Keramik usw.</p>
+                <p class="standard">Das Textfeld ermöglicht die simple Speicherung eines Textes. Aufgrund der Möglichkeit, bei jedem Produkt einen beliebigen Text zu speichern – ich muss an dieser Stelle kurz vorgreifen –, werden Sie bei diesem Eingabetyp keine Möglichkeit der Nutzung innerhalb der Layered Navigation haben.</p>
+                <p class="standard">Mit einem Textfeld kann man, wie Sie im Verlauf der nächsten Seiten noch sehen werden, recht schlecht arbeiten.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.2">Textbereich<a class="indexanchor" id="i07_26"/></h4>
+                <p class="standard">Der Eingabetyp Textbereich verhält sich exakt wie das Textfeld. Daher können Sie alle Eigenschaften, die ich beim Textfeld beschrieben habe, auch auf den Eingabetyp Textbereich anwenden. Der Unterschied zwischen diesen beiden Eingabetypen besteht in der Textlänge. Mithilfe des Textbereichs können Sie lange und umfangreiche Texte bei einem Produkt hinterlegen, wie beispielsweise bei der Produktbeschreibung. Das Textfeld hingegen eignet sich für die Speicherung von kurzen Informationen bestehend aus wenigen Worten und Zahlen.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.3">Datum<a class="indexanchor" id="i07_27"/></h4>
+                <p class="standard">Sofern Sie bei einem Produkt ein zusätzliches Datum, z. B. den initialen Veröffentlichungstermin des Produktes speichern möchten, können Sie beim Eingabetyp den Eintrag <span class="screenelement smallcaps">Datum</span> wählen. Erstellen Sie anschließend ein Produkt und es existiert ein Attribut von diesem Typ, können Sie das Datum ganz einfach und bequem mithilfe eines so genannten Date Pickers auswählen. Falls Sie sich an dieser Stelle nicht genau vorstellen können, wie dieser Date Picker aussieht, werfen Sie einen kurzen Blick auf <span class="crossreference "><a href="07_002.html#b7.13">Abbildung 7.13</a></span>.</p>
+                <div class="imagebox "><a href="img-b7.13.html" id="b7.13"><img alt="Mithilfe des Date Pickers können Sie bei der Produktanlage einfach und unkompliziert ein Datum auswählen." id="img-b7.13" src="bilderklein/kleinabbilund-7-13.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.13</b>    Mithilfe des Date Pickers können Sie bei der Produktanlage einfach und unkompliziert ein Datum auswählen.</p>
+                <p class="standard">Es ist also nicht nötig, per Freitexteinabe, wie beispielsweise beim Textbereich oder Textfeld, die Information zu hinterlegen. Magento stellt Ihnen für diesen Eingabetyp innerhalb der Maske schon das perfekte Eingabewerkzeug bereit.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.4">Ja/Nein<a class="indexanchor" id="i07_28"/></h4>
+                <p class="standard">Wie der Name des Eingabetyps bereits verrät, können Sie mit diesem den Wert Ja bzw. Nein bei einem Produkt speichern. Gerade für technische Produktinformationen kann dieser Eingabetyp sehr nützlich sein.</p>
+                <p class="standard">Wenn ich im späteren Verlauf des Kapitels ein Produkt anlege, beispielsweise eine Pfanne oder einen Teller, und es für den Nutzer bzw. potenziellen Kunden eine wichtige Information ist, ob das Produkt in der Spülmaschine gereinigt werden darf, so kann ich hierfür ein Attribut mit dem Eingabetyp Ja / Nein wählen, da sich diese Frage eben mit Ja oder Nein beantworten lässt.</p>
+                <p class="standard">Attribute von diesem Eingabetyp lassen sich zudem auch in der Layered Navigation nutzen, sprich, sie können gefiltert werden. Vermeiden Sie daher die Nutzung von Attributen vom Typ Textfeld, wenn Sie letztendlich nur eine Ja- bzw. Nein-Information hinterlegen wollen. Nutzen Sie stattdessen lieber direkt diesen Eingabetyp.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.5">Mehrfachauswahl<a class="indexanchor" id="i07_29"/></h4>
+                <p class="standard">Die Mehrfachauswahl ist neben der Dropdown-Liste der meiner Meinung nach stärkste Eingabetyp, der aber oftmals gar nicht genutzt wird. Wenn Sie den Eingabetyp Mehrfachauswahl anlegen, müssen Sie in diesem Zuge mögliche Auswahlwerte definieren.</p>
+                <p class="standard">Um dies an dieser Stelle etwas praxisnaher zu gestalten, bleibe ich bei meinem Beispiel und dem Attribut »Material«. Lege ich dieses Attribut an und wähle die Mehrfachauswahl, definiere ich im selben Schritt die später bei der Produktanlage auswählbaren Werte wie Aluminium, Keramik, Plastik, Silber. Wenn Sie ein Produkt anlegen, können Sie auch nur auf die im Vorfeld definierten Werte zurückgreifen. Merken Sie bei der Produktanlage, dass Sie einen weiteren Wert benötigen, beispielsweise Edelstahl, müssen Sie zuerst das Attribut editieren und den neuen Wert hinzufügen. Da es sich um eine Mehrfachauswahl handelt, können Sie bei der Produktanlage zudem mehrere Werte auswählen, d. h., das Produkt könnte aus Aluminium und Keramik bestehen, muss es aber nicht.</p>
+                <p class="standard">Die Definition der Werte im Vorfeld löst in der späteren Produktanlage und Produktverwaltung viele Probleme. Zum einen vermeiden Sie die unterschiedliche Schreibweise bzw. Definition von Werten. Wenn es eben nur definierte Materialen bei der Produktauswahl gibt, dann müssen Sie sich für ein Material entscheiden oder ein neues anlegen. Sie können an dieser Stelle aber nicht einfach irgendwelche beliebigen Werte hinterlegen. Auch vermeidet dieses Vorgehen die Fehleranfälligkeit, da Rechtschreibfehler oder unterschiedliche Schreibweisen ausgeschlossen werden. Die nachträgliche Übersetzung ist ebenso einfacher, da Sie diese an einer zentralen Stelle vornehmen können. Haben Sie hingegen 1.000 Produkte und verwenden für das Material den Eingabetyp Textfeld, so müssen Sie später bei einer neuen Sprache diese 1.000 Produkte editieren und manuell übersetzen. Beim Eingabetyp Mehrfachauswahl hingegen ändern Sie zentral die Übersetzung für die definierten Auswahloptionen und haben damit dieses Problem gelöst.</p>
+                <p class="standard">Im Gegensatz zum Textfeld und Textbereich lassen sich die Werte der Mehrfachauswahl zudem über die Layered Navigation auswählen. Bleibe ich bei meinem Beispiel mit dem Material, so können die Kunden im Frontend nach dem gewünschten Material, beispielsweise Keramik, filtern und sehen alle Produkte, die aus Keramik bestehen. Diese Verhaltensweise ist eben bei den Eingabetypen Textfeld und Textbereich nicht möglich.</p>
+                <div class="box_standard">
+                    <h6 class="boxheading">Textfeld und Textbereich nur bei individuellen Werten verwenden</h6>
+                    <p class="standard">Oftmals sind Shop-Betreiber bei der Wahl des richtigen Eingabetyps ratlos oder wählen gar den vermutlich falschen Typ. Jedoch ist die Wahl des richtigen Eingabetyps gar nicht so schwer. Wenn Sie bei Produkten individuelle Informationen hinterlegen möchten, d. h. Werte, die wirklich nur bei einem Produkt vorkommen und nicht auf weitere Produkte zutreffen, wählen Sie als Eingabetyp Textfeld oder Textbereich. Sobald eine Information hingegen bei mehreren Produkten vorkommen kann, z. B. eine Farbe Rot, eine Größe L oder das Material Aluminium, wählen Sie bitte den Eingabetyp Mehrfachauswahl bzw. Dropdown-Liste.</p>
+                </div>
+            
+            
+                <h4 class="t4" id="u7.2.1.6">Dropdown-Liste<a class="indexanchor" id="i07_30"/></h4>
+                <p class="standard">Recht ähnlich wie die Mehrfachauswahl verhält sich der Eingabetyp Dropdown-Liste. Auch bei diesem Eingabetyp müssen Sie bei der Anlage des Attributs bereits im Vorfeld mögliche Werte definieren, die anschließend bei der Anlage eines Produktes ausgewählt werden können. Im Gegensatz zur Mehrfachauswahl können Sie bei der Produktanlage jedoch immer nur einen Wert auswählen. Legen Sie daher das Attribut namens »Material« an, würden Sie bei einem Produkt definieren müssen, ob das Produkt aus z. B. Aluminium oder Keramik ist, eine Mehrfachauswahl von Werten ist jedoch nicht möglich.</p>
+                <p class="standard">Die Dropdown-Liste kann sich zudem exakt wie die Mehrfachauswahl verhalten, die Werte sind filterbar, werden also von der Layered Navigation genutzt und können im Frontend zur Eingrenzung der Ergebnisse innerhalb einer Kategorieseite dienen.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.7">Preis<a class="indexanchor" id="i07_31"/></h4>
+                <p class="standard">Auch wenn dies in der Praxis eher selten vorkommt, können Sie mit dem Eingabetyp Preis zusätzliche Preisinformationen speichern. Sollte dieser Eingabetyp zum Einsatz kommen, so wird in der Regel noch der Einkaufspreis bei einem Produkt gespeichert, da Magento von Haus aus diese Möglichkeit nicht anbietet. Wenn Sie jedenfalls einen Preis speichern möchten, dann verwenden Sie beim Eingabetyp bitte diesen.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.8">Medienbild<a class="indexanchor" id="i07_32"/></h4>
+                <p class="standard">An dieser Stelle muss ich erneut vorgreifen. Wenn Sie in Magento ein Produkt anlegen, dann können Sie beliebig viele Bilder hochladen. Dadurch haben Sie die Möglichkeit, umfangreiche Bildergalerien pro Produkt aufzubauen. Neben der Möglichkeit, die Bilder hochzuladen, können Sie zudem den Bild-Typ, in der deutschen Übersetzung als <span class="screenelement smallcaps">Rolle</span> bezeichnet, definieren, wie Sie in <span class="crossreference "><a href="07_002.html#b7.14">Abbildung 7.14</a></span> sehen.</p>
+                <div class="imagebox "><a href="img-b7.14.html" id="b7.14"><img alt="Die Rolle bzw. der Bild-Typ definiert die spätere Verwendung des Bildes." id="img-b7.14" src="bilderklein/kleinabbilund-7-14.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.14</b>    Die Rolle bzw. der Bild-Typ definiert die spätere Verwendung des Bildes.</p>
+                <p class="standard">Mithilfe des Bild-Typs können Sie bestimmen, welches Bild an welcher Stelle bzw. für welchen Zweck innerhalb des Systems genutzt werden soll. Magento erlaubt Ihnen beispielsweise innerhalb der Kategorieseite, ein anderes Produkt darzustellen als auf der Produktdetailseite. Diese Differenzierung erfolgt mittels des Bild-Typs.</p>
+                <p class="standard">Mit dem Eingabetyp Medienbild können Sie einen neuen Bild-Typ anlegen, dadurch erweitert sich automatisch die Auswahl der Rollen, die Sie in <span class="crossreference "><a href="07_002.html#b7.14">Abbildung 7.14</a></span> sehen. Zugegebenermaßen ist dies aber nur die Grundlage, denn wenn Sie ein neues Attribut von Typ Medienbild anlegen, hat dies nachgelagert noch keine Auswirkung. Die Auswirkung bzw. der Nutzen entsteht dann, wenn Sie ein individuelles Modul entwickeln bzw. eine Modifikation am Template vornehmen und auf diesen Wert zurückgreifen müssen. Im Gegensatz zu den bisher vorgestellten Eingabetypen ist daher der Eingabetyp Medienbild etwas spezieller, hat definitiv seine Existenzberechtigung, liefert aber speziell bei der Entwicklung eines eigenen Moduls einen Vorteil.</p>
+                <div class="box_standard">
+                    <h6 class="boxheading">Medienbild bei der Multi-Channel-Distribution</h6>
+                    <p class="standard">In <span class="crossreference "><a href="21_001.html#u21">Kapitel 21</a></span>, »<span class="crossreference ">Zusätzliche Absatzkanäle wie Google Shopping, Amazon und eBay nutzen</span>«, werde ich Ihnen Tools vorstellen, mit denen Sie Ihre Produkte nicht nur in Ihrem Magento-Shop verkaufen können, sondern auch auf Marktplätzen wie Amazon und eBay. In der Praxis werden Sie zu eBay und Amazon alternative Produktbilder übertragen. Speziell für dieses Szenario ist der Eingabetyp Medienbild ein Segen. Warum und weshalb erfahren Sie aber in voller Ausführlichkeit in <span class="crossreference "><a href="21_001.html#u21">Kapitel 21</a></span>.</p>
+                </div>
+            
+            
+                <h4 class="t4" id="u7.2.1.9">Visuelles Farbfeld<a class="indexanchor" id="i07_33"/></h4>
+                <p class="standard">Der Eingabetyp Visuelles Farbfeld dürfte Ihnen speziell dann gefallen, wenn Sie in der Modebranche tätig sind bzw. Ihre Produkte sich anhand einer Farbe konfigurieren lassen. Stellen Sie sich an dieser Stelle einen Produktkonfigurator innerhalb des Frontends vor. Als Kunde bzw. Besucher haben Sie ein T-Shirt ausgewählt und möchten nun die Farbe ändern. Wenn Sie in Magento die Dropdown-Liste für die Farbe verwendet haben, so kann bei einem konfigurierbaren Produkt – hierzu erfahren Sie mehr in <span class="crossreference "><a href="07_003.html#u7.3">Abschnitt 7.3</a></span>, »<span class="crossreference ">Produkte zum Verkauf anbieten</span>« – der Nutzer auch aus einer Dropdown-Liste die Farbe auswählen. Das ist zugegebenermaßen etwas unsexy, und ich möchte schon sagen langweilig. Schöner wäre es doch, wenn der Nutzer im Frontend eine rote Kachel angezeigt bekommt und einfach auf die rote Kachel klickt, um die rote Variante auszuwählen.</p>
+                <p class="standard">Genau um dies abzubilden, existiert in Magento der Eingabetyp <span class="screenelement smallcaps">Visuelles Farbfeld.</span> Ähnlich wie bei der Dropdown-Liste bzw. Mehrfachauswahl müssen Sie, nachdem Sie dem Attribut einen Namen gegeben haben, die möglichen Auswahloptionen definieren. Neben einem Text, z. B. rot, haben Sie jedoch die Möglichkeit, eine Grafik oder Farbe für die Option zu hinterlegen. Ich habe Ihnen in <span class="crossreference "><a href="07_002.html#b7.15">Abbildung 7.15</a></span> einen entsprechenden Screenshot beigefügt, in dem Sie zudem den Color Picker erkennen können. Mithilfe des Color Pickers können Sie einfach und unkompliziert den gewünschten Farbton auswählen und der Auswahloption hinzufügen.</p>
+                <div class="imagebox "><a href="img-b7.15.html" id="b7.15"><img alt="Bei der Auswahl des geeigneten Farbtons unterstützt ein Color Picker." id="img-b7.15" src="bilderklein/kleinabbilund-7-15.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.15</b>    Bei der Auswahl des geeigneten Farbtons unterstützt ein Color Picker.</p>
+                <p class="standard">Neben der Auswahl des Farbtons per Color Picker haben Sie aber auch die Möglichkeit, eine Grafik hochzuladen. Wenn Sie einen Farbverlauf oder ein Muster abbilden möchten, so ergibt der Upload einer entsprechenden Grafik sicherlich Sinn, denn Sie wollen Ihren Kunden und Besuchern im Vorfeld bei der Auswahl ja einen möglichst authentischen und realen Eindruck wiedergeben.</p>
+                <p class="standard">An dieser Stelle möchte ich Ihnen noch den Tipp mitgeben, dass Sie diesen Eingabetypen nicht unbedingt nur für die Farbauswahl verwenden müssen. Im Prinzip können Sie diesen Eingabetypen immer dann verwenden, wenn Sie im Frontend bei der Konfiguration bzw. innerhalb der Produktdetailseite eine Grafik abbilden möchten. Sie könnten, da der Upload einer Grafik akzeptiert wird, theoretisch auch jeweils ein Icon für eine Größe, eine Kragenform oder einen Schnitt hochladen.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.10">Text-Farbfeld<a class="indexanchor" id="i07_34"/></h4>
+                <p class="standard">Beim nächsten Eingabetyp dürfte aufgrund des Namens zuerst eine gewisse Verwirrung entstehen. Die deutsche Übersetzung hat an dieser Stelle das Wort »Swatch« mit <span class="italic">Farbfeld</span> wiedergegeben. Gemeint ist an dieser Stelle jedoch nicht das Wort »Farbe«, sondern die Auswahloption innerhalb des Frontends, die über Kästchen mit Kürzeln funktioniert. Eine perfekte Übersetzung für das Wort <span class="italic">Swatches</span> kann ich Ihnen an dieser Stelle jedoch auch nicht liefern, lassen Sie uns daher bei der deutschen Übersetzung des Sprachpakets bleiben.</p>
+                <p class="standard">Im Gegensatz zu dem Eingabetyp »Visuelles Farbfeld« können Sie beim Text-Farbfeld keine Grafik bzw. Farbe definieren. Dafür haben Sie jedoch die Möglichkeit pro Listeneintrag, auch hier müssen Sie im Vorfeld vorab mögliche Auswahloptionen definieren, ein Kürzel bzw. eine Bezeichnung zu hinterlegen. Lassen Sie mich den Nutzen anhand eines konkreten Beispiels verdeutlichen. In meinem auf Küchenbedarf spezialisierten Online-Shop möchte ich Pfannen verkaufen. Jede Pfanne hat dabei einen Durchmesser, und ich möchte dem Nutzer im Frontend die Möglichkeit geben, zuerst ein Modell auszuwählen und anschließend auf der Produktdetailseite den Durchmesser der Pfanne zu bestimmen. In diesem Fall würde ich ein Attribut namens »Durchmesser« vom Typ »Text-Farbfeld« anlegen. Diesem Attribut gebe ich anschließend die Werte 24 cm, 28 cm, 30 cm. Sie sehen dies in <span class="crossreference "><a href="07_002.html#b7.16">Abbildung 7.16</a></span>, für die ich die Werte entsprechend hinterlegt habe.</p>
+                <div class="imagebox "><a href="img-b7.16.html" id="b7.16"><img alt="Die hinterlegten Optionen lassen sich später im Frontend auf der Produktdetailseite mithilfe von »Kästchen« auswählen." id="img-b7.16" src="bilderklein/kleinabbilund-7-16.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.16</b>    Die hinterlegten Optionen lassen sich später im Frontend auf der Produktdetailseite mithilfe von »Kästchen« auswählen.</p>
+                <p class="standard">Als Ergebnis werden Sie im Frontend eine optisch sehr ansprechende Auswahloption für den Durchmesser erhalten. An dieser Stelle muss ich Sie noch um etwas Geduld bitten, spätestens wenn es um die Anlage der Produkte geht – dies ist ab <span class="crossreference "><a href="07_003.html#u7.3">Abschnitt 7.3</a></span>, »<span class="crossreference ">Produkte zum Verkauf anbieten</span>«, geplant –, werden Sie letztendlich im Frontend sehen, wie die visuelle Aufbereitung des Text-Farbfelds funktioniert.</p>
+            
+            
+                <h4 class="t4" id="u7.2.1.11">Feste Produktsteuer<a class="indexanchor" id="i07_35"/></h4>
+                <p class="standard">Zu guter Letzt existiert noch ein Eingabetyp mit dem Namen »Feste Produktsteuer«. Dieser Eingabetyp spielt speziell bei Magento-Projekten in Deutschland keine wirklich wichtige Rolle. Letztendlich ermöglicht Ihnen dieser Eingabetyp die zusätzliche Erhebung einer Steuer, und zwar auf Produktebene. Sinnvoll nutzbar ist dieser Eingabetyp immer dann, wenn es in bestimmten Ländern bei bestimmten Produkten aufgrund der gesetzlichen Rahmenbedingungen notwendig ist, eine zusätzliche Abgabe zu erheben.</p>
+                <p class="standard">Seitdem ich mit Magento arbeite, ist es mir jedoch noch nie vorgekommen, dass dieser Eingabetyp verwendet werden musste. Daher möchte ich an dieser Stelle auch auf ausschweifende Details verzichten.</p>
+                <p class="standard">Nach dem kurzen Exkurs und den Details zu den verschiedenen Eingabetypen möchte ich Ihnen die weiteren Optionen und Möglichkeiten, die bei der Anlage eines Attributes bestehen, aufzeigen.</p>
+                <p class="standard">Nachdem Sie bei dem <span class="screenelement smallcaps">Standard Label</span> den Wert »Material« und beim <span class="screenelement smallcaps">Katalog-Eingabetyp für Shop-Besitzer</span> Mehrfachauswahl hinterlegt bzw. ausgewählt haben, sehen Sie im nächsten Schritt die Option <span class="screenelement smallcaps">Werte erforderlich</span>. Standardmäßig steht diese Option auf <span class="screenelement smallcaps">Nein,</span> was dazu führt, dass Sie bei der Produktanlage dieses Attribut nicht mit einem Wert versehen müssen. Stellen Sie hingegen die Option auf <span class="screenelement smallcaps">Ja</span>, so müssen Sie bei der Produktanlage auch einen Wert bei dem Attribut hinterlegen, ansonsten können Sie das Produkt nicht speichern. Diese Option fungiert später als Check und hilft Ihnen definitiv bei der Fehlervermeidung, denn bei einigen Attributen wollen Sie sicherlich immer einen Wert hinterlegt haben. Ein Automatismus an dieser Stelle ist definitiv sinnvoll, denn im Alltag kann beim Produktmanagement schnell ein Wert vergessen werden.</p>
+                <p class="standard">Je nach gewähltem Eingabetyp haben Sie im nächsten Schritt die Möglichkeit, bestimmte Werte zu hinterlegen. Beim Eingabetyp Textfeld oder Textbereich fehlt diese Möglichkeit, denn hier werden Sie später bei jedem Produkt einen individuellen Wert hinterlegen können. Bei dem von mir gewählten Eingabetyp Mehrfachauswahl hingegen muss ich im nächsten Schritt Werte, die später bei der Anlage des Produkts als Auswahl bereitstehen, hinterlegen. Über den Button <span class="screenelement smallcaps">Optionen hinzufügen</span> können Sie beliebig viele Werte hinterlegen, eine Limitierung seitens Magento existiert nicht. Da ich bei meinem aktuellen Attribut das Material speichern möchte, hinterlege ich die folgenden Werte und erhalte dadurch eine Ansicht wie in <span class="crossreference "><a href="07_002.html#b7.17">Abbildung 7.17</a></span>:</p>
+                <ul>
+                    <li>
+                        Aluminium
+                    </li>
+                    <li>
+                        Edelstahl
+                    </li>
+                    <li>
+                        Keramik
+                    </li>
+                    <li>
+                        Porzellan
+                    </li>
+                    <li>
+                        Eisen
+                    </li>
+                    <li>
+                        Sonstiges
+                    </li>
+                </ul>
+                <p class="standard">Hinterlegen Sie an dieser Stelle bitte exakt dieselben Werte, um meinem Beispiel zu folgen. Wenn Sie möchten, können Sie zudem eine Option als Standard markieren, dadurch wäre diese vorausgewählt. In diesem konkreten Beispiel ist das inhaltlich aber nicht sinnvoll, da das Material eines Produkts eben vom jeweiligen Produkt abhängt und nicht ein Großteil der Produkte aus demselben Material gefertigt ist, wodurch eine Standard-Auswahl sinnvoll wäre.</p>
+                <div class="imagebox "><a href="img-b7.17.html" id="b7.17"><img alt="Für das Attribut »Material« hinterlege ich an dieser Stelle die verschiedenen Optionen, die später zur Auswahl angeboten werden sollen." id="img-b7.17" src="bilderklein/kleinabbilund-7-17.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.17</b>    Für das Attribut »Material« hinterlege ich an dieser Stelle die verschiedenen Optionen, die später zur Auswahl angeboten werden sollen.</p>
+                <p class="standard">Haben Sie die Werte entsprechend hinterlegt, scrollen Sie weiter zum nächsten Abschnitt namens <span class="screenelement smallcaps">Erweiterte Attributeigenschaften</span>. In diesem Abschnitt müssen Sie zuerst einen <span class="screenelement smallcaps">Attribut-Code</span><a class="indexanchor" id="i07_36"/> definieren. Im Gegensatz zum Standard-Label wird der Attribut-Code ausschließlich intern verwendet und nie im Frontend dargestellt. Der Attribut-Code spielt daher primär für Entwickler eine große Rolle, da diese in Modulen ein Attribut immer nur über den Attribut-Code ansprechen. Das resultiert letztendlich daraus, dass Sie das Standard-Label immer anpassen können. Möchten Sie anstelle des Materials also das Produktmaterial definieren, können Sie einfach das Standard-Label<a class="indexanchor" id="i07_37"/> editieren und Ihr Attribut hat einen neuen Namen. Der Attribut-Code hingegen wird initial vergeben und kann anschließend nicht mehr verändert werden. Abgesehen von einigen Sonderzeichen sowie dem Leerzeichen, können Sie beim Attribut-Code einen beliebigen Wert verwenden. Ich persönlich verwende immer den Namen des Attributs, schreibe diesen durchgehend klein und ersetze Leerzeichen durch einen Unterstrich. Daraus ergibt sich in meinem Beispiel als Attribut-Code der Wert »material«.</p>
+                <p class="standard">Mit der darauffolgenden Option, dem <span class="screenelement smallcaps">Bereich</span>, wird es etwas tricky. Denn der Bereich bezieht sich auf die Multistore-Fähigkeit von Magento, die ich Ihnen in <span class="crossreference "><a href="17_001.html#u17">Kapitel 17</a></span>, »<span class="crossreference ">Magento-Multistore-Funktionalität konfigurieren und nutzen</span>«, vorstelle. Mit Magento haben Sie die Möglichkeit, auf Basis einer Magento-Installation beliebig viele Online-Shops zu betreiben. So könnte ich neben meinem Demo-System <span class="url"><a href="http://www.foodbaer.de">www.foodbaer.de</a></span> noch einen weiteren Online-Shop erstellen, der sich auf den Verkauf von Spirituosen spezialisiert. Dieser zweite Online-Shop kann, muss aber nicht, komplett unterschiedliche Produkte, ein alternatives Design und eine angepasste Systemkonfiguration haben. Im einfachsten Fall ergänze ich mein bestehendes System <span class="url"><a href="http://www.foodbaer.de">www.foodbaer.de</a></span> jedoch nur um weitere Sprachen. In beiden Fällen würde ich die Multistore-Fähigkeit von Magento nutzen und mein bestehendes System erweitern. Wenn Sie diese Multistore-Fähigkeit nutzen, müssen Sie bei jedem Attribut den Geltungsbereich angeben, damit Sie später mit dem Attribut vernünftig arbeiten können. Der Geltungsbereich bestimmt letztendlich, ob das Attribut in den unterschiedlichen Stores unterschiedliche Werte haben darf. Wählen Sie als Option <span class="screenelement smallcaps">Store View</span><a class="indexanchor" id="i07_38"/>, so kann der Wert des Attributs in jedem Store View unterschiedlich sein. Da der Store View die Sprache abbildet, können Sie also pro Sprache einen unterschiedlichen Wert hinterlegen. Verwechseln Sie dies an dieser Stelle aber nicht mit der Übersetzung, die Sie auch pro Store View festlegen können. Wähle ich in meinem aktuellen Beispiel den Store View als Bereich, so könnte einem Produkt je Store View ein unterschiedliches Material zugewiesen werden, was sicherlich nicht sinnvoll ist. Denn ein Produkt, beispielsweise eine Pfanne, ändert ja nicht aufgrund der Sprache des Online-Shops die Beschaffenheit und transformiert von Aluminium in Edelstahl. Wählen Sie im Bereich hingegen den Eintrag <span class="screenelement smallcaps">Websites</span>, so kann später der Wert des Attributs nur auf Website-Ebene geändert werden. Eine Abhängigkeit von der Sprache, dem Store View, existiert nicht mehr. Wenn Sie aber unterschiedliche Websites auf Basis einer Magento-Instanz betreiben, so kann der Wert pro Website unterschiedlich sein. In meinem Beispiel beim Material ergibt dies auch keinen Sinn, denn wenn ich die Pfanne zusätzlich in dem Spirituosen-Shop vertreiben würde, so wäre dort das Material identisch mit dem desselben Produkts auf <span class="url"><a href="http://www.foodbaer.de">www.foodbaer.de</a></span>. Als dritte und letzte Option können Sie den Geltungsbereich auf <span class="screenelement smallcaps">Global</span> stellen. Das bedeutet, dass der Wert des Attributs unabhängig vom Store View oder der Website immer identisch sein wird. Dadurch können Sie unter Berücksichtigung der Magento-Multistore-Fähigkeit beim Anlegen oder Editieren des Produkts den Wert nur zentral hinterlegen. Beim Material ergibt die Option Global den größten Sinn, da das bei einem Produkt hinterlegte Material unabhängig vom Store View bzw. der Website immer identisch ist.</p>
+                <div class="box_standard">
+                    <h6 class="boxheading">Bereich »Store View« ergibt vor allem bei Textfeld/Textbereich Sinn</h6>
+                    <p class="standard">Wenn Sie Attribute vom Typ Textfeld bzw. Textbereich anlegen, sollten Sie den Bereich bis auf wenige Ausnahmen immer auf <span class="italic">Store View</span> stellen. Wenn Sie bei einem Produkt Fließtext hinterlegen – genau hierfür sind diese beiden Eingabetypen vorhanden – und diesen Text anschließend übersetzen wollen, dann müssen Sie auf die Store-View-Ebene wechseln. Stellen Sie den Bereich hingegen auf <span class="screenelement smallcaps">Global,</span> können Sie auch nur einen globalen Text, d. .h. einen Text in einer Sprache, hinterlegen.</p>
+                </div>
+                <p class="standard">Wählen Sie an dieser Stelle den Wert <span class="screenelement smallcaps">global</span><a class="indexanchor" id="i07_39"/> aus, und scrollen Sie zum nächsten Feld.</p>
+                <p class="standard">Magento möchte nun wissen, ob es sich bei dem Wert um einen einmaligen Wert handelt. Dies bedeutet, der bei einem Produkt hinterlegte Wert für dieses Attribut darf nur einmal im gesamten Magento-System vorkommen. Würden Sie diese Option aktivieren, dürfte es in Ihrem gesamten Magento-System nur ein Produkt mit dem Material Aluminium, nur ein Produkt mit dem Material Keramik etc. geben. Letztendlich gibt es nur ein Szenario, in dem einmalige Werte sinnvoll sind. Hierbei handelt es sich um Identifikationsnummern wie eine Artikelnummer oder eine EAN (European Article Number)<a class="indexanchor" id="i07_40"/>. Würden Sie daher ein Attribut zum Speichern von EAN-Nummern anlegen, dann sollten Sie diese Option aktivieren. In allen anderen Fällen ist dies hingegen nicht sinnvoll, denn Sie wollen ja viele Produkte anlegen, die zum Teil über dieselben Eigenschaften verfügen können und werden.</p>
+                <p class="standard">Ein weiterer Mechanismus zur Fehlervermeidung kann durch die Option <span class="screenelement smallcaps">Eingabeüberprüfung für Shopbesitzer</span> aktiviert werden, diese ist aber nur bei den Eingabetypen Textfeld bzw. Textbereich aktiviert. Sie haben die Möglichkeit, ein Muster auszuwählen, gegen das die Eingabe bei der Produktanlage oder der Bearbeitung eines Produktes geprüft wird. Zur Verfügung stehen folgende Optionen:</p>
+                <ul>
+                    <li>
+                        Keine
+                    </li>
+                    <li>
+                        Dezimalzahl
+                    </li>
+                    <li>
+                        Integer-Nummer
+                    </li>
+                    <li>
+                        E-Mail
+                    </li>
+                    <li>
+                        URL
+                    </li>
+                    <li>
+                        Buchstaben
+                    </li>
+                    <li>
+                        Buchstaben oder Ziffern
+                    </li>
+                </ul>
+                <p class="standard">Angenommen, Sie wählen das Muster URL aus, dann prüft Magento, ob Sie tatsächlich eine URL eingegeben haben. Wählen Sie hingegen die Option E-Mail-Adresse, so wird Ihre Eingabe dahingehend geprüft, ob es sich um eine E-Mail-Adresse handelt. Wie Sie in der aufgeführten Liste sehen, gibt es verschiedene Muster, die Magento prüfen kann. Für welches bzw. ob Sie sich für eine Prüfung entscheiden, obliegt Ihrer persönlichen Entscheidung. Zumindest bietet Magento die Möglichkeit der Fehlervermeidung, und diese sollte bei so vielen Attributen wie möglich genutzt werden.</p>
+                <p class="standard">Die letzten beiden Optionen in diesem Abschnitt regeln das Verhalten des Attributs innerhalb des Magento-Backends und haben somit keinen Einfluss auf die Darstellung oder das Verhalten im Frontend. Wenn Sie die Option <span class="screenelement smallcaps">Spaltenoptionen hinzufügen</span> auf <span class="screenelement smallcaps">Ja</span> setzen, können Sie Ihr neues Attribut in der Übersichtsseite aller im System vorhandenen Produkte als Spalte hinzufügen. Die Übersichtsseite werden Sie zwar erst auf den nächsten Seiten kennenlernen, Sie können an dieser Stelle aber einen Blick auf <span class="crossreference "><a href="07_002.html#b7.18">Abbildung 7.18</a></span> werfen.</p>
+                <div class="imagebox "><a href="img-b7.18.html" id="b7.18"><img alt="Auch selbst angelegte Attribute können als Spalten hinzugefügt werden." id="img-b7.18" src="bilderklein/kleinabbilund-7-18.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.18</b>    Auch selbst angelegte Attribute können als Spalten hinzugefügt werden.</p>
+                <p class="standard">Auch wenn aktuell noch nicht allzu viele Produkte in meinem System vorhanden sind, so sehen Sie dennoch in <span class="crossreference "><a href="07_002.html#b7.18">Abbildung 7.18</a></span> die verschiedenen Spalten wie Name, Typ, Preis, Menge etc. Wenn Sie Ihr neues Attribut, also das Material, dieser Übersicht hinzufügen möchten, müssen Sie im ersten Schritt die Option <span class="screenelement smallcaps">Spaltenoptionen hinzufügen</span><a class="indexanchor" id="i07_41"/> auf <span class="screenelement smallcaps">Ja</span> setzen. Mit der nächsten Option, <span class="screenelement smallcaps">In Filteroptionen verwenden</span>, verhält es sich ähnlich. Sie können in der Übersichtsseite der Produkte einen Filter setzen. Für die Filterung stehen bestimmte Attribute zur Verfügung. Erstellen Sie ein eigenes Attribut und möchten dieses für den Filter freischalten, so müssen Sie die Option <span class="screenelement smallcaps">In Filteroptionen verwenden</span> auf <span class="screenelement smallcaps">Ja</span> setzen. Durch das Setzen dieser beiden letzten Optionen haben Sie alle notwendigen Einstellungen im Reiter <span class="screenelement smallcaps">Eigenschaften</span> vorgenommen. Wie Ihnen sicherlich beim Lesen der vergangenen Seiten aufgefallen ist, definieren Sie in diesem Reiter grundlegende Eigenschaften eines Attributes, beispielsweise den Namen, den Attribut-Code sowie den Eingabetyp. Durch diese Einstellungen bestimmen Sie, wie später das Attribut angesprochen werden kann und auf welche Art und Weise bei der Produktanlage und Produktbearbeitung Informationen hinterlegt werden.</p>
+                <p class="standard">Auch wenn Sie einige Einstellungen an Ihrem neuen Attribut vorgenommen haben, sind Sie an dieser Stelle noch nicht fertig. Wechseln Sie bitte in der linken Tab-Navigation in den nächsten Reiter namens <span class="screenelement smallcaps">Labels verwalten</span>. Wie eingangs erwähnt, wird das Standard-Label sowohl im Backend als auch im Frontend ausgegeben. Das heißt, die Nutzer und potenziellen Kunden sehen innerhalb des Online-Shops den dort hinterlegten Namen, Gleiches gilt aber auch für Ihre Kollegen, die innerhalb des Backends arbeiten. Sollten Sie in Ihrem Magento-Shop über mehrere Sprachen verfügen, so sollten Sie das Label übersetzen, sodass in jeder Sprachversion die korrekte Bezeichnung für das Attribut ausgegeben wird. Um das Label zu übersetzen, müssen Sie in den erwähnten Tab <span class="screenelement smallcaps">Labels verwalten</span> wechseln, anschließend haben Sie die Möglichkeit, pro Sprache einen Wert für das Label zu hinterlegen. Da Sie zu diesem Zeitpunkt noch keine zusätzlichen Sprachen in Ihrem System angelegt haben, möchte ich Ihnen die Funktionsweise anhand von <span class="crossreference "><a href="07_002.html#b7.19">Abbildung 7.19</a></span> erklären.</p>
+                <div class="imagebox "><a href="img-b7.19.html" id="b7.19"><img alt="Labels können pro Sprache definiert werden." id="img-b7.19" src="bilderklein/kleinabbilund-7-19.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.19</b>    Labels können pro Sprache definiert werden.</p>
+                <p class="standard">Wie Sie sehen, haben Sie je Sprache ein Textfeld, in dem Sie die jeweilige Übersetzung hinterlegen können. Magento erzeugt je Sprache eine Spalte, daher ist die Übersetzung an dieser Stelle auch recht einfach. Haben Sie zudem mehrere Websites, die jeweils über die Sprache »Deutsch« verfügen, so können Sie pro Website und Sprache eine Übersetzung hinterlegen. In Österreich muss Ihr Label also nicht genauso heißen wie in Deutschland oder in der Schweiz, auch wenn in allen diesen drei Ländern Deutsch gesprochen wird.</p>
+                <div class="box_standard">
+                    <h6 class="boxheading">Fallback-Mechanismus für Labels</h6>
+                    <p class="standard">Wenn Sie in der in <span class="crossreference "><a href="07_002.html#b7.19">Abbildung 7.19</a></span> dargestellten Ansicht keine Übersetzungen hinterlegen, auch nicht für Ihren einzig vorhandenen Store View, so wird Magento schlicht und einfach den Wert aus dem Feld Standard-Label verwenden. Sie müssen daher im Tab <span class="screenelement smallcaps">Labels verwalten</span> keine Werte hinterlegen.</p>
+                </div>
+                <p class="standard">Da Sie an dieser Stelle wie gesagt keine Übersetzung vornehmen müssen, wechseln Sie jetzt in den dritten und letzten Tab namens <span class="screenelement smallcaps">Storefront-Eigenschaften</span><a class="indexanchor" id="i07_42"/>.</p>
+                <p class="standard">Im Tab Storefront-Eigenschaften geht es primär um das Verhalten des Attributs innerhalb des Frontends, d. h., wo es angezeigt wird und wie es sich verhält. So definieren Sie mithilfe der ersten Option namens <span class="screenelement smallcaps">In Suche verwenden,</span> ob das Attribut bzw. besser gesagt der Inhalt des Attributs durchsucht werden darf. Magento bietet von Haus aus zwei Suchmöglichkeiten an. Zum einen handelt es sich um die <span class="italic">Schnellsuche</span>, also den Suchschlitz, der im Header dargestellt ist und den Sie in <span class="crossreference "><a href="07_002.html#b7.20">Abbildung 7.20</a></span> sehen.</p>
+                <div class="imagebox "><a href="img-b7.20.html" id="b7.20"><img alt="Je nach Konfiguration durchsucht die Schnellsuche alle möglichen Attribute." id="img-b7.20" src="bilderklein/kleinabbilund-7-20.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.20</b>    Je nach Konfiguration durchsucht die Schnellsuche alle möglichen Attribute.</p>
+                <p class="standard">Zum anderen existiert eine erweiterte Suchmöglichkeit, mit deren Hilfe der Nutzer im Frontend wesentlich gezielter und individueller suchen kann. Denn in der <span class="italic">Erweiterten Suche</span> (siehe <span class="crossreference "><a href="07_002.html#b7.21">Abbildung 7.21</a></span>) können Sie direkt Attribute ansprechen und nach Werten suchen. Die Schnellsuche hingegen würde bei einer Suchanfrage alle erlaubten Attribute durchsuchen. Wenn Sie bei der erweiterten Suche jedoch nur das Attribut »Produktname« auswählen, so wird auch nur der Produktname durchsucht. Falls Sie nun möchten, dass auch Ihr neues Attribut namens Material in die Suche eingebunden wird, aktivieren Sie an dieser Stelle die Option <span class="screenelement smallcaps">In Suche verwenden</span>. Daraufhin öffnen sich zwei weitere Konfigurationsoptionen namens <span class="screenelement smallcaps">Suche nach Gewicht</span> sowie <span class="screenelement smallcaps">In erweiterter Suche sichtbar</span>. Bei der ersten Konfigurationsoption, die in der deutschen Übersetzung einen etwas merkwürdigen Namen trägt, geht es um die Gewichtung. Sie haben die Möglichkeit, eine Zahl zwischen 1 und 10 auszuwählen. Bei einer Suchanfrage wird diese Gewichtung letztendlich beim Aufbau des Suchergebnisses berücksichtigt.</p>
+                <div class="imagebox "><a href="img-b7.21.html" id="b7.21"><img alt="Die erweiterte Suche lässt das gezielte Suchen anhand von Attributen zu." id="img-b7.21" src="bilderklein/kleinabbilund-7-21.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.21</b>    Die erweiterte Suche lässt das gezielte Suchen anhand von Attributen zu.</p>
+                <p class="standard">Magento erlaubt Ihnen daher, Abstufungen vorzunehmen. Wenn beispielsweise das Material wichtiger ist als der Produktname, so können Sie eine entsprechende Gewichtung hinterlegen. Aktivieren Sie die<a class="indexanchor" id="i07_43"/> <span class="screenelement smallcaps">Option In erweiterter Suche sichtbar,</span> taucht das Attribut in der erweiterten Suche auf, wie Sie sehen, wenn Sie erneut einen kurzen Blick auf <span class="crossreference "><a href="07_002.html#b7.21">Abbildung 7.21</a></span> werfen. Möchten Sie Ihr Attribut daher über die erweiterte Suche zugänglich machen, so müssen Sie zwangsläufig diese Option aktivieren.</p>
+                <p class="standard">Mithilfe der nächsten Option können Sie bestimmen, ob das Attribut in der Vergleichsliste dargestellt werden soll. Kunden und Besucher können innerhalb des Frontends mehrere Produkte auf die persönliche Vergleichsliste setzen. In der daraufhin generierten tabellarischen Darstellung werden alle Attribute, bei denen die Option <span class="screenelement smallcaps">In Storefront vergleichbar</span> aktiviert ist, ausgegeben. Sie können daher recht granular definieren, welche Informationen Bestandteil des Produktvergleiches sein sollen und welche Attribute hiervon ausgeschlossen werden. Im Standard sind beispielsweise drei Attribute vergleichbar, wie Sie in <span class="crossreference "><a href="07_002.html#b7.22">Abbildung 7.22</a></span> sehen. Hierbei handelt es sich um die Artikelnummer (SKU), die Kurzbeschreibung (Short Description) sowie die Langbeschreibung (Description). Diese drei Attribute werden beim Produktvergleich ausgegeben, und anhand dieser drei Attribute kann der Nutzer die Unterschiede zwischen den ausgewählten Produkten sehen.</p>
+                <div class="imagebox "><a href="img-b7.22.html" id="b7.22"><img alt="Sie können beliebig viele Attribute für die Vergleichsliste aktivieren." id="img-b7.22" src="bilderklein/kleinabbilund-7-22.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.22</b>    Sie können beliebig viele Attribute für die Vergleichsliste aktivieren.</p>
+                <p class="standard">In der Praxis würde man vermutlich die Kurz- sowie die Langbeschreibung nicht vergleichbar machen, da der Nutzer hier ausschließlich Freitexte miteinander vergleichen kann. Dadurch können Unterschiede nicht direkt erfasst werden. Beim Material würde hingegen ein Vergleich sinnvoll sein, da Sie sofort sehen, welches Produkt aus welchem Material besteht.</p>
+                <p class="standard">Auf den vorherigen Seiten hatte ich bereits die Layered Navigation, damit ist die Filternavigation im Frontend gemeint, erwähnt. Je nach Eingabetyp haben Sie im nächsten Schritt bei der Option <span class="screenelement smallcaps">In Filternavigation verwenden</span><a class="indexanchor" id="i07_44"/> die Möglichkeit, das Attribut für die Filternavigation zu aktivieren. Möglich ist dies mit allen Eingabetypen, bei denen Sie keinen Freitext hinterlegen, sondern Werte im Vorfeld definieren. Das heißt, diese Option steht bei der Dropdown-Liste, der Mehrfachauswahl und dem Preis zur Verfügung. Da ich in diesem konkreten Beispiel als Eingabetyp die Mehrfachauswahl gewählt habe, kann ich also die Option <span class="screenelement smallcaps">In Filternavigation verwenden</span> nutzen. Andernfalls wäre das Auswahlfeld an dieser Stelle ausgegraut, und Sie müssten gegebenenfalls den Eingabetyp ändern. Möchten Sie das Attribut für die Filternavigation freischalten, stehen Ihnen zwei Optionen zur Verfügung. Insgesamt enthält das Dropdown-Menü drei Einträge, aber der Eintrag <span class="screenelement smallcaps">Nein</span> dürfte an dieser Stelle selbsterklärend sein, denn dieser würde letztendlich dafür sorgen, dass das Attribut nicht zur Filternavigation hinzugefügt wird. Wenn Sie hingegen das Attribut zur Filternavigation hinzufügen möchten, müssen sich zwischen diesen beiden Auswahloptionen entscheiden:</p>
+                <ul>
+                    <li>
+                        Filterbar (mit Resultaten)
+                    </li>
+                    <li>
+                        Filterbar (keine Resultate)
+                    </li>
+                </ul>
+                <p class="standard">Der Unterschied zwischen den beiden Optionen ist recht simpel. Wenn Sie die erste Option wählen, wird das Attribut samt aller Werte auch dann in der Filternavigation angezeigt, wenn in der Ergebnismenge, die sich rechts neben der Filternavigation befindet, kein Produkt vorhanden ist, auf das alle Werte zutreffen. Sprich, in meinem konkreten Fall würde die Filtermöglichkeit nach dem Material samt den zugewiesenen Materialen dargestellt werden, ganz egal, welche Eigenschaften die dargestellten Produkte enthalten. Bei der zweiten Option werden hingegen nur Auswahloptionen dargestellt, die in Produkten vorhanden sind. Existiert in der Kategorie kein Produkt mit dem Material Keramik, so wird mir im Filter auch nicht die Möglichkeit angeboten, Keramik anzuklicken. Sie müssen sich daher in dieser Auswahl entscheiden, ob Sie Ihren Kunden und Besuchern immer alle Auswahloptionen darstellen möchten oder nur diejenigen Werte, die auch den dargestellten Produkten zugewiesen sind. Gefühlt ergibt in der Regel die erste Option am meisten Sinn, denn ich möchte meinen Nutzern nur die Optionen innerhalb des Filters anbieten, die auch zu einem Ergebnis führen, letztendlich müssen Sie diese Entscheidung aber selbst treffen.</p>
+                <p class="standard">Magento trennt bei der Layered Navigation konsequent zwischen dem Filter, der innerhalb einer Kategorie dargestellt wird, und dem Filter, der auf der Suchergebnisseite ausgegeben wird. Gerade eben haben Sie das Verhalten des Attributs innerhalb der Filterung auf der Kategorieseite definiert, in der nächsten Option namens <span class="screenelement smallcaps">In Suchergebnissen der Filternavigation verwenden</span> können Sie nun das Verhalten des Attributs auf der Suchergebnisseite bestimmen. So haben Sie die Möglichkeit, das Attribut für die Filterung zu aktivieren bzw. zu deaktivieren. Magento erlaubt Ihnen bei Ihren Attributen daher auch eine Differenzierung: Nur weil Sie das Attribut innerhalb von Kategorien filterbar machen, müssen Sie dies nicht zwangsläufig auch auf der Suchergebnisseite tun.</p>
+                <p class="standard">Mit der nächsten Option, der <span class="screenelement smallcaps">Position</span>, definieren Sie die Reihenfolge des Attributs in der Filternavigation. Magento zählt an dieser Stelle von der kleinsten Zahl zur größten, d. h., wenn Sie dem Attribut »Material« die Zahl 1 zuweisen und einem weiteren Attribut, beispielsweise dem Attribut »Durchmesser«, die 2, so wird in der Filternavigation zuerst die Auswahl des Materials dargestellt. Vermutlich wundern Sie sich, warum das Feld aktuell noch deaktiviert ist. Sie können die Positionsnummer erst eingeben, nachdem Sie das Attribut gespeichert haben. Daher können Sie die Eingabe der Position an dieser Stelle überspringen und später, nachdem das Attribut gespeichert wurde, nachholen. Die Eingabe der Position ist übrigens nicht zwingend notwendig, d. h., Sie können an dieser Stelle den Wert auch leer lassen.</p>
+                <p class="standard">Möchten Sie später in Ihrem Magento-Online-Shop Rabatte in Form von Preisregeln ermöglichen, so können Sie diese Rabatte an bestimmte Produktattribute knüpfen. Um diese Verknüpfung herstellen zu können, muss das Attribut für die sogenannten Promo-Regeln aktiviert werden. Diese Aktivierung können Sie mithilfe der nächsten Option namens <span class="screenelement smallcaps">Für Promo-Regelbedingungen verwenden</span> vornehmen. Setzen Sie an dieser Stelle ruhig die Auswahl auf <span class="screenelement smallcaps">Ja</span>. In <span class="crossreference "><a href="10_003.html#u10.3">Abschnitt 10.3</a></span>., »Sonderpreise und Rabatte erstellen«, dreht sich alles um das Thema Rabatte und Preisregeln – dort erfahren Sie im Detail, wie Sie das Attribut bei der Regelentwicklung einbeziehen können.</p>
+                <p class="standard">Scrollen Sie weiter, bis Sie zur Option <span class="screenelement smallcaps">HTML-Tags in Storefront erlauben</span> gelangen. Bei dieser Option, die Sie auf Ja bzw. Nein setzen können, definieren Sie, ob im Attribut HTML-Tags hinterlegt werden dürfen bzw. im Frontend ausgegeben werden. Speziell bei Freitexten kann es durchaus sinnvoll sein, wenn Sie HTML-Tags hinterlegen und dadurch z. B. einzelne Wörter fett markieren oder unterstreichen können. Wären HTML-Tags im Frontend hingegen nicht erlaubt, so würden alle Formatierungsinformationen entfernt werden und Magento würde nur den reinen Text darstellen.</p>
+                <p class="standard">Wenn Sie ein Attribut anlegen, dann gibt es meiner Meinung nach zwei mögliche Einsatzzwecke für dieses Attribut. Entweder Sie möchten einen internen und nicht öffentlichen Wert speichern, beispielsweise einen Einkaufspreis, oder Sie möchten einen Wert speichern und diese Information Ihren Kunden im Frontend mitteilen. Möchten Sie Letzteres, müssen Sie die nächste Option <span class="screenelement smallcaps">Auf Katalogseiten im Storefront sichtbar</span> aktivieren. Nur wenn diese Option aktiviert ist, stellt Magento das Attribut samt Wert im Frontend dar. Sie sehen diese Darstellung exemplarisch in <span class="crossreference "><a href="07_002.html#b7.23">Abbildung 7.23</a></span>.</p>
+                <div class="imagebox "><a href="img-b7.23.html" id="b7.23"><img alt="Eigene Attribute werden auf der Produktdetailseite im Tab »Mehr Informationen« dargestellt." id="img-b7.23" src="bilderklein/kleinabbilund-7-23.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 7.23</b>    Eigene Attribute werden auf der Produktdetailseite im Tab »Mehr Informationen« dargestellt.</p>
+                <p class="standard">Alle Attribute, die Sie im Frontend dargestellt haben möchten, wandern in einen speziellen Tab und werden dort in tabellarischer Form dargestellt. Falls Sie das Attribut hingegen nicht für die Darstellung im Frontend aktivieren, können Sie zwar das Attribut bei jedem Produkt pflegen, aber Ihre Kunden würden den dort hinterlegten Wert im Frontend nie zu Gesicht bekommen.</p>
+                <p class="standard">Die nächste Option, bei der es sich um Im<a class="indexanchor" id="i07_45"/> <span class="screenelement smallcaps">Produkt-Listing verwendet</span> handelt, geht in eine ähnliche Richtung. Aktivieren Sie diese Option, so können Sie das Attribut auch innerhalb der Kategorieseite verwenden. Beachten Sie aber an dieser Stelle, dass das Attribut nicht plötzlich innerhalb der Kategorieseite auftaucht, wie es beispielsweise auf der Produktdetailseite passiert. Die Option ermöglicht Ihnen an dieser Stelle nur den Zugriff auf dieses Attribut, daher richtet sich die Einstellung primär an Frontend-Entwickler. Das heißt, Sie definieren innerhalb der Einstellung nur die Möglichkeit, ob innerhalb des Templates auf das Attribut zugegriffen werden darf oder nicht, es erfolgt jedoch keine automatische Darstellung.</p>
+                <p class="standard">Abschließend haben Sie zudem die Möglichkeit, das Attribut für die Sortierung freizuschalten, indem Sie bei der Option <span class="screenelement smallcaps">Wird für die Sortierung im Produkt-Listing verwendet</span> den Wert <span class="screenelement smallcaps">Ja</span> hinterlegen. Tun Sie dies, haben Sie in der globalen Systemkonfiguration die Möglichkeit, das Attribut für die Sortierung freizuschalten, alternativ hierzu können Sie dies jedoch auch innerhalb einer bestimmten Kategorie tun.</p>
+                <p class="standard">Mit dieser letzten Einstellung haben Sie alle relevanten Informationen bei Ihrem Attribut hinterlegt und können dieses speichern. Glückwunsch hierzu! Denn das Attribut bzw. die Attribute sind die Grundlage für das Produktmanagement, um das es in <span class="crossreference "><a href="07_003.html#u7.3">Abschnitt 7.3</a></span>, »<span class="crossreference ">Produkte zum Verkauf anbieten</span>«, geht. Da Sie für den späteren Verlauf des Buches eine Handvoll Attribute benötigen, bitte ich Sie an dieser Stelle, die nachfolgend aufgelisteten Attribute anzulegen. Auf den vorherigen Seiten haben Sie einen Einblick in die verschiedenen Optionen und Möglichkeiten erhalten, diese Informationen sollten Ihnen als Basis für die Anlage der Attribute reichen. Falls Sie jedoch an der einen oder anderen Stelle eine gewisse Unsicherheit verspüren, melden Sie sich einfach auf <span class="url"><a href="http://www.foodbaer.de">www.foodbaer.de</a></span> im Backend an und öffnen Sie dort die Attributs-Verwaltung. Letztendlich sind dort alle Attribute bereits angelegt, die Sie nun ebenfalls erstellen sollten. Sie haben also die Möglichkeit, schnell und unkompliziert nachzuprüfen, welche Einstellungen bzw. Werte ich hinterlegt habe, und können sich an diesen Einstellungen orientieren.</p>
+                <p class="standard">Bitte legen Sie jetzt folgende Attribute in Ihrem System an, die über die definierten Ausprägungen und Eigenschaften verfügen:</p>
+                <table class="standardtable" id="t_ohne_07_00">
+                    <thead>
+                        <tr class="">
+                            <th class="tablehead tablecell_first top_border_cell">
+                                Standard-<br/>Label
+                            </th>
+                            <th class="tablehead top_border_cell">
+                                Eingabetyp
+                            </th>
+                            <th class="tablehead top_border_cell">
+                                Optionen
+                            </th>
+                            <th class="tablehead top_border_cell">
+                                Bereich
+                            </th>
+                            <th class="tablehead tablecell_last top_border_cell">
+                                In Filternaviga-<br/>tion verwenden
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="tablecell tablecell_first top_border_cell">
+                                Material
+                            </td>
+                            <td class="tablecell top_border_cell">
+                                Mehrfachauswahl
+                            </td>
+                            <td class="tablecell top_border_cell">
+                                Aluguss<br/>
+                                Plastik<br/>
+                                Edelstahl<br/>
+                                Keramik<br/>
+                                Aluminium<br/>
+                                Porzellan<br/>
+                                Bambus<br/>
+                                Sonstiges
+                            </td>
+                            <td class="tablecell top_border_cell">
+                                Global
+                            </td>
+                            <td class="tablecell tablecell_last top_border_cell">
+                                ja
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Durchmesser
+                            </td>
+                            <td class="tablecell">
+                                Dropdown
+                            </td>
+                            <td class="tablecell">
+                                20 cm<br/>
+                                24 cm<br/>
+                                28 cm<br/>
+                                32 cm
+                            </td>
+                            <td class="tablecell">
+                                Global
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                ja
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Garantie
+                            </td>
+                            <td class="tablecell">
+                                Dropdown
+                            </td>
+                            <td class="tablecell">
+                                12 Monate<br/>
+                                24 Monate<br/>
+                                36 Monate
+                            </td>
+                            <td class="tablecell">
+                                Global
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                ja
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Besonderheiten
+                            </td>
+                            <td class="tablecell">
+                                Textfeld
+                            </td>
+                            <td class="tablecell">
+                                –
+                            </td>
+                            <td class="tablecell">
+                                Store View
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                –
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Vorteile
+                            </td>
+                            <td class="tablecell">
+                                Textbereich
+                            </td>
+                            <td class="tablecell">
+                                –
+                            </td>
+                            <td class="tablecell">
+                                Store View
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                –
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                ofenkompatibel
+                            </td>
+                            <td class="tablecell">
+                                Ja/Nein
+                            </td>
+                            <td class="tablecell">
+                                –
+                            </td>
+                            <td class="tablecell">
+                                Global
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                –
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Farbe
+                            </td>
+                            <td class="tablecell">
+                                Dropdown
+                            </td>
+                            <td class="tablecell">
+                                Blau<br/>
+                                Grün<br/>
+                                Rot<br/>
+                                Gelb<br/>
+                                Schwarz<br/>
+                                Weiß
+                            </td>
+                            <td class="tablecell">
+                                Global
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Ja
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Ausstattung
+                            </td>
+                            <td class="tablecell">
+                                Textbereich
+                            </td>
+                            <td class="tablecell">
+                                –
+                            </td>
+                            <td class="tablecell">
+                                Store View
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                –
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Pfannenform
+                            </td>
+                            <td class="tablecell">
+                                Textfeld
+                            </td>
+                            <td class="tablecell">
+                                –
+                            </td>
+                            <td class="tablecell">
+                                Store View
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                –
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Länge
+                            </td>
+                            <td class="tablecell">
+                                Dropdown
+                            </td>
+                            <td class="tablecell">
+                                18 cm<br/>
+                                20 cm<br/>
+                                24 cm<br/>
+                                28 cm<br/>
+                                32 cm
+                            </td>
+                            <td class="tablecell">
+                                Global
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                ja
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="standard">Für die spätere Anlage der Produkte werden Sie diese zehn Attribute in den jeweiligen Ausprägungen benötigen, legen Sie die Attribute daher an dieser Stelle an. Bei Optionen wie z. B. dem Attribut-Code überlasse ich Ihnen die Wahl eines geeigneten Wertes. Meine Empfehlung, die für alle aufgeführten Attribute gilt, ist zudem, dass Sie folgende Werte im Abschnitt <span class="screenelement smallcaps">Storefront- Eigenschaften</span> hinterlegen:</p>
+                <ul>
+                    <li>
+                        In Suche verwenden = Ja
+                    </li>
+                    <li>
+                        In Storefront vergleichbar = Ja
+                    </li>
+                    <li>
+                        In Filternavigation verwenden = Ja (abhängig vom Eingabetyp des Attributs)
+                    </li>
+                    <li>
+                        In Suchergebnissen der Filternavigation verwenden = Ja (abhängig vom Eingabetyp des Attributs)
+                    </li>
+                    <li>
+                        Für Promo-Regelbedingungen verwenden = Ja
+                    </li>
+                    <li>
+                        Auf Katalogseiten im Storefront sichtbar = Ja
+                    </li>
+                </ul>
+                <p class="standard">Diese Werte sind wichtig, da ich auch in den späteren Kapiteln nochmals auf das eine oder andere Attribut zurückgreifen werde, beispielsweise wenn es um die Warenkorb- bzw. Katalog-Preisregeln geht. Wenn Sie bei der Attributanlage schon die entsprechenden Werte setzen, ersparen Sie sich später viel Mühe und Aufwand, da Sie nicht nochmals in die Attributbearbeitung springen müssen.</p>
+                <p class="standard">Nun haben Sie es nach vielen Seiten voller Informationen endlich geschafft! Sie haben Ihre ersten individuellen Attribute angelegt und damit den Grundstein für die Anlage von Produkten geschaffen. Bevor Sie aber mit dem Produktmanagement starten können, müssen Sie die angelegten Attribute noch in Form von Attributsets gruppieren. Was es mit den Attributsets im Detail auf sich hat, erfahren Sie auf den folgenden Seiten.</p>
+            
+        
+        
+            <h3 class="t3" id="u7.2.2">7.2.2    Attributsets<a class="indexanchor" id="i07_46"/></h3>
+            <p class="standard">Auch wenn Sie eine Vielzahl von Attributen angelegt haben, können Sie nach jetzigem Stand auf diese Attribute bei der Produktanlage noch nicht zugreifen. Momentan befinden sich die angelegten Attribute in einer Art Pool. Sie können die bestehenden Attribute aufrufen, bearbeiten, löschen sowie neue Attribute anlegen und dem Pool hinzufügen, aber eine direkte Verbindung der angelegten Attributen zu Produkten besteht aktuell noch nicht. Diese »Verbindung« erfolgt in Form von sogenannten <span class="italic">Attributsets</span>.</p>
+            <p class="standard">Ein Attributset definiert letztendlich nur, um was für eine Art Produkt es sich handelt. Damit ist nicht das Produkt als solches gemeint, sondern der Produkttyp bzw. die Produktart. Beispielsweise kann eine Pfanne oder Glas ein Attributset sein, niemals aber eine Endausprägung wie z. B. eine Edelstahlpfanne aus Edelstahl mit einem Durchmesser von 32 cm. Beim Attributset befinden Sie sich auf der Metaebene, die eine Produktart beschreibt.</p>
+            <p class="standard">Der Nutzen eines Attributsets zeigt sich später beim Anlegen eines Produkts. Wählen Sie beim Attributset den Wert »Pfanne«, so wird Sie Magento auch nur nach den Produkteigenschaften (Attribute) fragen, die Sie dem Attributset »Pfanne« zugewiesen haben. Da sich eine Pfanne, bezogen auf die Produkteigenschaften, stark von z. B. einem Glas unterscheidet, werden Sie bei der Produktanlage daher auch nur nach den für das ausgewählte Attributset relevanten Informationen gefragt und können auch nur diese Werte auswählen und hinterlegen. Diese Vorgehensweise sorgt für eine gewisse Übersichtlichkeit beim Produktmanagement und erlaubt ein sauberes und strukturiertes Arbeiten. Genug der grauen Theorie, lassen Sie uns jetzt Attributsets anlegen, spätestens dann wird Ihnen sicherlich ein Licht bezüglich der Funktionsweise aufgehen und die letzten offenen Fragen werden geklärt.</p>
+            <p class="standard">Sofern Sie aktuell nicht mehr im Magento-Backend angemeldet sind, melden Sie sich bitte mit Ihren persönlichen Zugangsdaten an. Anschließend klicken Sie auf <span class="screenelement smallcaps">Shops</span> • <span class="screenelement smallcaps">Attribute</span> • <span class="screenelement smallcaps">Attributset</span>, daraufhin gelangen Sie zur Übersicht der im System hinterlegten Attributsets.</p>
+            <p class="standard">Magento besitzt von Haus aus ein Attributset namens Default, das Sie nicht löschen können. Das Default-Attributset enthält alle notwendigen Systemattribute, die für die Anlage eines Produktes relevant sind. Im Prinzip differenziert Magento zwischen Systemattributen und selbst angelegten Attributen. Die Systemattribute werden Sie nicht löschen bzw. aus einem Attributset entfernen können, da ein Produkt diese Attribute zwangsläufig braucht. Hierbei handelt es sich beispielsweise um die Artikelnummer. Ein Produkt ohne Artikelnummer werden Sie nicht anlegen können, daher ist dieses Attribut als Systemattribut definiert, wodurch Sie das Attribut nicht aus dem Attributset »Default« entfernen oder gar das Attribut als solches löschen können. Das Attributset »Default« besteht größtenteils aus diesen Systemattributen und kann theoretisch, auch wenn man dies in der Praxis nicht tut, um eigene Attribute erweitert werden.</p>
+            <div class="box_standard">
+                <h6 class="boxheading">Belassen Sie das Attributset »Default«, wie es ist, und nehmen Sie keine Anpassungen vor</h6>
+                <p class="standard">Natürlich können Sie alle selbst angelegten Attribute dem Attributset »Standard« zuweisen und anschließend Produkte anlegen. Damit würden Sie die dahinterstehende Logik aber ad absurdum führen, da Sie die Attributsets zur Strukturierung Ihrer Produkttypen verwenden sollen. Werfen Sie aber alle Attribute in einen Topf, d. h. fügen Sie diese dem Attributset »Default« zu, haben Sie keine Strukturierung der Produkttypen, sondern nur ein Set, das alle möglichen Informationen enthält und speichern kann.</p>
+            </div>
+            <p class="standard">Damit Sie sehen, was ich Ihnen gerade beschrieben habe, öffnen Sie das Attributset <span class="screenelement smallcaps">Default</span>, indem Sie auf den entsprechenden Tabelleneintrag klicken. Daraufhin werden Sie eine Darstellung des Attributsets wie in <span class="crossreference "><a href="07_002.html#b7.24">Abbildung 7.24</a></span> vorfinden.</p>
+            <div class="imagebox "><a href="img-b7.24.html" id="b7.24"><img alt="Beim Editieren eines Attributsets sehen Sie alle zugewiesenen und nicht zugewiesenen Attribute." id="img-b7.24" src="bilderklein/kleinabbilund-7-24.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 7.24</b>    Beim Editieren eines Attributsets sehen Sie alle zugewiesenen und nicht zugewiesenen Attribute.</p>
+            <p class="standard">Die Attributset-Ansicht untergliedert sich in insgesamt drei Spalten. In der ersten Spalte, die Sie in <span class="crossreference "><a href="07_002.html#b7.24">Abbildung 7.24</a></span> sehen, wird der Name des Attributsets gespeichert. Öffnen Sie das Attributset »Default«, so wird an dieser Stelle der Wert <span class="italic">Default</span> ausgegeben. Ein Attributset muss immer aus einem Namen bestehen, auch wenn Sie bei der Namensgebung eine gewisse Flexibilität haben. Speichern bzw. aktualisieren können Sie das Attributset aber nur dann, wenn Sie das Feld <span class="screenelement smallcaps">Name</span> ausfüllen.</p>
+            <p class="standard">In der mittleren Spalte, die den Titel <span class="screenelement smallcaps">Gruppen</span> trägt, werden alle dem Attributset zugewiesenen Attribute aufgelistet. Sie haben dabei die Möglichkeit – Magento greift im Standard ebenfalls darauf zurück –, die Attribute in Ordnern zu gruppieren. Die Ordner werden bei der Produktanlage später als Tabs dargestellt, dazu aber mehr in <span class="crossreference "><a href="07_003.html#u7.3">Abschnitt 7.3</a></span>, »<span class="crossreference ">Produkte zum Verkauf anbieten</span>«. Wenn Sie einen erneuten Blick auf die Abbildung oder in Ihr Magento System werfen, sehen Sie sowohl die Ordner, beispielsweise »Product Details« oder »Content«, als auch die Attribute. Ist ein Attribut mit einem roten Icon versehen, so handelt es sich um ein Systemattribut. Diese Attribute lassen sich, wie bereits erwähnt, nicht löschen oder entfernen.</p>
+            <p class="standard">Die dritte und letzte Spalte zeigt Ihnen alle im System vorhandenen, aber nicht dem Attributset zugewiesenen Attribute an. Wenn Sie ebenfalls die auf den vorherigen Seiten erwähnten Attribute angelegt haben, werden diese bei Ihnen, genau wie bei mir in der Abbildung zu sehen ist, in der dritten Spalte aufgelistet. Möchte ich nun beispielsweise bei Produkten, die das Attributset »Default« besitzen, zusätzlich eine Farbe speichern, so würde ich an dieser Stelle das Attribut »Farbe« aus der dritten Spalte einfach in die zweite Spalte ziehen und auf Speichern klicken. Anschließend steht beim Produktmanagement dieses neue Attribut zur Verfügung. Magento setzt an dieser Stelle auf ein recht einfaches »Drag &amp; Drop-Interface«, d. h., Sie ziehen die Werte einfach in die Spalten oder aus den Spalten heraus. Dies geschieht recht intuitiv und ist meiner Meinung nach von Magento äußerst gut gelöst.</p>
+            <p class="standard">Wie gesagt, empfehle ich Ihnen, von Änderungen am Attributset Default abzusehen, da Sie ansonsten die eigentliche Logik und Möglichkeiten, mit mehreren Attributsets zu arbeiten, stellenweise umgehen. Springen Sie daher in die Übersichtsseite zurück, indem Sie in der oberen Navigationsleiste auf <span class="screenelement smallcaps">Zurück</span> klicken. In der Übersichtsseite angekommen, klicken Sie auf <span class="screenelement smallcaps">Attributset hinzufügen</span><a class="indexanchor" id="i07_47"/>. Daraufhin fragt Sie Magento nach dem Namen des neuen Attributsets sowie nach dem Attributset, auf dem Ihr neues Attributset basieren soll. Da Sie immer die Systemattribute benötigen, wird jedes Ihrer Attributsets im Zweifel auf dem Attributset »Default« basieren. Das Attributset »Default« bietet aufgrund der zugewiesenen Attribute die minimale Basis, die Sie verwenden müssen. Später können Sie jedoch, wenn Sie weitere Attributsets angelegt haben, auch Ihre eigenen Attributsets als Basis verwenden, die jedoch wiederum in letzter Konsequenz auf dem Attributset »Default« basieren. Hinterlegen Sie bei <span class="screenelement smallcaps">Name</span> nun den Wert »Töpfe« und bei <span class="screenelement smallcaps">basierend auf</span> »Default«, und klicken Sie auf den Button <span class="screenelement smallcaps">Speichern</span>. Daraufhin gelangen Sie zu einer Ansicht wie in <span class="crossreference "><a href="07_002.html#b7.24">Abbildung 7.24</a></span>, abgesehen von dem Namen, der in der ersten Spalte nun »Töpfe« lautet.</p>
+            <p class="standard">Wie der Name impliziert, möchte ich ein Attributset anlegen, das ich später für Produkte, bei denen es sich um Töpfe handelt, verwenden möchte. Nach jetzigem Stand hätte ich nur die Möglichkeit, die Informationen in den bereits zugewiesenen Attributen zu speichern, was mir persönlich zu wenig ist. Daher weise ich im nächsten Schritt die relevanten Attribute dem Attributset zu. Um etwas Struktur zu wahren, lege ich eine neue Gruppe an. Wenn Sie mir an dieser Stelle in Ihrem Magento-System folgen, klicken Sie in der mittleren Spalte auf den Button <span class="screenelement smallcaps">Neu hinzufügen</span>. Daraufhin öffnet sich ein Fenster, und Sie werden nach einem Namen gefragt. Geben Sie an dieser Stelle den Wert »Topf-Attribute« ein, und klicken Sie auf <span class="screenelement smallcaps">OK</span>. Sie sind bei der Wahl des Namens natürlich komplett frei und können auch alternative Bezeichnungen hinterlegen. Da ich Ihnen an dieser Stelle primär das Verhalten demonstrieren möchte, eignet sich diese Bezeichnung, speziell für den späteren Verlauf des Buches. In der Praxis verwendet man bei den Gruppen jedoch spezifischere Werte wie »Technische Details«, »Dokumente«, »Auszeichnungen« etc. Nachdem Sie die neue Gruppe angelegt haben, wird Magento diese an das Ende der Liste packen, wie Sie in <span class="crossreference "><a href="07_002.html#b7.25">Abbildung 7.25</a></span> sehen.</p>
+            <div class="imagebox "><a href="img-b7.25.html" id="b7.25"><img alt="Neue Gruppen fügt Magento an das Ende der Liste an." id="img-b7.25" src="bilderklein/kleinabbilund-7-25.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 7.25</b>    Neue Gruppen fügt Magento an das Ende der Liste an.</p>
+            <p class="standard">Da mich das später beim Produktmanagement jedoch stören wird, ziehe ich die Topf-Attribute per Drag &amp; Drop unter die Gruppe Content. Beachten Sie an dieser Stelle, dass Magento ab und an etwas zickig sein kann und es vorkommt, dass das Element unten bleibt, obwohl Sie es nach oben gezogen haben. Zum Teil sind es Pixel, die darüber entscheiden, ob Magento Ihren Strukturänderungswunsch akzeptiert oder nicht. Gegebenenfalls müssen Sie daher das Element drei- bis viermal an die entsprechende Stelle ziehen, bis es klappt. Nachdem Sie jetzt die Gruppe verschoben haben, müssen im nächsten Schritt die relevanten Attribute dieser Gruppe zugewiesen werden. Sie können an dieser Stelle zwar frei agieren, aber meine Empfehlung ist die Zuweisung der folgenden Attribute:</p>
+            <ul>
+                <li>
+                    Ausstattung
+                </li>
+                <li>
+                    Besonderheiten
+                </li>
+                <li>
+                    Garantie
+                </li>
+                <li>
+                    Material
+                </li>
+                <li>
+                    Vorteile
+                </li>
+                <li>
+                    Durchmesser
+                </li>
+                <li>
+                    Farbe
+                </li>
+            </ul>
+            <p class="standard">Nachdem Sie die Attribute von der dritten in die mittlere Spalte gezogen haben, verschwinden diese automatisch aus der dritten Spalte, und Sie sehen die Änderungen wie in <span class="crossreference "><a href="07_002.html#b7.26">Abbildung 7.26</a></span>.</p>
+            <div class="imagebox "><a href="img-b7.26.html" id="b7.26"><img alt="Sobald Sie Attribute Ihrem Attributset zuweisen, werden diese aus der dritten und letzten Spalte entfernt." id="img-b7.26" src="bilderklein/kleinabbilund-7-26-neu.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 7.26</b>    Sobald Sie Attribute Ihrem Attributset zuweisen, werden diese aus der dritten und letzten Spalte entfernt.</p>
+            <p class="standard">Haben Sie die Attribute dem Set zugewiesen, klicken Sie bitte auf den Button <span class="screenelement smallcaps">Speichern</span>, um die Änderungen zu übernehmen. Glückwunsch, nachdem an dieser Stelle keine Fehler aufgetreten sind, wovon ich ausgehe, haben Sie Ihr erstes eigenes Attributset angelegt!</p>
+            <p class="standard">Da ich Ihnen im nächsten Abschnitt des Buches das Produktmanagement im Detail vorstellen möchte und hierbei auch wieder auf Beispiele zurückgreifen werden, müssen Sie noch weitere Attributsets anlegen. Ich bin mir jedoch sicher, dass Sie dies nun ohne Probleme tun können und Sie damit keine Schwierigkeiten haben werden. Falls es doch noch Ungereimtheiten geben sollte, können Sie auf <span class="url"><a href="http://www.foodbaer.de">www.foodbaer.de</a></span> den Aufbau der Attributsets nachschlagen. Legen Sie jetzt noch folgende Attributsets mit diesen Attributen an:</p>
+            <table class="standardtable" id="t_ohne_07_01">
+                <thead>
+                    <tr class="">
+                        <th class="tablehead tablecell_first top_border_cell">
+                            Name
+                        </th>
+                        <th class="tablehead top_border_cell">
+                            Basierend auf
+                        </th>
+                        <th class="tablehead tablecell_last top_border_cell">
+                            Attribute
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td class="tablecell tablecell_first top_border_cell">
+                            Pfannen
+                        </td>
+                        <td class="tablecell top_border_cell">
+                            Default
+                        </td>
+                        <td class="tablecell tablecell_last top_border_cell">
+                            Ausstattung, Besonderheiten, Durchmesser, Garantie, Material, ofenkompatibel, Pfannenform
+                        </td>
+                    </tr>
+                    <tr class="light">
+                        <td class="tablecell tablecell_first">
+                            Messer
+                        </td>
+                        <td class="tablecell">
+                            Default
+                        </td>
+                        <td class="tablecell tablecell_last">
+                            Garantie, Farbe, Länge, Vorteile
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="tablecell tablecell_first">
+                            Bücher
+                        </td>
+                        <td class="tablecell">
+                            Default
+                        </td>
+                        <td class="tablecell tablecell_last">
+                            Besonderheiten, Vorteile
+                        </td>
+                    </tr>
+                    <tr class="light">
+                        <td class="tablecell tablecell_first">
+                            Gläser
+                        </td>
+                        <td class="tablecell">
+                            Default
+                        </td>
+                        <td class="tablecell tablecell_last">
+                            Besonderheiten, Durchmesser, Farbe, Garantie
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="standard">An dieser Stelle könnten Sie ruhig kreativ werden, bei den oben aufgeführten Attributen und Attributsets handelt es sich letztendlich nur um Vorschläge. Wenn Sie wie ich vorgehen, fällt es Ihnen auf den folgenden Seiten etwas leichter, meinen Beschreibungen zu folgen, natürlich können Sie den Attributsets zusätzliche Attribute hinzufügen, weitere Attributsets anlegen, mit unterschiedlichen Gruppen in den Attributsets arbeiten etc. Toben Sie sich daher an dieser Stelle gern aus, und tauchen Sie so weit wie möglich in das System und die Möglichkeiten ab. Die besten Ergebnisse erzielt man dann doch mit der altbewährten Trial-and-Error-Methode.</p>
+            <p class="standard">Auf den vorherigen Seiten haben Sie sowohl Kategorien als auch Attribute und Attributsets angelegt und zudem bereits Inhalte hinterlegt. Jetzt haben Sie die perfekte Basis, um mit der Anlage und der Verwaltung von Produkten durchzustarten. Welche Möglichkeiten Ihnen Magento bietet und wie Sie idealerweise beim Produktmanagement vorgehen. erfahren Sie im folgenden Abschnitt.</p>
+        
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

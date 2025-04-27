@@ -1,0 +1,2609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx
+  PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="de-DE">
+   <head>
+      <meta name="dtb:uid" content="978-3-8362-4232-5"/>
+      <meta name="dc:title" content="Alexander Steireif Magento 2"/>
+      <meta name="dtb:depth" content="3"/>
+   </head>
+   <docTitle>
+      <text>Inhaltsverzeichnis</text>
+   </docTitle>
+   <navMap>
+      <navPoint id="d37e2" playOrder="1">
+         <navLabel>
+            <text>Liebe Leser!</text>
+         </navLabel>
+         <content src="dear_reader.html"/>
+      </navPoint>
+      
+      <navPoint id="d37e12" playOrder="2">
+         <navLabel>
+            <text>Inhaltsverzeichnis</text>
+         </navLabel>
+         <content src="toc.html"/>
+      </navPoint>
+      <navPoint id="d37e22" playOrder="3">
+         <navLabel>
+            <text>  Danke</text>
+         </navLabel>
+         <content src="00_001.html"/>
+      </navPoint>
+      <navPoint id="d37e27" playOrder="4">
+         <navLabel>
+            <text>1   E-Commerce als Bestandteil unseres Alltags</text>
+         </navLabel>
+         <content src="01_001.html"/>
+         <navPoint id="d37e32" playOrder="5">
+            <navLabel>
+               <text>1.1   Definition E-Commerce</text>
+            </navLabel>
+            <content src="01_001.html#u1.1"/>
+         </navPoint>
+         <navPoint id="d37e37" playOrder="6">
+            <navLabel>
+               <text>1.2   Unterschiede zwischen B2C- &amp; B2B-E-Commerce</text>
+            </navLabel>
+            <content src="01_002.html#u1.2"/>
+            <navPoint id="d37e42" playOrder="7">
+               <navLabel>
+                  <text>1.2.1   B2C-E-Commerce</text>
+               </navLabel>
+               <content src="01_002.html#u1.2.1"/>
+            </navPoint>
+            <navPoint id="d37e47" playOrder="8">
+               <navLabel>
+                  <text>1.2.2   B2B-E-Commerce</text>
+               </navLabel>
+               <content src="01_002.html#u1.2.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e52" playOrder="9">
+            <navLabel>
+               <text>1.3   Die bisherige Entwicklung des E-Commerce</text>
+            </navLabel>
+            <content src="01_003.html#u1.3"/>
+         </navPoint>
+         <navPoint id="d37e58" playOrder="10">
+            <navLabel>
+               <text>1.4   Aktuelle Trends und zukünftige Potenziale</text>
+            </navLabel>
+            <content src="01_004.html#u1.4"/>
+         </navPoint>
+         <navPoint id="d37e63" playOrder="11">
+            <navLabel>
+               <text>1.5   Vor- und Nachteile eines eigenen Online-Shops</text>
+            </navLabel>
+            <content src="01_005.html#u1.5"/>
+            <navPoint id="d37e68" playOrder="12">
+               <navLabel>
+                  <text>1.5.1   Diese Punkte sprechen für einen Online-Shop</text>
+               </navLabel>
+               <content src="01_005.html#u1.5.1"/>
+            </navPoint>
+            <navPoint id="d37e73" playOrder="13">
+               <navLabel>
+                  <text>1.5.2   Diese Punkte machen E-Commerce so schwierig</text>
+               </navLabel>
+               <content src="01_005.html#u1.5.2"/>
+            </navPoint>
+            <navPoint id="d37e78" playOrder="14">
+               <navLabel>
+                  <text>1.5.3   Ein Online-Shop erfordert hohe Investitionen</text>
+               </navLabel>
+               <content src="01_005.html#u1.5.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e83" playOrder="15">
+            <navLabel>
+               <text>1.6   Fazit</text>
+            </navLabel>
+            <content src="01_006.html#u1.6"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e88" playOrder="16">
+         <navLabel>
+            <text>2   Magento als State-of-the-Art-E‐Commerce-Lösung</text>
+         </navLabel>
+         <content src="02_001.html"/>
+         <navPoint id="d37e93" playOrder="17">
+            <navLabel>
+               <text>2.1   Begriffsdefinition: Magento oder Magento Open Source?</text>
+            </navLabel>
+            <content src="02_001.html#u2.1"/>
+         </navPoint>
+         <navPoint id="d37e98" playOrder="18">
+            <navLabel>
+               <text>2.2   Die Entwicklung von Magento in den letzten Jahren</text>
+            </navLabel>
+            <content src="02_002.html#u2.2"/>
+         </navPoint>
+         <navPoint id="d37e103" playOrder="19">
+            <navLabel>
+               <text>2.3   Vergleich von Magento 1.x und Magento 2.x</text>
+            </navLabel>
+            <content src="02_003.html#u2.3"/>
+            <navPoint id="d37e108" playOrder="20">
+               <navLabel>
+                  <text>2.3.1   Gemeinsamkeiten</text>
+               </navLabel>
+               <content src="02_003.html#u2.3.1"/>
+            </navPoint>
+            <navPoint id="d37e114" playOrder="21">
+               <navLabel>
+                  <text>2.3.2   Unterschiede</text>
+               </navLabel>
+               <content src="02_003.html#u2.3.2"/>
+            </navPoint>
+            <navPoint id="d37e119" playOrder="22">
+               <navLabel>
+                  <text>2.3.3   Evolution statt Revolution</text>
+               </navLabel>
+               <content src="02_003.html#u2.3.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e124" playOrder="23">
+            <navLabel>
+               <text>2.4   Magento-Editionen im Überblick</text>
+            </navLabel>
+            <content src="02_004.html#u2.4"/>
+            <navPoint id="d37e129" playOrder="24">
+               <navLabel>
+                  <text>2.4.1   Magento Open Source (ehemals »Community Edition«)</text>
+               </navLabel>
+               <content src="02_004.html#u2.4.1"/>
+            </navPoint>
+            <navPoint id="d37e134" playOrder="25">
+               <navLabel>
+                  <text>2.4.2   Magento Enterprise Edition</text>
+               </navLabel>
+               <content src="02_004.html#u2.4.2"/>
+            </navPoint>
+            <navPoint id="d37e139" playOrder="26">
+               <navLabel>
+                  <text>2.4.3   Magento Enterprise Cloud Edition</text>
+               </navLabel>
+               <content src="02_004.html#u2.4.3"/>
+            </navPoint>
+            <navPoint id="d37e144" playOrder="27">
+               <navLabel>
+                  <text>2.4.4   Magento B2B Edition</text>
+               </navLabel>
+               <content src="02_004.html#u2.4.4"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e149" playOrder="28">
+            <navLabel>
+               <text>2.5   Weitere Produkte von Magento</text>
+            </navLabel>
+            <content src="02_005.html#u2.5"/>
+         </navPoint>
+         <navPoint id="d37e154" playOrder="29">
+            <navLabel>
+               <text>2.6   Magento 2 und seine Stärken und Schwächen</text>
+            </navLabel>
+            <content src="02_006.html#u2.6"/>
+            <navPoint id="d37e159" playOrder="30">
+               <navLabel>
+                  <text>2.6.1   Stärken</text>
+               </navLabel>
+               <content src="02_006.html#u2.6.1"/>
+            </navPoint>
+            <navPoint id="d37e164" playOrder="31">
+               <navLabel>
+                  <text>2.6.2   Schwächen</text>
+               </navLabel>
+               <content src="02_006.html#u2.6.2"/>
+            </navPoint>
+            <navPoint id="d37e170" playOrder="32">
+               <navLabel>
+                  <text>2.6.3   Fazit</text>
+               </navLabel>
+               <content src="02_006.html#u2.6.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e175" playOrder="33">
+            <navLabel>
+               <text>2.7   Magento im Vergleich mit anderen E‐Commerce-Lösungen</text>
+            </navLabel>
+            <content src="02_007.html#u2.7"/>
+            <navPoint id="d37e180" playOrder="34">
+               <navLabel>
+                  <text>2.7.1   Magento</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.1"/>
+            </navPoint>
+            <navPoint id="d37e185" playOrder="35">
+               <navLabel>
+                  <text>2.7.2   Shopware</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.2"/>
+            </navPoint>
+            <navPoint id="d37e190" playOrder="36">
+               <navLabel>
+                  <text>2.7.3   OXID eSales</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.3"/>
+            </navPoint>
+            <navPoint id="d37e195" playOrder="37">
+               <navLabel>
+                  <text>2.7.4   PrestaShop</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.4"/>
+            </navPoint>
+            <navPoint id="d37e200" playOrder="38">
+               <navLabel>
+                  <text>2.7.5   WooCommerce</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.5"/>
+            </navPoint>
+            <navPoint id="d37e205" playOrder="39">
+               <navLabel>
+                  <text>2.7.6   xt:Commerce</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.6"/>
+            </navPoint>
+            <navPoint id="d37e210" playOrder="40">
+               <navLabel>
+                  <text>2.7.7   osCommerce</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.7"/>
+            </navPoint>
+            <navPoint id="d37e215" playOrder="41">
+               <navLabel>
+                  <text>2.7.8   Zusammenfassung</text>
+               </navLabel>
+               <content src="02_007.html#u2.7.8"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e220" playOrder="42">
+            <navLabel>
+               <text>2.8   Ein Blick in die Zukunft von Magento</text>
+            </navLabel>
+            <content src="02_008.html#u2.8"/>
+         </navPoint>
+         <navPoint id="d37e226" playOrder="43">
+            <navLabel>
+               <text>2.9   Fazit</text>
+            </navLabel>
+            <content src="02_009.html#u2.9"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e231" playOrder="44">
+         <navLabel>
+            <text>3   Magento installieren</text>
+         </navLabel>
+         <content src="03_001.html"/>
+         <navPoint id="d37e236" playOrder="45">
+            <navLabel>
+               <text>3.1   Aufbau einer Magento-Umgebung</text>
+            </navLabel>
+            <content src="03_001.html#u3.1"/>
+         </navPoint>
+         <navPoint id="d37e241" playOrder="46">
+            <navLabel>
+               <text>3.2   Setup einer lokalen Entwicklungsumgebung</text>
+            </navLabel>
+            <content src="03_002.html#u3.2"/>
+            <navPoint id="d37e246" playOrder="47">
+               <navLabel>
+                  <text>3.2.1   XAMPP für Windows</text>
+               </navLabel>
+               <content src="03_002.html#u3.2.1"/>
+            </navPoint>
+            <navPoint id="d37e251" playOrder="48">
+               <navLabel>
+                  <text>3.2.2   XAMPP für Linux-Systeme</text>
+               </navLabel>
+               <content src="03_002.html#u3.2.2"/>
+            </navPoint>
+            <navPoint id="d37e256" playOrder="49">
+               <navLabel>
+                  <text>3.2.3   MAMP für macOS-Systeme</text>
+               </navLabel>
+               <content src="03_002.html#u3.2.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e261" playOrder="50">
+            <navLabel>
+               <text>3.3   Installation von Magento</text>
+            </navLabel>
+            <content src="03_003.html#u3.3"/>
+            <navPoint id="d37e266" playOrder="51">
+               <navLabel>
+                  <text>3.3.1   Grundvoraussetzung Datenbank</text>
+               </navLabel>
+               <content src="03_003.html#u3.3.1"/>
+            </navPoint>
+            <navPoint id="d37e271" playOrder="52">
+               <navLabel>
+                  <text>3.3.2   Klassische Installation per Weboberfläche</text>
+               </navLabel>
+               <content src="03_003.html#u3.3.2"/>
+            </navPoint>
+            <navPoint id="d37e276" playOrder="53">
+               <navLabel>
+                  <text>3.3.3   Klassische Installation per Kommandozeile</text>
+               </navLabel>
+               <content src="03_003.html#u3.3.3"/>
+            </navPoint>
+            <navPoint id="d37e282" playOrder="54">
+               <navLabel>
+                  <text>3.3.4   Composer</text>
+               </navLabel>
+               <content src="03_003.html#u3.3.4"/>
+            </navPoint>
+            <navPoint id="d37e287" playOrder="55">
+               <navLabel>
+                  <text>3.3.5   Magerun</text>
+               </navLabel>
+               <content src="03_003.html#u3.3.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e292" playOrder="56">
+            <navLabel>
+               <text>3.4   MageVM auf Basis von VirtualBox</text>
+            </navLabel>
+            <content src="03_004.html#u3.4"/>
+            <navPoint id="d37e297" playOrder="57">
+               <navLabel>
+                  <text>3.4.1   Installation von VirtualBox</text>
+               </navLabel>
+               <content src="03_004.html#u3.4.1"/>
+            </navPoint>
+            <navPoint id="d37e302" playOrder="58">
+               <navLabel>
+                  <text>3.4.2   Installation von MageVM</text>
+               </navLabel>
+               <content src="03_004.html#u3.4.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e307" playOrder="59">
+            <navLabel>
+               <text>3.5   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="03_005.html#u3.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e312" playOrder="60">
+         <navLabel>
+            <text>4   Einstieg und Konfiguration von Magento</text>
+         </navLabel>
+         <content src="04_001.html"/>
+         <navPoint id="d37e317" playOrder="61">
+            <navLabel>
+               <text>4.1   Installation des deutschen Sprachpakets</text>
+            </navLabel>
+            <content src="04_001.html#u4.1"/>
+         </navPoint>
+         <navPoint id="d37e322" playOrder="62">
+            <navLabel>
+               <text>4.2   Das Magento-Backend im Überblick</text>
+            </navLabel>
+            <content src="04_002.html#u4.2"/>
+         </navPoint>
+         <navPoint id="d37e327" playOrder="63">
+            <navLabel>
+               <text>4.3   Die Struktur des Magento-Backends</text>
+            </navLabel>
+            <content src="04_003.html#u4.3"/>
+         </navPoint>
+         <navPoint id="d37e332" playOrder="64">
+            <navLabel>
+               <text>4.4   Magento an die eigenen Bedürfnisse anpassen</text>
+            </navLabel>
+            <content src="04_004.html#u4.4"/>
+            <navPoint id="d37e338" playOrder="65">
+               <navLabel>
+                  <text>4.4.1   Allgemein</text>
+               </navLabel>
+               <content src="04_004.html#u4.4.1"/>
+            </navPoint>
+            <navPoint id="d37e343" playOrder="66">
+               <navLabel>
+                  <text>4.4.2   Katalog</text>
+               </navLabel>
+               <content src="04_004.html#u4.4.2"/>
+            </navPoint>
+            <navPoint id="d37e348" playOrder="67">
+               <navLabel>
+                  <text>4.4.3   Kunden</text>
+               </navLabel>
+               <content src="04_004.html#u4.4.3"/>
+            </navPoint>
+            <navPoint id="d37e353" playOrder="68">
+               <navLabel>
+                  <text>4.4.4   Umsatz</text>
+               </navLabel>
+               <content src="04_004.html#u4.4.4"/>
+            </navPoint>
+            <navPoint id="d37e358" playOrder="69">
+               <navLabel>
+                  <text>4.4.5   Services</text>
+               </navLabel>
+               <content src="04_004.html#u4.4.5"/>
+            </navPoint>
+            <navPoint id="d37e363" playOrder="70">
+               <navLabel>
+                  <text>4.4.6   Erweitert</text>
+               </navLabel>
+               <content src="04_004.html#u4.4.6"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e368" playOrder="71">
+            <navLabel>
+               <text>4.5   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="04_005.html#u4.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e373" playOrder="72">
+         <navLabel>
+            <text>5   Versandmethoden und Zahlungsarten</text>
+         </navLabel>
+         <content src="05_001.html"/>
+         <navPoint id="d37e378" playOrder="73">
+            <navLabel>
+               <text>5.1   Versandmethoden</text>
+            </navLabel>
+            <content src="05_001.html#u5.1"/>
+            <navPoint id="d37e383" playOrder="74">
+               <navLabel>
+                  <text>5.1.1   Einheitspreis</text>
+               </navLabel>
+               <content src="05_001.html#u5.1.1"/>
+            </navPoint>
+            <navPoint id="d37e388" playOrder="75">
+               <navLabel>
+                  <text>5.1.2   Kostenloser Versand</text>
+               </navLabel>
+               <content src="05_001.html#u5.1.2"/>
+            </navPoint>
+            <navPoint id="d37e394" playOrder="76">
+               <navLabel>
+                  <text>5.1.3   Tabellenkurse</text>
+               </navLabel>
+               <content src="05_001.html#u5.1.3"/>
+            </navPoint>
+            <navPoint id="d37e399" playOrder="77">
+               <navLabel>
+                  <text>5.1.4   UPS, USPS, FedEx, DHL</text>
+               </navLabel>
+               <content src="05_001.html#u5.1.4"/>
+            </navPoint>
+            <navPoint id="d37e404" playOrder="78">
+               <navLabel>
+                  <text>5.1.5   Erweiterung der Versandmethoden</text>
+               </navLabel>
+               <content src="05_001.html#u5.1.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e409" playOrder="79">
+            <navLabel>
+               <text>5.2   Zahlungsarten</text>
+            </navLabel>
+            <content src="05_002.html#u5.2"/>
+            <navPoint id="d37e414" playOrder="80">
+               <navLabel>
+                  <text>5.2.1   Braintree</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.1"/>
+            </navPoint>
+            <navPoint id="d37e419" playOrder="81">
+               <navLabel>
+                  <text>5.2.2   PayPal Payment Solutions</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.2"/>
+            </navPoint>
+            <navPoint id="d37e424" playOrder="82">
+               <navLabel>
+                  <text>5.2.3   Rechnung/Geld-Bestellung</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.3"/>
+            </navPoint>
+            <navPoint id="d37e429" playOrder="83">
+               <navLabel>
+                  <text>5.2.4   Zahlung per Banküberweisung</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.4"/>
+            </navPoint>
+            <navPoint id="d37e434" playOrder="84">
+               <navLabel>
+                  <text>5.2.5   Zahlung per Nachnahme</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.5"/>
+            </navPoint>
+            <navPoint id="d37e439" playOrder="85">
+               <navLabel>
+                  <text>5.2.6   Zwischensumme Kasse Null</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.6"/>
+            </navPoint>
+            <navPoint id="d37e444" playOrder="86">
+               <navLabel>
+                  <text>5.2.7   Bestellung durchführen</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.7"/>
+            </navPoint>
+            <navPoint id="d37e450" playOrder="87">
+               <navLabel>
+                  <text>5.2.8   Authorize.net</text>
+               </navLabel>
+               <content src="05_002.html#u5.2.8"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e455" playOrder="88">
+            <navLabel>
+               <text>5.3   Payment-Service-Provider</text>
+            </navLabel>
+            <content src="05_003.html#u5.3"/>
+         </navPoint>
+         <navPoint id="d37e460" playOrder="89">
+            <navLabel>
+               <text>5.4   Eingrenzung von Zahlungsarten auf Basis von Attributen</text>
+            </navLabel>
+            <content src="05_004.html#u5.4"/>
+         </navPoint>
+         <navPoint id="d37e465" playOrder="90">
+            <navLabel>
+               <text>5.5   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="05_005.html#u5.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e470" playOrder="91">
+         <navLabel>
+            <text>6   Steuerregeln und Währungen</text>
+         </navLabel>
+         <content src="06_001.html"/>
+         <navPoint id="d37e475" playOrder="92">
+            <navLabel>
+               <text>6.1   Steuerregeln</text>
+            </navLabel>
+            <content src="06_001.html#u6.1"/>
+            <navPoint id="d37e480" playOrder="93">
+               <navLabel>
+                  <text>6.1.1   Steuerzonen und -sätze</text>
+               </navLabel>
+               <content src="06_001.html#u6.1.1"/>
+            </navPoint>
+            <navPoint id="d37e485" playOrder="94">
+               <navLabel>
+                  <text>6.1.2   Steuerregeln</text>
+               </navLabel>
+               <content src="06_001.html#u6.1.2"/>
+            </navPoint>
+            <navPoint id="d37e490" playOrder="95">
+               <navLabel>
+                  <text>6.1.3   Import/Export Steuersätze</text>
+               </navLabel>
+               <content src="06_001.html#u6.1.3"/>
+            </navPoint>
+            <navPoint id="d37e495" playOrder="96">
+               <navLabel>
+                  <text>6.1.4   Steuer</text>
+               </navLabel>
+               <content src="06_001.html#u6.1.4"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e500" playOrder="97">
+            <navLabel>
+               <text>6.2   Währungen</text>
+            </navLabel>
+            <content src="06_002.html#u6.2"/>
+            <navPoint id="d37e506" playOrder="98">
+               <navLabel>
+                  <text>6.2.1   Währungseinstellungen</text>
+               </navLabel>
+               <content src="06_002.html#u6.2.1"/>
+            </navPoint>
+            <navPoint id="d37e511" playOrder="99">
+               <navLabel>
+                  <text>6.2.2   Währungskurse</text>
+               </navLabel>
+               <content src="06_002.html#u6.2.2"/>
+            </navPoint>
+            <navPoint id="d37e516" playOrder="100">
+               <navLabel>
+                  <text>6.2.3   Währungssymbole</text>
+               </navLabel>
+               <content src="06_002.html#u6.2.3"/>
+            </navPoint>
+            <navPoint id="d37e521" playOrder="101">
+               <navLabel>
+                  <text>6.2.4   Darstellung der Währungen innerhalb des Online-Shops</text>
+               </navLabel>
+               <content src="06_002.html#u6.2.4"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e526" playOrder="102">
+            <navLabel>
+               <text>6.3   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="06_003.html#u6.3"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e531" playOrder="103">
+         <navLabel>
+            <text>7   Aufbau und Verwaltung des Produktsortiments</text>
+         </navLabel>
+         <content src="07_001.html"/>
+         <navPoint id="d37e536" playOrder="104">
+            <navLabel>
+               <text>7.1   Kategorien erstellen und strukturieren</text>
+            </navLabel>
+            <content src="07_001.html#u7.1"/>
+            <navPoint id="d37e541" playOrder="105">
+               <navLabel>
+                  <text>7.1.1   Neue Kategorien anlegen</text>
+               </navLabel>
+               <content src="07_001.html#u7.1.1"/>
+            </navPoint>
+            <navPoint id="d37e546" playOrder="106">
+               <navLabel>
+                  <text>7.1.2   Bestehende Kategorien editieren</text>
+               </navLabel>
+               <content src="07_001.html#u7.1.2"/>
+            </navPoint>
+            <navPoint id="d37e551" playOrder="107">
+               <navLabel>
+                  <text>7.1.3   Kategorien strukturieren und verschieben</text>
+               </navLabel>
+               <content src="07_001.html#u7.1.3"/>
+            </navPoint>
+            <navPoint id="d37e556" playOrder="108">
+               <navLabel>
+                  <text>7.1.4   Kategorien löschen</text>
+               </navLabel>
+               <content src="07_001.html#u7.1.4"/>
+            </navPoint>
+            <navPoint id="d37e562" playOrder="109">
+               <navLabel>
+                  <text>7.1.5   Zusammenfassung</text>
+               </navLabel>
+               <content src="07_001.html#u7.1.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e567" playOrder="110">
+            <navLabel>
+               <text>7.2   Attribute pflegen und in Attributsets gruppieren</text>
+            </navLabel>
+            <content src="07_002.html#u7.2"/>
+            <navPoint id="d37e572" playOrder="111">
+               <navLabel>
+                  <text>7.2.1   Attribute</text>
+               </navLabel>
+               <content src="07_002.html#u7.2.1"/>
+            </navPoint>
+            <navPoint id="d37e577" playOrder="112">
+               <navLabel>
+                  <text>7.2.2   Attributsets</text>
+               </navLabel>
+               <content src="07_002.html#u7.2.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e582" playOrder="113">
+            <navLabel>
+               <text>7.3   Produkte zum Verkauf anbieten</text>
+            </navLabel>
+            <content src="07_003.html#u7.3"/>
+            <navPoint id="d37e587" playOrder="114">
+               <navLabel>
+                  <text>7.3.1   Produkttypen unterscheiden</text>
+               </navLabel>
+               <content src="07_003.html#u7.3.1"/>
+            </navPoint>
+            <navPoint id="d37e592" playOrder="115">
+               <navLabel>
+                  <text>7.3.2   Ein neues Produkt erstellen und veröffentlichen</text>
+               </navLabel>
+               <content src="07_003.html#u7.3.2"/>
+            </navPoint>
+            <navPoint id="d37e597" playOrder="116">
+               <navLabel>
+                  <text>7.3.3   Änderungen an bestehenden Produkten vornehmen</text>
+               </navLabel>
+               <content src="07_003.html#u7.3.3"/>
+            </navPoint>
+            <navPoint id="d37e602" playOrder="117">
+               <navLabel>
+                  <text>7.3.4   Ein bestehendes Produkt löschen</text>
+               </navLabel>
+               <content src="07_003.html#u7.3.4"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e607" playOrder="118">
+            <navLabel>
+               <text>7.4   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="07_004.html#u7.4"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e612" playOrder="119">
+         <navLabel>
+            <text>8   Bestellungen aufgeben und verarbeiten</text>
+         </navLabel>
+         <content src="08_001.html"/>
+         <navPoint id="d37e618" playOrder="120">
+            <navLabel>
+               <text>8.1   Bestellungen aufgeben</text>
+            </navLabel>
+            <content src="08_001.html#u8.1"/>
+            <navPoint id="d37e623" playOrder="121">
+               <navLabel>
+                  <text>8.1.1   Bestellungen im Frontend platzieren</text>
+               </navLabel>
+               <content src="08_001.html#u8.1.1"/>
+            </navPoint>
+            <navPoint id="d37e628" playOrder="122">
+               <navLabel>
+                  <text>8.1.2   Bestellungen im Backend anlegen</text>
+               </navLabel>
+               <content src="08_001.html#u8.1.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e633" playOrder="123">
+            <navLabel>
+               <text>8.2   Bestellungen verarbeiten</text>
+            </navLabel>
+            <content src="08_002.html#u8.2"/>
+         </navPoint>
+         <navPoint id="d37e638" playOrder="124">
+            <navLabel>
+               <text>8.3   Verwaltung von Bestellstatus</text>
+            </navLabel>
+            <content src="08_003.html#u8.3"/>
+         </navPoint>
+         <navPoint id="d37e643" playOrder="125">
+            <navLabel>
+               <text>8.4   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="08_004.html#u8.4"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e648" playOrder="126">
+         <navLabel>
+            <text>9   Kundenkonto und Kundenverwaltung</text>
+         </navLabel>
+         <content src="09_001.html"/>
+         <navPoint id="d37e653" playOrder="127">
+            <navLabel>
+               <text>9.1   Registrierung innerhalb des Frontends</text>
+            </navLabel>
+            <content src="09_001.html#u9.1"/>
+            <navPoint id="d37e658" playOrder="128">
+               <navLabel>
+                  <text>9.1.1   Registrierung vor dem Checkout-Prozess</text>
+               </navLabel>
+               <content src="09_001.html#u9.1.1"/>
+            </navPoint>
+            <navPoint id="d37e663" playOrder="129">
+               <navLabel>
+                  <text>9.1.2   Registrierung während des Checkout-Prozesses</text>
+               </navLabel>
+               <content src="09_001.html#u9.1.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e668" playOrder="130">
+            <navLabel>
+               <text>9.2   Ein neues Passwort anfordern</text>
+            </navLabel>
+            <content src="09_002.html#u9.2"/>
+         </navPoint>
+         <navPoint id="d37e674" playOrder="131">
+            <navLabel>
+               <text>9.3   Funktionen des Kundenkontos</text>
+            </navLabel>
+            <content src="09_003.html#u9.3"/>
+            <navPoint id="d37e679" playOrder="132">
+               <navLabel>
+                  <text>9.3.1   Dashboard</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.1"/>
+            </navPoint>
+            <navPoint id="d37e684" playOrder="133">
+               <navLabel>
+                  <text>9.3.2   Kontoinformationen</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.2"/>
+            </navPoint>
+            <navPoint id="d37e689" playOrder="134">
+               <navLabel>
+                  <text>9.3.3   Adressbuch</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.3"/>
+            </navPoint>
+            <navPoint id="d37e694" playOrder="135">
+               <navLabel>
+                  <text>9.3.4   Meine herunterladbaren Produkte</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.4"/>
+            </navPoint>
+            <navPoint id="d37e699" playOrder="136">
+               <navLabel>
+                  <text>9.3.5   Meine Bestellungen</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.5"/>
+            </navPoint>
+            <navPoint id="d37e704" playOrder="137">
+               <navLabel>
+                  <text>9.3.6   Newsletter-Abonnements</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.6"/>
+            </navPoint>
+            <navPoint id="d37e709" playOrder="138">
+               <navLabel>
+                  <text>9.3.7   Stored Payment Methods</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.7"/>
+            </navPoint>
+            <navPoint id="d37e714" playOrder="139">
+               <navLabel>
+                  <text>9.3.8   Meine Produktbewertungen</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.8"/>
+            </navPoint>
+            <navPoint id="d37e719" playOrder="140">
+               <navLabel>
+                  <text>9.3.9   Abrechnungsvereinbarungen</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.9"/>
+            </navPoint>
+            <navPoint id="d37e724" playOrder="141">
+               <navLabel>
+                  <text>9.3.10   Mein Wunschzettel</text>
+               </navLabel>
+               <content src="09_003.html#u9.3.10"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e730" playOrder="142">
+            <navLabel>
+               <text>9.4   Kundenverwaltung im Backend</text>
+            </navLabel>
+            <content src="09_004.html#u9.4"/>
+            <navPoint id="d37e735" playOrder="143">
+               <navLabel>
+                  <text>9.4.1   Aktive Kunden anzeigen lassen</text>
+               </navLabel>
+               <content src="09_004.html#u9.4.1"/>
+            </navPoint>
+            <navPoint id="d37e740" playOrder="144">
+               <navLabel>
+                  <text>9.4.2   Kunden und Kundendetails einsehen</text>
+               </navLabel>
+               <content src="09_004.html#u9.4.2"/>
+            </navPoint>
+            <navPoint id="d37e745" playOrder="145">
+               <navLabel>
+                  <text>9.4.3   Kundendaten exportieren</text>
+               </navLabel>
+               <content src="09_004.html#u9.4.3"/>
+            </navPoint>
+            <navPoint id="d37e750" playOrder="146">
+               <navLabel>
+                  <text>9.4.4   Kundengruppen verwalten</text>
+               </navLabel>
+               <content src="09_004.html#u9.4.4"/>
+            </navPoint>
+            <navPoint id="d37e755" playOrder="147">
+               <navLabel>
+                  <text>9.4.5   Kundengruppenabhängige Zahlungs- und Versandmethoden</text>
+               </navLabel>
+               <content src="09_004.html#u9.4.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e760" playOrder="148">
+            <navLabel>
+               <text>9.5   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="09_005.html#u9.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e765" playOrder="149">
+         <navLabel>
+            <text>10   Marketingmaßnahmen planen und durchführen</text>
+         </navLabel>
+         <content src="10_001.html"/>
+         <navPoint id="d37e770" playOrder="150">
+            <navLabel>
+               <text>10.1   Newsletter erstellen und versenden</text>
+            </navLabel>
+            <content src="10_001.html#u10.1"/>
+            <navPoint id="d37e775" playOrder="151">
+               <navLabel>
+                  <text>10.1.1   Newsletter-Abonnenten gewinnen</text>
+               </navLabel>
+               <content src="10_001.html#u10.1.1"/>
+            </navPoint>
+            <navPoint id="d37e780" playOrder="152">
+               <navLabel>
+                  <text>10.1.2   Newsletter-Abonnenten verwalten</text>
+               </navLabel>
+               <content src="10_001.html#u10.1.2"/>
+            </navPoint>
+            <navPoint id="d37e786" playOrder="153">
+               <navLabel>
+                  <text>10.1.3   Newsletter erstellen und versenden</text>
+               </navLabel>
+               <content src="10_001.html#u10.1.3"/>
+            </navPoint>
+            <navPoint id="d37e791" playOrder="154">
+               <navLabel>
+                  <text>10.1.4   Bewertung der Newsletter-Funktionen</text>
+               </navLabel>
+               <content src="10_001.html#u10.1.4"/>
+            </navPoint>
+            <navPoint id="d37e796" playOrder="155">
+               <navLabel>
+                  <text>10.1.5   Integration von externen Newsletter-Lösungen</text>
+               </navLabel>
+               <content src="10_001.html#u10.1.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e801" playOrder="156">
+            <navLabel>
+               <text>10.2   Produkte in CMS-Seiten integrieren</text>
+            </navLabel>
+            <content src="10_002.html#u10.2"/>
+            <navPoint id="d37e806" playOrder="157">
+               <navLabel>
+                  <text>10.2.1   Katalogprodukte anzeigen lassen</text>
+               </navLabel>
+               <content src="10_002.html#u10.2.1"/>
+            </navPoint>
+            <navPoint id="d37e811" playOrder="158">
+               <navLabel>
+                  <text>10.2.2   Integration der zuletzt angesehenen und verglichenen Produkte</text>
+               </navLabel>
+               <content src="10_002.html#u10.2.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e816" playOrder="159">
+            <navLabel>
+               <text>10.3   Sonderpreise und Rabatte erstellen</text>
+            </navLabel>
+            <content src="10_003.html#u10.3"/>
+            <navPoint id="d37e821" playOrder="160">
+               <navLabel>
+                  <text>10.3.1   Individueller Sonderpreis oder Preisregeln</text>
+               </navLabel>
+               <content src="10_003.html#u10.3.1"/>
+            </navPoint>
+            <navPoint id="d37e826" playOrder="161">
+               <navLabel>
+                  <text>10.3.2   Einen individuellen Sonderpreis hinterlegen</text>
+               </navLabel>
+               <content src="10_003.html#u10.3.2"/>
+            </navPoint>
+            <navPoint id="d37e831" playOrder="162">
+               <navLabel>
+                  <text>10.3.3   Katalogpreisregeln erstellen</text>
+               </navLabel>
+               <content src="10_003.html#u10.3.3"/>
+            </navPoint>
+            <navPoint id="d37e836" playOrder="163">
+               <navLabel>
+                  <text>10.3.4   Warenkorb-Preisregeln erstellen</text>
+               </navLabel>
+               <content src="10_003.html#u10.3.4"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e842" playOrder="164">
+            <navLabel>
+               <text>10.4   Up-Selling, Cross-Selling und Zubehör verwalten</text>
+            </navLabel>
+            <content src="10_004.html#u10.4"/>
+            <navPoint id="d37e847" playOrder="165">
+               <navLabel>
+                  <text>10.4.1   Up-Selling</text>
+               </navLabel>
+               <content src="10_004.html#u10.4.1"/>
+            </navPoint>
+            <navPoint id="d37e852" playOrder="166">
+               <navLabel>
+                  <text>10.4.2   Cross-Selling</text>
+               </navLabel>
+               <content src="10_004.html#u10.4.2"/>
+            </navPoint>
+            <navPoint id="d37e857" playOrder="167">
+               <navLabel>
+                  <text>10.4.3   Zubehör</text>
+               </navLabel>
+               <content src="10_004.html#u10.4.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e862" playOrder="168">
+            <navLabel>
+               <text>10.5   On-Page-Suchmaschinenoptimierung beachten</text>
+            </navLabel>
+            <content src="10_005.html#u10.5"/>
+            <navPoint id="d37e867" playOrder="169">
+               <navLabel>
+                  <text>10.5.1   Sitemap erstellen</text>
+               </navLabel>
+               <content src="10_005.html#u10.5.1"/>
+            </navPoint>
+            <navPoint id="d37e872" playOrder="170">
+               <navLabel>
+                  <text>10.5.2   Sprechende URLs verwenden</text>
+               </navLabel>
+               <content src="10_005.html#u10.5.2"/>
+            </navPoint>
+            <navPoint id="d37e877" playOrder="171">
+               <navLabel>
+                  <text>10.5.3   Kanonische URLs</text>
+               </navLabel>
+               <content src="10_005.html#u10.5.3"/>
+            </navPoint>
+            <navPoint id="d37e882" playOrder="172">
+               <navLabel>
+                  <text>10.5.4   URL-Suffix</text>
+               </navLabel>
+               <content src="10_005.html#u10.5.4"/>
+            </navPoint>
+            <navPoint id="d37e887" playOrder="173">
+               <navLabel>
+                  <text>10.5.5   Metainformationen hinterlegen</text>
+               </navLabel>
+               <content src="10_005.html#u10.5.5"/>
+            </navPoint>
+            <navPoint id="d37e892" playOrder="174">
+               <navLabel>
+                  <text>10.5.6   robots.txt-Datei</text>
+               </navLabel>
+               <content src="10_005.html#u10.5.6"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e898" playOrder="175">
+            <navLabel>
+               <text>10.6   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="10_006.html#u10.6"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e903" playOrder="176">
+         <navLabel>
+            <text>11   Content Management mit Magento</text>
+         </navLabel>
+         <content src="11_001.html"/>
+         <navPoint id="d37e908" playOrder="177">
+            <navLabel>
+               <text>11.1   Benutzerdefinierte Variablen anlegen und nutzen</text>
+            </navLabel>
+            <content src="11_001.html#u11.1"/>
+            <navPoint id="d37e913" playOrder="178">
+               <navLabel>
+                  <text>11.1.1   Eine neue Variable erstellen</text>
+               </navLabel>
+               <content src="11_001.html#u11.1.1"/>
+            </navPoint>
+            <navPoint id="d37e918" playOrder="179">
+               <navLabel>
+                  <text>11.1.2   Vorhandene Variablen verwalten und editieren</text>
+               </navLabel>
+               <content src="11_001.html#u11.1.2"/>
+            </navPoint>
+            <navPoint id="d37e923" playOrder="180">
+               <navLabel>
+                  <text>11.1.3   Variablen schnell und einfach einbinden</text>
+               </navLabel>
+               <content src="11_001.html#u11.1.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e928" playOrder="181">
+            <navLabel>
+               <text>11.2   Blöcke anlegen und integrieren</text>
+            </navLabel>
+            <content src="11_002.html#u11.2"/>
+            <navPoint id="d37e933" playOrder="182">
+               <navLabel>
+                  <text>11.2.1   Einen neuen Block erstellen</text>
+               </navLabel>
+               <content src="11_002.html#u11.2.1"/>
+            </navPoint>
+            <navPoint id="d37e938" playOrder="183">
+               <navLabel>
+                  <text>11.2.2   Vorhandene Blöcke verwalten</text>
+               </navLabel>
+               <content src="11_002.html#u11.2.2"/>
+            </navPoint>
+            <navPoint id="d37e943" playOrder="184">
+               <navLabel>
+                  <text>11.2.3   Blöcke im Frontend einbinden</text>
+               </navLabel>
+               <content src="11_002.html#u11.2.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e948" playOrder="185">
+            <navLabel>
+               <text>11.3   Widgets hinzufügen und nutzen</text>
+            </navLabel>
+            <content src="11_003.html#u11.3"/>
+            <navPoint id="d37e954" playOrder="186">
+               <navLabel>
+                  <text>11.3.1   Die Magento-Standard-Widgets kennenlernen</text>
+               </navLabel>
+               <content src="11_003.html#u11.3.1"/>
+            </navPoint>
+            <navPoint id="d37e959" playOrder="187">
+               <navLabel>
+                  <text>11.3.2   Ein Widget hinzufügen und im Frontend darstellen</text>
+               </navLabel>
+               <content src="11_003.html#u11.3.2"/>
+            </navPoint>
+            <navPoint id="d37e964" playOrder="188">
+               <navLabel>
+                  <text>11.3.3   Bestehende Widgets verwalten</text>
+               </navLabel>
+               <content src="11_003.html#u11.3.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e969" playOrder="189">
+            <navLabel>
+               <text>11.4   Seiten verwalten und gestalten</text>
+            </navLabel>
+            <content src="11_004.html#u11.4"/>
+            <navPoint id="d37e974" playOrder="190">
+               <navLabel>
+                  <text>11.4.1   Eine neue Seite anlegen</text>
+               </navLabel>
+               <content src="11_004.html#u11.4.1"/>
+            </navPoint>
+            <navPoint id="d37e979" playOrder="191">
+               <navLabel>
+                  <text>11.4.2   Vorhandene Seiten verwalten</text>
+               </navLabel>
+               <content src="11_004.html#u11.4.2"/>
+            </navPoint>
+            <navPoint id="d37e984" playOrder="192">
+               <navLabel>
+                  <text>11.4.3   Der WYSIWYG-Editor im Detail erklärt</text>
+               </navLabel>
+               <content src="11_004.html#u11.4.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e989" playOrder="193">
+            <navLabel>
+               <text>11.5   Bewertungen als »User Generated Content«</text>
+            </navLabel>
+            <content src="11_005.html#u11.5"/>
+            <navPoint id="d37e994" playOrder="194">
+               <navLabel>
+                  <text>11.5.1   Bewertungskriterien definieren</text>
+               </navLabel>
+               <content src="11_005.html#u11.5.1"/>
+            </navPoint>
+            <navPoint id="d37e999" playOrder="195">
+               <navLabel>
+                  <text>11.5.2   Eine neue Bewertung schreiben</text>
+               </navLabel>
+               <content src="11_005.html#u11.5.2"/>
+            </navPoint>
+            <navPoint id="d37e1004" playOrder="196">
+               <navLabel>
+                  <text>11.5.3   Vorhandene Bewertungen prüfen und freigeben</text>
+               </navLabel>
+               <content src="11_005.html#u11.5.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1010" playOrder="197">
+            <navLabel>
+               <text>11.6   E‐Mails</text>
+            </navLabel>
+            <content src="11_006.html#u11.6"/>
+            <navPoint id="d37e1015" playOrder="198">
+               <navLabel>
+                  <text>11.6.1   Eine neue E‐Mail auf Basis einer Vorlage erstellen</text>
+               </navLabel>
+               <content src="11_006.html#u11.6.1"/>
+            </navPoint>
+            <navPoint id="d37e1020" playOrder="199">
+               <navLabel>
+                  <text>11.6.2   Eine erstellte E‐Mail-Vorlage nutzen</text>
+               </navLabel>
+               <content src="11_006.html#u11.6.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1025" playOrder="200">
+            <navLabel>
+               <text>11.7   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="11_007.html#u11.7"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1030" playOrder="201">
+         <navLabel>
+            <text>12   Berichte auswerten &amp; Google-Dienste anbinden</text>
+         </navLabel>
+         <content src="12_001.html"/>
+         <navPoint id="d37e1035" playOrder="202">
+            <navLabel>
+               <text>12.1   Das integrierte Magento-Berichtswesen nutzen</text>
+            </navLabel>
+            <content src="12_001.html#u12.1"/>
+            <navPoint id="d37e1040" playOrder="203">
+               <navLabel>
+                  <text>12.1.1   Statistiken aktualisieren</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1045" playOrder="204">
+               <navLabel>
+                  <text>12.1.2   Marketing</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1050" playOrder="205">
+               <navLabel>
+                  <text>12.1.3   Bewertungen</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1055" playOrder="206">
+               <navLabel>
+                  <text>12.1.4   Umsatz</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1060" playOrder="207">
+               <navLabel>
+                  <text>12.1.5   Kunden</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.5"/>
+            </navPoint>
+            <navPoint id="d37e1066" playOrder="208">
+               <navLabel>
+                  <text>12.1.6   Produkte</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.6"/>
+            </navPoint>
+            <navPoint id="d37e1071" playOrder="209">
+               <navLabel>
+                  <text>12.1.7   Wie hilfreich sind die in Magento vorhandenen Berichte?</text>
+               </navLabel>
+               <content src="12_001.html#u12.1.7"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1076" playOrder="210">
+            <navLabel>
+               <text>12.2   Daten mithilfe von Google erfassen und auswerten</text>
+            </navLabel>
+            <content src="12_002.html#u12.2"/>
+            <navPoint id="d37e1081" playOrder="211">
+               <navLabel>
+                  <text>12.2.1   Google Webmaster Tools anbinden</text>
+               </navLabel>
+               <content src="12_002.html#u12.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1086" playOrder="212">
+               <navLabel>
+                  <text>12.2.2   Google Analytics in Magento integrieren</text>
+               </navLabel>
+               <content src="12_002.html#u12.2.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1091" playOrder="213">
+            <navLabel>
+               <text>12.3   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="12_003.html#u12.3"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1096" playOrder="214">
+         <navLabel>
+            <text>13   Magento für den deutschen Markt vorbereiten</text>
+         </navLabel>
+         <content src="13_001.html"/>
+         <navPoint id="d37e1101" playOrder="215">
+            <navLabel>
+               <text>13.1   MageSetup installieren und nutzen</text>
+            </navLabel>
+            <content src="13_001.html#u13.1"/>
+            <navPoint id="d37e1106" playOrder="216">
+               <navLabel>
+                  <text>13.1.1   Die MageSetup-Installation Schritt für Schritt</text>
+               </navLabel>
+               <content src="13_001.html#u13.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1111" playOrder="217">
+               <navLabel>
+                  <text>13.1.2   Änderungen und Erweiterungen durch MageSetup</text>
+               </navLabel>
+               <content src="13_001.html#u13.1.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1116" playOrder="218">
+            <navLabel>
+               <text>13.2   Bestellbedingungen verwalten</text>
+            </navLabel>
+            <content src="13_002.html#u13.2"/>
+         </navPoint>
+         <navPoint id="d37e1122" playOrder="219">
+            <navLabel>
+               <text>13.3   EU-Cookie-Verordnung umsetzen</text>
+            </navLabel>
+            <content src="13_003.html#u13.3"/>
+         </navPoint>
+         <navPoint id="d37e1127" playOrder="220">
+            <navLabel>
+               <text>13.4   Transaktions-E‐Mails</text>
+            </navLabel>
+            <content src="13_004.html#u13.4"/>
+         </navPoint>
+         <navPoint id="d37e1132" playOrder="221">
+            <navLabel>
+               <text>13.5   Double-Opt-in-Verfahren aktivieren</text>
+            </navLabel>
+            <content src="13_005.html#u13.5"/>
+         </navPoint>
+         <navPoint id="d37e1137" playOrder="222">
+            <navLabel>
+               <text>13.6   Was Sie ansonsten beachten sollten …</text>
+            </navLabel>
+            <content src="13_006.html#u13.6"/>
+         </navPoint>
+         <navPoint id="d37e1142" playOrder="223">
+            <navLabel>
+               <text>13.7   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="13_007.html#u13.7"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1147" playOrder="224">
+         <navLabel>
+            <text>14   Magento erweitern und an die eigenen Bedürfnisse und Anforderungen anpassen</text>
+         </navLabel>
+         <content src="14_001.html"/>
+         <navPoint id="d37e1152" playOrder="225">
+            <navLabel>
+               <text>14.1   Mithilfe von Extensions den Funktionsumfang erweitern</text>
+            </navLabel>
+            <content src="14_001.html#u14.1"/>
+            <navPoint id="d37e1157" playOrder="226">
+               <navLabel>
+                  <text>14.1.1   Kostenfreies Magento-Benutzerkonto anlegen</text>
+               </navLabel>
+               <content src="14_001.html#u14.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1162" playOrder="227">
+               <navLabel>
+                  <text>14.1.2   Magento Marketplace nutzen</text>
+               </navLabel>
+               <content src="14_001.html#u14.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1167" playOrder="228">
+               <navLabel>
+                  <text>14.1.3   Extensions mit Composer installieren</text>
+               </navLabel>
+               <content src="14_001.html#u14.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1172" playOrder="229">
+               <navLabel>
+                  <text>14.1.4   Interessante Extension-Anbieter im Überblick</text>
+               </navLabel>
+               <content src="14_001.html#u14.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1178" playOrder="230">
+               <navLabel>
+                  <text>14.1.5   Extensions deaktivieren</text>
+               </navLabel>
+               <content src="14_001.html#u14.1.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1183" playOrder="231">
+            <navLabel>
+               <text>14.2   Backend- und Frontend-Übersetzungen erstellen und pflegen</text>
+            </navLabel>
+            <content src="14_002.html#u14.2"/>
+            <navPoint id="d37e1188" playOrder="232">
+               <navLabel>
+                  <text>14.2.1   Übersetzungen mit der Inline Translation erstellen</text>
+               </navLabel>
+               <content src="14_002.html#u14.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1193" playOrder="233">
+               <navLabel>
+                  <text>14.2.2   Übersetzungen per CSV-Datei erstellen</text>
+               </navLabel>
+               <content src="14_002.html#u14.2.2"/>
+            </navPoint>
+            <navPoint id="d37e1198" playOrder="234">
+               <navLabel>
+                  <text>14.2.3   Ein eigenes Sprachpaket erstellen</text>
+               </navLabel>
+               <content src="14_002.html#u14.2.3"/>
+            </navPoint>
+            <navPoint id="d37e1203" playOrder="235">
+               <navLabel>
+                  <text>14.2.4   Bestehende Sprachpakete installieren und nutzen</text>
+               </navLabel>
+               <content src="14_002.html#u14.2.4"/>
+            </navPoint>
+            <navPoint id="d37e1208" playOrder="236">
+               <navLabel>
+                  <text>14.2.5   Bewertung der Übersetzungsfunktionen und Sprachpakete</text>
+               </navLabel>
+               <content src="14_002.html#u14.2.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1213" playOrder="237">
+            <navLabel>
+               <text>14.3   Die Darstellung des Frontends individualisieren</text>
+            </navLabel>
+            <content src="14_003.html#u14.3"/>
+            <navPoint id="d37e1218" playOrder="238">
+               <navLabel>
+                  <text>14.3.1   Das Magento-Standard-Theme anpassen</text>
+               </navLabel>
+               <content src="14_003.html#u14.3.1"/>
+            </navPoint>
+            <navPoint id="d37e1223" playOrder="239">
+               <navLabel>
+                  <text>14.3.2   Vorhandene Themes nutzen und installieren</text>
+               </navLabel>
+               <content src="14_003.html#u14.3.2"/>
+            </navPoint>
+            <navPoint id="d37e1228" playOrder="240">
+               <navLabel>
+                  <text>14.3.3   Interessante Seiten für Themes</text>
+               </navLabel>
+               <content src="14_003.html#u14.3.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1234" playOrder="241">
+            <navLabel>
+               <text>14.4   Interessante Backend-Optionen für Entwickler</text>
+            </navLabel>
+            <content src="14_004.html#u14.4"/>
+         </navPoint>
+         <navPoint id="d37e1239" playOrder="242">
+            <navLabel>
+               <text>14.5   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="14_005.html#u14.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1244" playOrder="243">
+         <navLabel>
+            <text>15   Mit Magento Business Intelligence umfangreiche Berichte und Analysen erstellen</text>
+         </navLabel>
+         <content src="15_001.html"/>
+         <navPoint id="d37e1249" playOrder="244">
+            <navLabel>
+               <text>15.1   Der Sinn und Zweck von Magento BI</text>
+            </navLabel>
+            <content src="15_001.html#u15.1"/>
+         </navPoint>
+         <navPoint id="d37e1254" playOrder="245">
+            <navLabel>
+               <text>15.2   Einen neuen Magento-BI-Account erstellen</text>
+            </navLabel>
+            <content src="15_002.html#u15.2"/>
+         </navPoint>
+         <navPoint id="d37e1259" playOrder="246">
+            <navLabel>
+               <text>15.3   Magento-BI-Backend im Überblick</text>
+            </navLabel>
+            <content src="15_003.html#u15.3"/>
+         </navPoint>
+         <navPoint id="d37e1264" playOrder="247">
+            <navLabel>
+               <text>15.4   Datenquellen anbinden und überwachen</text>
+            </navLabel>
+            <content src="15_004.html#u15.4"/>
+         </navPoint>
+         <navPoint id="d37e1269" playOrder="248">
+            <navLabel>
+               <text>15.5   Metriken und Filter verwalten</text>
+            </navLabel>
+            <content src="15_005.html#u15.5"/>
+         </navPoint>
+         <navPoint id="d37e1274" playOrder="249">
+            <navLabel>
+               <text>15.6   Berichte erstellen und verwalten</text>
+            </navLabel>
+            <content src="15_006.html#u15.6"/>
+         </navPoint>
+         <navPoint id="d37e1279" playOrder="250">
+            <navLabel>
+               <text>15.7   Dashboards anlegen, einsehen und verwalten</text>
+            </navLabel>
+            <content src="15_007.html#u15.7"/>
+         </navPoint>
+         <navPoint id="d37e1284" playOrder="251">
+            <navLabel>
+               <text>15.8   Daten und Berichte exportieren</text>
+            </navLabel>
+            <content src="15_008.html#u15.8"/>
+         </navPoint>
+         <navPoint id="d37e1290" playOrder="252">
+            <navLabel>
+               <text>15.9   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="15_009.html#u15.9"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1295" playOrder="253">
+         <navLabel>
+            <text>16   Datensätze exportieren und importieren</text>
+         </navLabel>
+         <content src="16_001.html"/>
+         <navPoint id="d37e1300" playOrder="254">
+            <navLabel>
+               <text>16.1   Daten aus Magento exportieren</text>
+            </navLabel>
+            <content src="16_001.html#u16.1"/>
+            <navPoint id="d37e1305" playOrder="255">
+               <navLabel>
+                  <text>16.1.1   Produkte</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1310" playOrder="256">
+               <navLabel>
+                  <text>16.1.2   Erweiterte Preisgestaltung</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1315" playOrder="257">
+               <navLabel>
+                  <text>16.1.3   Kunden Hauptdatei</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1320" playOrder="258">
+               <navLabel>
+                  <text>16.1.4   Kundenadressdaten</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1325" playOrder="259">
+               <navLabel>
+                  <text>16.1.5   Steuersätze</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.5"/>
+            </navPoint>
+            <navPoint id="d37e1330" playOrder="260">
+               <navLabel>
+                  <text>16.1.6   Kontextabhängigen Export nutzen</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.6"/>
+            </navPoint>
+            <navPoint id="d37e1335" playOrder="261">
+               <navLabel>
+                  <text>16.1.7   Was Sie nicht exportieren können</text>
+               </navLabel>
+               <content src="16_001.html#u16.1.7"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1340" playOrder="262">
+            <navLabel>
+               <text>16.2   Import von Daten</text>
+            </navLabel>
+            <content src="16_002.html#u16.2"/>
+            <navPoint id="d37e1346" playOrder="263">
+               <navLabel>
+                  <text>16.2.1   Produkte</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1351" playOrder="264">
+               <navLabel>
+                  <text>16.2.2   Erweiterte Preisgestaltung</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.2"/>
+            </navPoint>
+            <navPoint id="d37e1356" playOrder="265">
+               <navLabel>
+                  <text>16.2.3   Kunden und Adressen (einzelne Datei)</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.3"/>
+            </navPoint>
+            <navPoint id="d37e1361" playOrder="266">
+               <navLabel>
+                  <text>16.2.4   Kunden Hauptdatei</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.4"/>
+            </navPoint>
+            <navPoint id="d37e1366" playOrder="267">
+               <navLabel>
+                  <text>16.2.5   Kundenadressen</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.5"/>
+            </navPoint>
+            <navPoint id="d37e1371" playOrder="268">
+               <navLabel>
+                  <text>16.2.6   Steuersätze</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.6"/>
+            </navPoint>
+            <navPoint id="d37e1376" playOrder="269">
+               <navLabel>
+                  <text>16.2.7   Import-Historie</text>
+               </navLabel>
+               <content src="16_002.html#u16.2.7"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1381" playOrder="270">
+            <navLabel>
+               <text>16.3   Erweitern Sie die Standardfunktionalitäten</text>
+            </navLabel>
+            <content src="16_003.html#u16.3"/>
+            <navPoint id="d37e1386" playOrder="271">
+               <navLabel>
+                  <text>16.3.1   Die Erweiterung »importexportfree« installieren</text>
+               </navLabel>
+               <content src="16_003.html#u16.3.1"/>
+            </navPoint>
+            <navPoint id="d37e1391" playOrder="272">
+               <navLabel>
+                  <text>16.3.2   Neue Funktionen durch importexportfree</text>
+               </navLabel>
+               <content src="16_003.html#u16.3.2"/>
+            </navPoint>
+            <navPoint id="d37e1396" playOrder="273">
+               <navLabel>
+                  <text>16.3.3   Funktionen der kostenpflichtigen Version</text>
+               </navLabel>
+               <content src="16_003.html#u16.3.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1402" playOrder="274">
+            <navLabel>
+               <text>16.4   Backups erstellen und einspielen</text>
+            </navLabel>
+            <content src="16_004.html#u16.4"/>
+            <navPoint id="d37e1407" playOrder="275">
+               <navLabel>
+                  <text>16.4.1   Backups verwalten</text>
+               </navLabel>
+               <content src="16_004.html#u16.4.1"/>
+            </navPoint>
+            <navPoint id="d37e1412" playOrder="276">
+               <navLabel>
+                  <text>16.4.2   System-Backup erstellen</text>
+               </navLabel>
+               <content src="16_004.html#u16.4.2"/>
+            </navPoint>
+            <navPoint id="d37e1417" playOrder="277">
+               <navLabel>
+                  <text>16.4.3   Datenbank- und Medien-Backup erstellen</text>
+               </navLabel>
+               <content src="16_004.html#u16.4.3"/>
+            </navPoint>
+            <navPoint id="d37e1422" playOrder="278">
+               <navLabel>
+                  <text>16.4.4   Datenbank-Backup erstellen</text>
+               </navLabel>
+               <content src="16_004.html#u16.4.4"/>
+            </navPoint>
+            <navPoint id="d37e1427" playOrder="279">
+               <navLabel>
+                  <text>16.4.5   Backups planen und automatisieren</text>
+               </navLabel>
+               <content src="16_004.html#u16.4.5"/>
+            </navPoint>
+            <navPoint id="d37e1432" playOrder="280">
+               <navLabel>
+                  <text>16.4.6   Vorhandenes Backup einspielen</text>
+               </navLabel>
+               <content src="16_004.html#u16.4.6"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1437" playOrder="281">
+            <navLabel>
+               <text>16.5   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="16_005.html#u16.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1442" playOrder="282">
+         <navLabel>
+            <text>17   Magento-Multistore-Funktionalität konfigurieren und nutzen</text>
+         </navLabel>
+         <content src="17_001.html"/>
+         <navPoint id="d37e1447" playOrder="283">
+            <navLabel>
+               <text>17.1   Websites, Stores und Store Views anlegen und verwalten</text>
+            </navLabel>
+            <content src="17_001.html#u17.1"/>
+            <navPoint id="d37e1452" playOrder="284">
+               <navLabel>
+                  <text>17.1.1   Konfigurationsbereich</text>
+               </navLabel>
+               <content src="17_001.html#u17.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1458" playOrder="285">
+               <navLabel>
+                  <text>17.1.2   Store Views</text>
+               </navLabel>
+               <content src="17_001.html#u17.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1463" playOrder="286">
+               <navLabel>
+                  <text>17.1.3   Stores</text>
+               </navLabel>
+               <content src="17_001.html#u17.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1468" playOrder="287">
+               <navLabel>
+                  <text>17.1.4   Websites</text>
+               </navLabel>
+               <content src="17_001.html#u17.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1473" playOrder="288">
+               <navLabel>
+                  <text>17.1.5   Zusammenfassung und Überblick</text>
+               </navLabel>
+               <content src="17_001.html#u17.1.5"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1478" playOrder="289">
+            <navLabel>
+               <text>17.2   Website- und Store-View-spezifische Werte und Einstellungen hinterlegen</text>
+            </navLabel>
+            <content src="17_002.html#u17.2"/>
+            <navPoint id="d37e1483" playOrder="290">
+               <navLabel>
+                  <text>17.2.1   Produkte</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1488" playOrder="291">
+               <navLabel>
+                  <text>17.2.2   Kategorien</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.2"/>
+            </navPoint>
+            <navPoint id="d37e1493" playOrder="292">
+               <navLabel>
+                  <text>17.2.3   Kunden</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.3"/>
+            </navPoint>
+            <navPoint id="d37e1498" playOrder="293">
+               <navLabel>
+                  <text>17.2.4   Warenkorb-Preisregeln und Katalogpreisregeln</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.4"/>
+            </navPoint>
+            <navPoint id="d37e1503" playOrder="294">
+               <navLabel>
+                  <text>17.2.5   Seiten</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.5"/>
+            </navPoint>
+            <navPoint id="d37e1508" playOrder="295">
+               <navLabel>
+                  <text>17.2.6   Blöcke</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.6"/>
+            </navPoint>
+            <navPoint id="d37e1514" playOrder="296">
+               <navLabel>
+                  <text>17.2.7   Widgets</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.7"/>
+            </navPoint>
+            <navPoint id="d37e1519" playOrder="297">
+               <navLabel>
+                  <text>17.2.8   Konfiguration</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.8"/>
+            </navPoint>
+            <navPoint id="d37e1524" playOrder="298">
+               <navLabel>
+                  <text>17.2.9   Themes</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.9"/>
+            </navPoint>
+            <navPoint id="d37e1529" playOrder="299">
+               <navLabel>
+                  <text>17.2.10   Sonstige Bereiche und allgemeine Logik von Magento</text>
+               </navLabel>
+               <content src="17_002.html#u17.2.10"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1534" playOrder="300">
+            <navLabel>
+               <text>17.3   Multi-Domain-Setup in Magento hinterlegen</text>
+            </navLabel>
+            <content src="17_003.html#u17.3"/>
+            <navPoint id="d37e1539" playOrder="301">
+               <navLabel>
+                  <text>17.3.1   Store Codes zu URLs hinzufügen</text>
+               </navLabel>
+               <content src="17_003.html#u17.3.1"/>
+            </navPoint>
+            <navPoint id="d37e1544" playOrder="302">
+               <navLabel>
+                  <text>17.3.2   Eigene URLs pro Store View bzw. Website definieren</text>
+               </navLabel>
+               <content src="17_003.html#u17.3.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1549" playOrder="303">
+            <navLabel>
+               <text>17.4   Notwendige Anpassungen, damit Store Views und Websites aufgerufen werden können</text>
+            </navLabel>
+            <content src="17_004.html#u17.4"/>
+         </navPoint>
+         <navPoint id="d37e1554" playOrder="304">
+            <navLabel>
+               <text>17.5   Die optimale Struktur</text>
+            </navLabel>
+            <content src="17_005.html#u17.5"/>
+         </navPoint>
+         <navPoint id="d37e1559" playOrder="305">
+            <navLabel>
+               <text>17.6   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="17_006.html#u17.6"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1564" playOrder="306">
+         <navLabel>
+            <text>18   Magento aktualisieren und up to date halten</text>
+         </navLabel>
+         <content src="18_001.html"/>
+         <navPoint id="d37e1570" playOrder="307">
+            <navLabel>
+               <text>18.1   Über neue Versionen informiert werden</text>
+            </navLabel>
+            <content src="18_001.html#u18.1"/>
+         </navPoint>
+         <navPoint id="d37e1575" playOrder="308">
+            <navLabel>
+               <text>18.2   Magento-Update durchführen</text>
+            </navLabel>
+            <content src="18_002.html#u18.2"/>
+         </navPoint>
+         <navPoint id="d37e1580" playOrder="309">
+            <navLabel>
+               <text>18.3   Updates planen und durchführen</text>
+            </navLabel>
+            <content src="18_003.html#u18.3"/>
+         </navPoint>
+         <navPoint id="d37e1585" playOrder="310">
+            <navLabel>
+               <text>18.4   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="18_004.html#u18.4"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1590" playOrder="311">
+         <navLabel>
+            <text>19   Magento per Kommandozeile administrieren</text>
+         </navLabel>
+         <content src="19_001.html"/>
+         <navPoint id="d37e1595" playOrder="312">
+            <navLabel>
+               <text>19.1   Magento CLI (Command Line Interface) nutzen</text>
+            </navLabel>
+            <content src="19_001.html#u19.1"/>
+            <navPoint id="d37e1600" playOrder="313">
+               <navLabel>
+                  <text>19.1.1   Befehle des Magento CLI im Überblick</text>
+               </navLabel>
+               <content src="19_001.html#u19.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1605" playOrder="314">
+               <navLabel>
+                  <text>19.1.2   Wann Sie zur CLI greifen sollten und wann nicht</text>
+               </navLabel>
+               <content src="19_001.html#u19.1.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1610" playOrder="315">
+            <navLabel>
+               <text>19.2   Magento mittels Magerun verwalten</text>
+            </navLabel>
+            <content src="19_002.html#u19.2"/>
+            <navPoint id="d37e1615" playOrder="316">
+               <navLabel>
+                  <text>19.2.1   Magerun installieren</text>
+               </navLabel>
+               <content src="19_002.html#u19.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1620" playOrder="317">
+               <navLabel>
+                  <text>19.2.2   Die Magerun-Befehle im Überblick</text>
+               </navLabel>
+               <content src="19_002.html#u19.2.2"/>
+            </navPoint>
+            <navPoint id="d37e1626" playOrder="318">
+               <navLabel>
+                  <text>19.2.3   Magerun vs. Magento CLI</text>
+               </navLabel>
+               <content src="19_002.html#u19.2.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1631" playOrder="319">
+            <navLabel>
+               <text>19.3   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="19_003.html#u19.3"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1636" playOrder="320">
+         <navLabel>
+            <text>20   Magento an ERP-, PIM- oder CRM-Systeme anbinden</text>
+         </navLabel>
+         <content src="20_001.html"/>
+         <navPoint id="d37e1641" playOrder="321">
+            <navLabel>
+               <text>20.1   Weshalb externe Systeme an Magento angebunden werden sollten</text>
+            </navLabel>
+            <content src="20_001.html#u20.1"/>
+            <navPoint id="d37e1646" playOrder="322">
+               <navLabel>
+                  <text>20.1.1   ERP-System</text>
+               </navLabel>
+               <content src="20_001.html#u20.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1651" playOrder="323">
+               <navLabel>
+                  <text>20.1.2   CRM-System</text>
+               </navLabel>
+               <content src="20_001.html#u20.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1656" playOrder="324">
+               <navLabel>
+                  <text>20.1.3   PIM-System</text>
+               </navLabel>
+               <content src="20_001.html#u20.1.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1661" playOrder="325">
+            <navLabel>
+               <text>20.2   Schnittstellen sind (leider) Individualprojekte</text>
+            </navLabel>
+            <content src="20_002.html#u20.2"/>
+         </navPoint>
+         <navPoint id="d37e1666" playOrder="326">
+            <navLabel>
+               <text>20.3   Anbindung von externen Lösungen an Magento auf Basis von Synesty</text>
+            </navLabel>
+            <content src="20_003.html#u20.3"/>
+            <navPoint id="d37e1671" playOrder="327">
+               <navLabel>
+                  <text>20.3.1   Synesty-Account anlegen</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.1"/>
+            </navPoint>
+            <navPoint id="d37e1676" playOrder="328">
+               <navLabel>
+                  <text>20.3.2   Magento 2 an Synesty anbinden</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.2"/>
+            </navPoint>
+            <navPoint id="d37e1682" playOrder="329">
+               <navLabel>
+                  <text>20.3.3   Übertragene Daten einsehen</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.3"/>
+            </navPoint>
+            <navPoint id="d37e1687" playOrder="330">
+               <navLabel>
+                  <text>20.3.4   Bestelldaten transformieren und exportieren</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.4"/>
+            </navPoint>
+            <navPoint id="d37e1692" playOrder="331">
+               <navLabel>
+                  <text>20.3.5   Actindo-Test-Account erstellen</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.5"/>
+            </navPoint>
+            <navPoint id="d37e1697" playOrder="332">
+               <navLabel>
+                  <text>20.3.6   Bestellungen in Actindo importieren</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.6"/>
+            </navPoint>
+            <navPoint id="d37e1702" playOrder="333">
+               <navLabel>
+                  <text>20.3.7   Sonstige Funktionen von Synesty</text>
+               </navLabel>
+               <content src="20_003.html#u20.3.7"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1707" playOrder="334">
+            <navLabel>
+               <text>20.4   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="20_004.html#u20.4"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1712" playOrder="335">
+         <navLabel>
+            <text>21   Zusätzliche Absatzkanäle wie Google Shopping, Amazon und eBay nutzen</text>
+         </navLabel>
+         <content src="21_001.html"/>
+         <navPoint id="d37e1717" playOrder="336">
+            <navLabel>
+               <text>21.1   Exporte mithilfe des Data Feed Managers erstellen</text>
+            </navLabel>
+            <content src="21_001.html#u21.1"/>
+            <navPoint id="d37e1722" playOrder="337">
+               <navLabel>
+                  <text>21.1.1   Data Feed Manager installieren</text>
+               </navLabel>
+               <content src="21_001.html#u21.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1727" playOrder="338">
+               <navLabel>
+                  <text>21.1.2   Einführung in den Data Feed Manager</text>
+               </navLabel>
+               <content src="21_001.html#u21.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1732" playOrder="339">
+               <navLabel>
+                  <text>21.1.3   Benutzerdefinierte Variablen und Custom Functions</text>
+               </navLabel>
+               <content src="21_001.html#u21.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1738" playOrder="340">
+               <navLabel>
+                  <text>21.1.4   Google Shopping mit Produktdaten versorgen</text>
+               </navLabel>
+               <content src="21_001.html#u21.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1743" playOrder="341">
+               <navLabel>
+                  <text>21.1.5   Preissuchmaschinen und Portale abseits von Google Shopping</text>
+               </navLabel>
+               <content src="21_001.html#u21.1.5"/>
+            </navPoint>
+            <navPoint id="d37e1748" playOrder="342">
+               <navLabel>
+                  <text>21.1.6   Der Data Feed Manager als Must-Have-Extension für Shop-Betreiber</text>
+               </navLabel>
+               <content src="21_001.html#u21.1.6"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1753" playOrder="343">
+            <navLabel>
+               <text>21.2   Mit M2E Pro auf eBay und Amazon verkaufen</text>
+            </navLabel>
+            <content src="21_002.html#u21.2"/>
+            <navPoint id="d37e1758" playOrder="344">
+               <navLabel>
+                  <text>21.2.1   Erweiterung M2E Pro installieren</text>
+               </navLabel>
+               <content src="21_002.html#u21.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1763" playOrder="345">
+               <navLabel>
+                  <text>21.2.2   eBay anbinden und nutzen</text>
+               </navLabel>
+               <content src="21_002.html#u21.2.2"/>
+            </navPoint>
+            <navPoint id="d37e1768" playOrder="346">
+               <navLabel>
+                  <text>21.2.3   Auf Amazon verkaufen</text>
+               </navLabel>
+               <content src="21_002.html#u21.2.3"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1773" playOrder="347">
+            <navLabel>
+               <text>21.3   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="21_003.html#u21.3"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1778" playOrder="348">
+         <navLabel>
+            <text>22   Magento auf und mit verschiedenen Endgeräten nutzen</text>
+         </navLabel>
+         <content src="22_001.html"/>
+         <navPoint id="d37e1783" playOrder="349">
+            <navLabel>
+               <text>22.1   Zugriff mit einem Notebook bzw. Desktop-Computer</text>
+            </navLabel>
+            <content src="22_001.html#u22.1"/>
+         </navPoint>
+         <navPoint id="d37e1788" playOrder="350">
+            <navLabel>
+               <text>22.2   Mit dem Smartphone und Tablet zugreifen</text>
+            </navLabel>
+            <content src="22_002.html#u22.2"/>
+            <navPoint id="d37e1794" playOrder="351">
+               <navLabel>
+                  <text>22.2.1   Magento Responsive Theme</text>
+               </navLabel>
+               <content src="22_002.html#u22.2.1"/>
+            </navPoint>
+            <navPoint id="d37e1799" playOrder="352">
+               <navLabel>
+                  <text>22.2.2   Shopgate und Magento 2 nutzen</text>
+               </navLabel>
+               <content src="22_002.html#u22.2.2"/>
+            </navPoint>
+            <navPoint id="d37e1804" playOrder="353">
+               <navLabel>
+                  <text>22.2.3   MageNative Mobile App</text>
+               </navLabel>
+               <content src="22_002.html#u22.2.3"/>
+            </navPoint>
+            <navPoint id="d37e1809" playOrder="354">
+               <navLabel>
+                  <text>22.2.4   Magento Mobile Shop</text>
+               </navLabel>
+               <content src="22_002.html#u22.2.4"/>
+            </navPoint>
+            <navPoint id="d37e1814" playOrder="355">
+               <navLabel>
+                  <text>22.2.5   Mobikul Mobile App Builder</text>
+               </navLabel>
+               <content src="22_002.html#u22.2.5"/>
+            </navPoint>
+            <navPoint id="d37e1819" playOrder="356">
+               <navLabel>
+                  <text>22.2.6   Responsive Design vs. iOS- oder Android-App</text>
+               </navLabel>
+               <content src="22_002.html#u22.2.6"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1824" playOrder="357">
+            <navLabel>
+               <text>22.3   Point-of-Sale-(PoS-)Lösungen</text>
+            </navLabel>
+            <content src="22_003.html#u22.3"/>
+            <navPoint id="d37e1829" playOrder="358">
+               <navLabel>
+                  <text>22.3.1   POS Extension (Point Of Sales) for Magento 2</text>
+               </navLabel>
+               <content src="22_003.html#u22.3.1"/>
+            </navPoint>
+            <navPoint id="d37e1834" playOrder="359">
+               <navLabel>
+                  <text>22.3.2   Magento 2 POS</text>
+               </navLabel>
+               <content src="22_003.html#u22.3.2"/>
+            </navPoint>
+            <navPoint id="d37e1839" playOrder="360">
+               <navLabel>
+                  <text>22.3.3   ebizmarts POS</text>
+               </navLabel>
+               <content src="22_003.html#u22.3.3"/>
+            </navPoint>
+            <navPoint id="d37e1844" playOrder="361">
+               <navLabel>
+                  <text>22.3.4   Beurteilung der verschiedenen PoS-Lösungen</text>
+               </navLabel>
+               <content src="22_003.html#u22.3.4"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1850" playOrder="362">
+            <navLabel>
+               <text>22.4   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="22_004.html#u22.4"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1855" playOrder="363">
+         <navLabel>
+            <text>23   Magento Enterprise Edition</text>
+         </navLabel>
+         <content src="23_001.html"/>
+         <navPoint id="d37e1860" playOrder="364">
+            <navLabel>
+               <text>23.1   Features und Möglichkeiten</text>
+            </navLabel>
+            <content src="23_001.html#u23.1"/>
+            <navPoint id="d37e1865" playOrder="365">
+               <navLabel>
+                  <text>23.1.1   Erweiterte Benutzerberechtigungen im Magento-Backend</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1870" playOrder="366">
+               <navLabel>
+                  <text>23.1.2   Protokollierung von Benutzertätigkeiten im Backend</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1875" playOrder="367">
+               <navLabel>
+                  <text>23.1.3   Bestellarchivierung</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1880" playOrder="368">
+               <navLabel>
+                  <text>23.1.4   Berechtigungen für Kategorien</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1885" playOrder="369">
+               <navLabel>
+                  <text>23.1.5   Automatisierte Produktzuweisung</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.5"/>
+            </navPoint>
+            <navPoint id="d37e1890" playOrder="370">
+               <navLabel>
+                  <text>23.1.6   Automatisiertes Up- und Cross-Selling sowie Zubehör</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.6"/>
+            </navPoint>
+            <navPoint id="d37e1895" playOrder="371">
+               <navLabel>
+                  <text>23.1.7   Kundensegmente</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.7"/>
+            </navPoint>
+            <navPoint id="d37e1900" playOrder="372">
+               <navLabel>
+                  <text>23.1.8   Banner</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.8"/>
+            </navPoint>
+            <navPoint id="d37e1906" playOrder="373">
+               <navLabel>
+                  <text>23.1.9   CMS-Hierarchien</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.9"/>
+            </navPoint>
+            <navPoint id="d37e1911" playOrder="374">
+               <navLabel>
+                  <text>23.1.10   Individuelle Kundenattribute</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.10"/>
+            </navPoint>
+            <navPoint id="d37e1916" playOrder="375">
+               <navLabel>
+                  <text>23.1.11   Automatisierte E‐Mail-Erinnerung</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.11"/>
+            </navPoint>
+            <navPoint id="d37e1921" playOrder="376">
+               <navLabel>
+                  <text>23.1.12   Retourenmanagement</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.12"/>
+            </navPoint>
+            <navPoint id="d37e1926" playOrder="377">
+               <navLabel>
+                  <text>23.1.13   Private Sales</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.13"/>
+            </navPoint>
+            <navPoint id="d37e1931" playOrder="378">
+               <navLabel>
+                  <text>23.1.14   Belohnungspunkte</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.14"/>
+            </navPoint>
+            <navPoint id="d37e1936" playOrder="379">
+               <navLabel>
+                  <text>23.1.15   Geschenkkarten und Guthaben</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.15"/>
+            </navPoint>
+            <navPoint id="d37e1941" playOrder="380">
+               <navLabel>
+                  <text>23.1.16   Sonstiges</text>
+               </navLabel>
+               <content src="23_001.html#u23.1.16"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e1946" playOrder="381">
+            <navLabel>
+               <text>23.2   Kosten und Lizenzierung</text>
+            </navLabel>
+            <content src="23_002.html#u23.2"/>
+         </navPoint>
+         <navPoint id="d37e1951" playOrder="382">
+            <navLabel>
+               <text>23.3   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="23_003.html#u23.3"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e1956" playOrder="383">
+         <navLabel>
+            <text>24   Magento B2B Edition</text>
+         </navLabel>
+         <content src="24_001.html"/>
+         <navPoint id="d37e1962" playOrder="384">
+            <navLabel>
+               <text>24.1   Funktionen im Überblick</text>
+            </navLabel>
+            <content src="24_001.html#u24.1"/>
+            <navPoint id="d37e1967" playOrder="385">
+               <navLabel>
+                  <text>24.1.1   Advanced Reporting</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.1"/>
+            </navPoint>
+            <navPoint id="d37e1972" playOrder="386">
+               <navLabel>
+                  <text>24.1.2   Quick Order</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.2"/>
+            </navPoint>
+            <navPoint id="d37e1977" playOrder="387">
+               <navLabel>
+                  <text>24.1.3   Requisition Lists</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.3"/>
+            </navPoint>
+            <navPoint id="d37e1982" playOrder="388">
+               <navLabel>
+                  <text>24.1.4   Payment Methods</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.4"/>
+            </navPoint>
+            <navPoint id="d37e1987" playOrder="389">
+               <navLabel>
+                  <text>24.1.5   Quotes</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.5"/>
+            </navPoint>
+            <navPoint id="d37e1992" playOrder="390">
+               <navLabel>
+                  <text>24.1.6   Shared Catalogs</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.6"/>
+            </navPoint>
+            <navPoint id="d37e1997" playOrder="391">
+               <navLabel>
+                  <text>24.1.7   Company</text>
+               </navLabel>
+               <content src="24_001.html#u24.1.7"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e2002" playOrder="392">
+            <navLabel>
+               <text>24.2   Lizenzkosten und Verfügbarkeit</text>
+            </navLabel>
+            <content src="24_002.html#u24.2"/>
+         </navPoint>
+         <navPoint id="d37e2007" playOrder="393">
+            <navLabel>
+               <text>24.3   Fazit und Ausblick</text>
+            </navLabel>
+            <content src="24_003.html#u24.3"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e2012" playOrder="394">
+         <navLabel>
+            <text>25   Weiterführende Themen und Troubleshooting</text>
+         </navLabel>
+         <content src="25_001.html"/>
+         <navPoint id="d37e2018" playOrder="395">
+            <navLabel>
+               <text>25.1   Empfohlene Konfigurationseinstellungen</text>
+            </navLabel>
+            <content src="25_001.html#u25.1"/>
+            <navPoint id="d37e2023" playOrder="396">
+               <navLabel>
+                  <text>25.1.1   Flat Catalogs aktivieren</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.1"/>
+            </navPoint>
+            <navPoint id="d37e2028" playOrder="397">
+               <navLabel>
+                  <text>25.1.2   Double-Opt-in-Verfahren nutzen</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.2"/>
+            </navPoint>
+            <navPoint id="d37e2033" playOrder="398">
+               <navLabel>
+                  <text>25.1.3   E-Mail-Absender definieren</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.3"/>
+            </navPoint>
+            <navPoint id="d37e2038" playOrder="399">
+               <navLabel>
+                  <text>25.1.4   Caches aktivieren</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.4"/>
+            </navPoint>
+            <navPoint id="d37e2043" playOrder="400">
+               <navLabel>
+                  <text>25.1.5   Demo-Hinweis entfernen</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.5"/>
+            </navPoint>
+            <navPoint id="d37e2048" playOrder="401">
+               <navLabel>
+                  <text>25.1.6   Länder und Regionen ausschließen</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.6"/>
+            </navPoint>
+            <navPoint id="d37e2053" playOrder="402">
+               <navLabel>
+                  <text>25.1.7   URL-Rewrites nutzen</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.7"/>
+            </navPoint>
+            <navPoint id="d37e2058" playOrder="403">
+               <navLabel>
+                  <text>25.1.8   WYSIWYG-Editor aktivieren</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.8"/>
+            </navPoint>
+            <navPoint id="d37e2063" playOrder="404">
+               <navLabel>
+                  <text>25.1.9   Mailversand-Einstellungen prüfen und gegebenenfalls aktivieren</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.9"/>
+            </navPoint>
+            <navPoint id="d37e2068" playOrder="405">
+               <navLabel>
+                  <text>25.1.10   Kunden-IPs verbergen</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.10"/>
+            </navPoint>
+            <navPoint id="d37e2074" playOrder="406">
+               <navLabel>
+                  <text>25.1.11   Canonical Tags</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.11"/>
+            </navPoint>
+            <navPoint id="d37e2079" playOrder="407">
+               <navLabel>
+                  <text>25.1.12   Preisdarstellung</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.12"/>
+            </navPoint>
+            <navPoint id="d37e2084" playOrder="408">
+               <navLabel>
+                  <text>25.1.13   Steuerkonfiguration prüfen</text>
+               </navLabel>
+               <content src="25_001.html#u25.1.13"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e2089" playOrder="409">
+            <navLabel>
+               <text>25.2   Typische Alltagsprobleme und passende Lösungen</text>
+            </navLabel>
+            <content src="25_002.html#u25.2"/>
+            <navPoint id="d37e2094" playOrder="410">
+               <navLabel>
+                  <text>25.2.1   MySQL-Verbindungsdaten zum Datenbankserver anpassen</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.1"/>
+            </navPoint>
+            <navPoint id="d37e2099" playOrder="411">
+               <navLabel>
+                  <text>25.2.2   Cache per Kommandozeile leeren</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.2"/>
+            </navPoint>
+            <navPoint id="d37e2104" playOrder="412">
+               <navLabel>
+                  <text>25.2.3   Indexe per Kommandozeile erneuern</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.3"/>
+            </navPoint>
+            <navPoint id="d37e2109" playOrder="413">
+               <navLabel>
+                  <text>25.2.4   Admin-Passwort per SQL-Statement zurücksetzen</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.4"/>
+            </navPoint>
+            <navPoint id="d37e2114" playOrder="414">
+               <navLabel>
+                  <text>25.2.5   Wartungsmodus per Kommandozeile steuern</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.5"/>
+            </navPoint>
+            <navPoint id="d37e2119" playOrder="415">
+               <navLabel>
+                  <text>25.2.6   Fehlende Dateien? Statische Inhalte per Kommandozeile deployen</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.6"/>
+            </navPoint>
+            <navPoint id="d37e2124" playOrder="416">
+               <navLabel>
+                  <text>25.2.7   Backup per Kommandozeile erstellen</text>
+               </navLabel>
+               <content src="25_002.html#u25.2.7"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e2130" playOrder="417">
+            <navLabel>
+               <text>25.3   Interessante und empfehlenswerte Erweiterungen</text>
+            </navLabel>
+            <content src="25_003.html#u25.3"/>
+            <navPoint id="d37e2135" playOrder="418">
+               <navLabel>
+                  <text>25.3.1   Advanced Invoice Layout für Magento 2</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.1"/>
+            </navPoint>
+            <navPoint id="d37e2140" playOrder="419">
+               <navLabel>
+                  <text>25.3.2   Fooman Email Attachments</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.2"/>
+            </navPoint>
+            <navPoint id="d37e2145" playOrder="420">
+               <navLabel>
+                  <text>25.3.3   Blog for Magento 2</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.3"/>
+            </navPoint>
+            <navPoint id="d37e2150" playOrder="421">
+               <navLabel>
+                  <text>25.3.4   RMA for Magento 2</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.4"/>
+            </navPoint>
+            <navPoint id="d37e2155" playOrder="422">
+               <navLabel>
+                  <text>25.3.5   Data Feed Manager</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.5"/>
+            </navPoint>
+            <navPoint id="d37e2160" playOrder="423">
+               <navLabel>
+                  <text>25.3.6   M2E Pro</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.6"/>
+            </navPoint>
+            <navPoint id="d37e2165" playOrder="424">
+               <navLabel>
+                  <text>25.3.7   Magento 2 SEO Suite Ultimate</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.7"/>
+            </navPoint>
+            <navPoint id="d37e2170" playOrder="425">
+               <navLabel>
+                  <text>25.3.8   Multiple Coupons for Magento 2</text>
+               </navLabel>
+               <content src="25_003.html#u25.3.8"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e2175" playOrder="426">
+            <navLabel>
+               <text>25.4   Blogs, Hilfeseiten und weitere Ressourcen</text>
+            </navLabel>
+            <content src="25_004.html#u25.4"/>
+            <navPoint id="d37e2180" playOrder="427">
+               <navLabel>
+                  <text>25.4.1   Offizielle Magento-Ressourcen</text>
+               </navLabel>
+               <content src="25_004.html#u25.4.1"/>
+            </navPoint>
+            <navPoint id="d37e2186" playOrder="428">
+               <navLabel>
+                  <text>25.4.2   Community-Ressourcen</text>
+               </navLabel>
+               <content src="25_004.html#u25.4.2"/>
+            </navPoint>
+         </navPoint>
+         <navPoint id="d37e2191" playOrder="429">
+            <navLabel>
+               <text>25.5   Fazit – der eigene Shop auf Basis von Magento 2</text>
+            </navLabel>
+            <content src="25_005.html#u25.5"/>
+         </navPoint>
+      </navPoint>
+      <navPoint id="d37e2196" playOrder="430">
+         <navLabel>
+            <text>Stichwortverzeichnis</text>
+         </navLabel>
+         <content src="index.html"/>
+      </navPoint>
+      
+      <navPoint id="d37e2206" playOrder="431">
+         <navLabel>
+            <text>Rechtliche Hinweise</text>
+         </navLabel>
+         <content src="legal_notes.html"/>
+      </navPoint>
+      <navPoint id="d37e2211" playOrder="432">
+         <navLabel>
+            <text>Über den Autor</text>
+         </navLabel>
+         <content src="about_the_author.html"/>
+      </navPoint>
+   </navMap>
+</ncx>

@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Einstieg und Konfiguration von Magento" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Einstieg und Konfiguration von Magento" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Einstieg und Konfiguration von Magento</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main"><h1 class="t1" id="u4">4    Einstieg und Konfiguration<a class="indexanchor" id="i04_00"/> von Magento</h1><p class="introductorynote">Nachdem Sie Magento erfolgreich installiert haben, erhalten Sie in diesem Kapitel einen ersten Einstieg und Einblick. Was für Möglichkeiten bietet Magento, welche Funktionen verbergen sich wo, und wie können Sie diese konfigurieren und anpassen? Auf all diese Fragen möchte ich Ihnen nun entsprechende Antworten liefern.</p><p class="standard">Die Basis für den weiteren Verlauf dieses Buches haben Sie im vorherigen <span class="crossreference "><a href="03_001.html#u3">Kapitel 3</a></span>, »<span class="crossreference ">Magento installieren</span>«, geschaffen. Ihnen steht jetzt eine vollfunktionsfähige Magento-Instanz bereit, die nur darauf wartet, von Ihnen mit Leben gefüllt und modifiziert zu werden. Grob gesprochen, besteht Magento aus zwei großen Bestandteilen. Auf der einen Seite gibt es das sogenannte Frontend. Dabei handelt es sich um denjenigen Bereich, den Ihre Kunden sehen. Das Frontend ist die Oberfläche, mit der Ihre Kunden in Kontakt kommen, auf welcher der Produktkatalog betrachtet wird und Einkäufe durchgeführt werden. Auf der anderen Seite gibt es das Backend. Das Backend ist die Verwaltungsoberfläche von Magento. Mithilfe des Backends können Shop-Betreiber Produkte anlegen, Konfigurationseinstellungen anpassen oder auch Bestellungen bearbeiten. Alle Auswertungs- und Konfigurationsmöglichkeiten sowie die gesamte Inhaltspflege befinden sich im Backend.</p><p class="standard">In diesem Kapitel zeige ich Ihnen bewusst zuerst die gesamten Funktionen und Möglichkeiten des Backends, sprich diejenigen Möglichkeiten und Funktionen, die für Sie als Shop-Betreiber relevant und notwendig sind, auch wenn natürlich an der einen oder anderen Stelle Querverweise auf das Frontend gesetzt werden. Denn wenn Sie sich erst einmal perfekt mit dem administrativen Bereich von Magento auskennen, fällt es Ihnen wesentlich einfacher, gewisse Funktionen und Abläufe im Frontend nachzuvollziehen.</p>
+        <h2 class="t2" id="u4.1">4.1    Installation des deutschen Sprachpakets<a class="indexanchor" id="i04_01"/></h2>
+        <p class="standard">Auch wenn Sie bei der Installation von Magento bei der Lokalisierung, also der Sprache, Deutsch ausgewählt haben, werden Sie nach der Installation kein deutschsprachiges Backend oder Frontend vorfinden. Magento unterstützt zwar eine Vielzahl von Sprachen, Sie haben das bei der Installation ebenfalls in dem entsprechenden Dropdown-Menü gefunden, ausgeliefert wird die Software jedoch nur auf Englisch.</p>
+        <p class="standard">Doch nicht jeder spricht perfekt Englisch, und um Ihnen die Nutzung der Software etwas zu vereinfachen, möchte ich Ihnen zeigen, wie Sie das deutsche Sprachpaket installieren. Dadurch werden alle Magento-Komponenten und -Bestandteile übersetzt. Unmittelbar im Anschluss werfen Sie dann einen ersten Blick in das Magento-Backend.</p>
+        <div class="box_standard">
+            <h6 class="boxheading">Magento selbst bietet keine Sprachpakete bzw. Übersetzungen an</h6>
+            <p class="standard">Magento erfreut sich in vielen Ländern großer Beliebtheit. Dennoch vermeidet es Magento, selbst Sprachpakete zu erstellen und diese herauszugeben. Für Magento 2 gibt es mittlerweile zwar eine Handvoll Sprachpakete, diese stammen aber allesamt aus der Community. Agenturen, Freelancer und Magento-Anwender haben diese in ihrer Freizeit erstellt und bieten sie kostenlos zum Download an. Deshalb können Sie auch keine Perfektion erwarten und müssen gegebenenfalls selbst Hand anlegen. Mehr hierzu in <span class="crossreference "><a href="14_002.html#u14.2.3">Abschnitt 14.2.3</a></span>, »<span class="crossreference ">Ein eigenes Sprachpaket erstellen</span>«.</p>
+        </div>
+        <p class="standard">Eine Lokalisierung umfasst weitaus mehr als die Installation einer Sprache. Hierzu zählen ebenfalls die Anpassung der Steuerkonfiguration sowie die Anpassung des Gesamtsystems an einen jeweiligen Zielmarkt. Ich möchte mich im Folgenden ausschließlich auf die Basics konzentrieren, sodass Sie schnell die deutsche Sprache installiert bekommen. weiterführende Informationen zum Thema Lokalisierung erhalten Sie in <span class="crossreference "><a href="13_001.html#u13">Kapitel 13</a></span> und <span class="crossreference "><a href="14_001.html#u14">Kapitel 14</a></span>.</p>
+        <p class="standard">Rufen Sie im ersten Schritt in Ihrem Browser die Website von Magenerds auf, die Sie unter <span class="url"><a href="http://www.magenerds.com">http://www.magenerds.com</a></span> erreichen. Bei Magenerds handelt es sich um ein Projekt, bei dem kostenfreie Magento 2-Erweiterungen und -Anpassungen bereitgestellt werden. Es ist eines dieser Community-Projekte, die Magento zu dem gemacht haben, was es ist, da sich eine große Anzahl an Personen unentgeltlich für die Weiterentwicklung der Software durch Extensions und Themes einsetzt. Auf der Magenerds-Seite angekommen, klicken Sie im oberen Bereich auf <span class="screenelement smallcaps">Magento 2 Extensions</span>. Anschließend scrollen Sie bitte bis zum Eintrag <span class="screenelement smallcaps">German Language Pack</span> und öffnen Sie das Element durch einen Klick. Alternativ hierzu können Sie gern auch direkt die URL <span class="url"><a href="http://www.magenerds.com/magento-2-extensions/german-language-pack/">http://www.magenerds.com/magento-2-extensions/german-language-pack/</a></span> aufrufen, die Sie zum deutschen Sprachpaket führt. Auf dieser Seite angekommen, starten Sie den Download, indem Sie auf <span class="screenelement smallcaps">Download for Free</span> klicken. Daraufhin erhalten Sie ein Zip-Archiv, das Sie entpacken. Das Zip-Archiv selbst besteht insgesamt nur aus fünf Dateien:</p>
+        <ul>
+            <li>
+                <span class="italic">composer.json</span>
+            </li>
+            <li>
+                <span class="italic">de_DE.csv</span>
+            </li>
+            <li>
+                <span class="italic">language.xml</span>
+            </li>
+            <li>
+                <span class="italic">LICENSE.txt</span>
+            </li>
+            <li>
+                <span class="italic">registration.php</span>
+            </li>
+        </ul>
+        <p class="standard">Die CSV-Datei ist der primäre Bestandteil der Übersetzung, denn hierin wird jeder im System vorhandene englische Begriff durch einen deutschen Begriff ergänzt. Bei den weiteren Dateien handelt es sich in erster Linie um für Magento notwendige Dateien zum Laden und Installieren des Sprachpakets.</p>
+        <p class="standard">Nachdem Sie das Zip-Archiv heruntergeladen und entpackt haben, erstellen Sie in Ihrer Magento-Instanz ein neues Verzeichnis namens <span class="italic">code</span> im Verzeichnis <span class="italic">/app</span> und innerhalb dieses Verzeichnisses ein weiteres namens <span class="italic">Magenerds</span> mit dem Unterverzeichnis <span class="italic">de_De</span>, in das Sie die Inhalte der extrahierten Zip-Datei verschieben. Als Ergebnis haben Sie ein neues Verzeichnis namens <span class="italic">app/code/Magenerds/de_DE</span> mit den Dateien des Sprachpakets.</p>
+        <p class="standard">Im zweiten Schritt muss dieses neue Sprachpaket installiert werden. Starten Sie hierfür, je nach Betriebssystem, die Eingabeaufforderung bzw. das Terminal oder die Shell, und navigieren Sie in Ihr Magento-Hauptverzeichnis. Dort angelangt, führen Sie den folgenden Befehl aus: <span class="listingcharacter">php bin/magento setup:upgrade</span>.</p>
+        <p class="standard">Durch die Ausführung dieses Befehls prüft Magento, ob es neue Erweiterungen oder Modifikationen gibt, die installiert werden müssen. Sollte dies zutreffen, führt Magento eine Installationsroutine aus. Sie haben durch den neuen Ordner <span class="italic">code/Magenerds/de_DE Magento</span> die Information gegeben, dass »etwas Neues« vorhanden ist, die darin enthaltenen Dateien haben sich sozusagen um den Rest, nämlich die gesamten Detailinformationen, gekümmert und somit die Installation ermöglicht. Hat alles geklappt, sollten Sie eine Ausgabe wie in <span class="crossreference "><a href="04_001.html#b4.1">Abbildung 4.1</a></span> erhalten.</p>
+        <div class="imagebox "><a href="img-b4.1.html" id="b4.1"><img alt="Der Magento-Installationsprozess gibt während der Installation konstant einen Status zurück." id="img-b4.1" src="bilderklein/kleinabbildung-4-1.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 4.1</b>    Der Magento-Installationsprozess gibt während der Installation konstant einen Status zurück.</p>
+        <p class="standard">Daraufhin ist das Sprachpaket erfolgreich installiert, und Sie müssen sich um nichts weiter kümmern.</p>
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

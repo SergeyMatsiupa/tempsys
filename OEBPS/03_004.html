@@ -1,0 +1,112 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Magento installieren" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Magento installieren" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Magento installieren</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u3.4">3.4    MageVM<a class="indexanchor" id="i03_17"/> auf Basis von VirtualBox</h2>
+        <p class="standard">Alternativ zum Setup eines eigenen Web- und Datenbankservers auf dem heimischen Computer haben Sie zudem die Möglichkeit, Magento mithilfe einer virtuellen Maschine lokal zu betreiben. Der Vorteil dieser Lösung besteht primär in der Einfachheit. Sie müssen keinen eigenen Web- und Datenbankserver installieren und konfigurieren. Zudem müssen Sie sich auch nicht um die Installation von Magento kümmern. Dank der virtuellen Maschine benötigen Sie ausschließlich die Anwendung VirtualBox sowie die MageVM und können anschließend innerhalb weniger Minuten loslegen.</p>
+        <p class="standard">Der Vorteil der Einfachheit hat auf der anderen Seite, wie sollte es anders sein, aber auch einen Nachteil. Bei einer virtuellen Maschine wird auf Ihrem Computer ein komplettes Betriebssystem, im Fall der MageVM eine Linux-Distribution emuliert. Eine virtuelle Maschine ist also ein Betriebssystem in Ihrem Betriebssystem. Dieses Konzept geht in der Regel zu Lasten der Performance, da die Emulation eines kompletten Betriebssystems, wie Sie sich sicherlich vorstellen können, eine gewisse CPU-Power und auch Arbeitsspeicher voraussetzt. Aus diesem Grund sollten Sie diese Option nur ins Auge fassen, wenn Sie einen halbwegs aktuellen Computer haben, der über mindestens 4 GB Arbeitsspeicher verfügt. Ansonsten könnten Sie zwar die Installation von VirtualBox durchführen und die virtuelle Maschine betreiben. Es wäre aber voraussichtlich ein enorm langsames Arbeiten, das Ihnen sicherlich keine Freude bereiten würde.</p>
+        
+            <h3 class="t3" id="u3.4.1">3.4.1    Installation von VirtualBox</h3>
+            <p class="standard">Für den Betrieb der MageVM benötigen Sie als Basis die Software VirtualBox. Bei VirtualBox handelt es sich um eine kostenfreie Anwendung, auf deren Basis Sie virtualisierte Systeme betreiben können. Ihnen ist gegebenenfalls die Anwendung VMware geläufig, die im Prinzip dieselbe Funktionsweise wie VirtualBox aufweist. Der große Vorteil von VirtualBox ist meiner Meinung nach die einfache Bedienung, aber auch die Tatsache, dass Sie die Software kostenlos nutzen können. Zudem steht VirtualBox für alle gängigen Betriebssysteme zur Verfügung. Es spielt also keine Rolle, ob Sie als Leser Windows, Linux oder macOS nutzen. Die Software steht für alle diese Plattformen bereit und besitzt ebenso übergreifend eine identische Benutzeroberfläche. Auch wenn ich im Folgenden Windows verwende, so ist doch die Vorgehensweise unter Linux bzw. macOS komplett identisch.</p>
+            <p class="standard">Um nun zu starten, müssen Sie im ersten Schritt die Anwendung VirtualBox herunterladen. Gehen Sie hierfür im Browser Ihrer Wahl auf <span class="url"><a href="http://www.virtualbox.org">http://www.virtualbox.org</a></span>, und klicken Sie im linken Navigationsbereich auf »Downloads«. Anschließend müssen Sie die Plattform wählen, sprich unter welchem Betriebssystem Sie VirtualBox installieren möchten. Ich wähle in meinem Fall Windows, da mein verwendetes Betriebssystem Windows ist. Wie erwähnt, kann VirtualBox<a class="indexanchor" id="i03_18"/> neben Windows auch unter Linux, macOS und sogar Solaris betrieben werden. Wählen Sie Ihre Plattform, und klicken Sie anschließend auf den verlinkten Bereich, den Sie auch in <span class="crossreference "><a href="03_004.html#b3.27">Abbildung 3.27</a></span> sehen, hinter dem gewählten Betriebssystem, um den Download zu starten.</p>
+            <div class="box_standard">
+                <h6 class="boxheading">Installation der VirtualBox unter Windows</h6>
+                <p class="standard">Aus Gründen der Einfachheit beschreibe ich Ihnen im Folgenden die Installation der VirtualBox unter Microsoft Windows 10. Der Installationsprozess unterscheidet sich speziell in Bezug auf Linux bzw. macOS an einigen Stellen. Wenn Sie eine ausführliche Installationsanleitung für Ihr Betriebssystem benötigen, kann ich Ihnen folgenden Link ans Herz legen: <span class="url"><a href="https://www.virtualbox.org/manual/ch02.html">https://www.virtualbox.org/manual/ch02.html</a></span>.</p>
+                <p class="standard">Unter dieser URL finden Sie eine ausführliche Dokumentation und Beschreibung des Installationsprozesses für Linux, Windows und macOS, die Ihnen bei Problemen sicherlich weiterhelfen wird.</p>
+            </div>
+            <p class="standard">Anschließend startet der knapp 100 MB große Download und ist bei Ihnen je nach Internetverbindung innerhalb weniger Sekunden oder Minuten abgeschlossen. Nachdem Sie die Installationsdatei erfolgreich heruntergeladen haben, starten Sie diese durch einen Doppelklick.</p>
+            <div class="imagebox "><a href="img-b3.27.html" id="b3.27"><img alt="Die VirtualBox steht für verschiedenste Betriebssysteme zum Download zur Verfügung." id="img-b3.27" src="bilderklein/kleinabbildung-3-12.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 3.27</b>    Die VirtualBox steht für verschiedenste Betriebssysteme zum Download zur Verfügung.</p>
+            <p class="standard">Daraufhin öffnet sich der Installationsprozess. Klicken Sie, nachdem sich der Installationsprozess geöffnet hat, in der ersten Maske auf <span class="screenelement smallcaps">Next,</span> um die Installation zu beginnen. Daraufhin werden Sie zu einer Maske geführt, in der Sie verschiedene Installationskomponenten auswählen können. Innerhalb dieser Ansicht müssen Sie jedoch keine Anpassungen vornehmen, sondern können durch einen Klick auf <span class="screenelement smallcaps">Next</span> fortfahren. Abschließend werden Sie noch gefragt, ob Sie einen Eintrag im Startmenü bzw. eine Desktopverknüpfung wünschen. Diese Auswahl überlasse ich Ihnen, im Prinzip können Sie aber auch hier direkt ohne weitere Änderung auf <span class="screenelement smallcaps">Next</span> klicken. Daraufhin sollten Sie eine Warnung erhalten, die Sie in <span class="crossreference "><a href="03_004.html#b3.28">Abbildung 3.28</a></span> sehen. VirtualBox warnt Sie im Vorfeld, dass Ihre Netzwerkverbindung kurzzeitig deaktiviert wird. Dies müssen Sie bestätigen, was Sie aber letztendlich bedenkenlos machen können, da diese Entscheidung keine negativen Auswirkungen hat.</p>
+            <p class="standard">Klicken Sie anschließend auf <span class="screenelement smallcaps">Yes</span>, um mit der Installation fortzufahren, und in der darauffolgenden Maske auf <span class="screenelement smallcaps">Install</span>. Nun ist der Zeitpunkt gekommen, zu dem der eigentliche Installationsprozess startet und VirtualBox auf Ihrem Computer installiert wird.</p>
+            <div class="imagebox "><a href="img-b3.28.html" id="b3.28"><img alt="VirtualBox warnt innerhalb des Installationsprozesses vor einer kurzfristigen Deaktivierung der Netzwerkverbindung." id="img-b3.28" src="bilderklein/kleinabbildung-3-13.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 3.28</b>    VirtualBox warnt innerhalb des Installationsprozesses vor einer kurzfristigen Deaktivierung der Netzwerkverbindung.</p>
+            <p class="standard">Sollte während der Installation nochmals ein Dialogfenster erscheinen, was unter anderem von Ihrer verwendeten Windows-Version abhängig ist, können Sie dieses bedenkenlos bestätigen. Andernfalls würde der Installationsprozess nicht fortgeführt werden. Nach einigen Minuten ist der Installationsprozess abgeschlossen, und Sie haben VirtualBox erfolgreich installiert!</p>
+            <p class="standard">Auch wenn Sie VirtualBox nun erfolgreich installiert haben, empfehle ich Ihnen zusätzlich die Installation des VirtualBox Extension Packs. Es handelt sich hierbei um ein Add-on zu VirtualBox, das die Performance der virtuellen Maschine, aber auch deren Funktionsumfang erweitert. Auch hierbei fallen für Sie keinerlei Kosten an, weswegen es auch keinen Grund gibt, die Erweiterung nicht zu installieren. Rufen Sie in Ihrem Browser erneut die Download-Seite von VirtualBox auf, die Sie direkt unter <span class="url"><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></span> erreichen. Scrollen Sie nun herunter bis zum Eintrag <span class="screenelement smallcaps">VirtualBox 5.1.2 Oracle VM VirtualBox Extension Pack.</span> Bitte beachten Sie, dass sich die Version während der Arbeit an diesem Buch geändert haben kann, gegebenenfalls steht daher eine neue Version zum Download bereit. Ungeachtet dessen, klicken Sie nun auf den Link <span class="screenelement smallcaps">All supported platforms</span>, um den Download des Extension Packs zu starten. Haben Sie die Datei erfolgreich heruntergeladen, öffnen Sie diese durch einen Doppelklick. VirtualBox fragt Sie anschließend, ob Sie das Extension Pack installieren möchten, was Sie bestätigen.</p>
+            <p class="standard">Nach der Installation des Extension Packs sind Sie mit dem Setup von VirtualBox fertig, und dem Betrieb der MageVM steht nichts mehr im Weg.</p>
+        
+        
+            <h3 class="t3" id="u3.4.2">3.4.2    Installation von MageVM<a class="indexanchor" id="i03_19"/></h3>
+            <p class="standard">Bei der MageVM handelt es sich um eine auf Linux basierende virtuelle Maschine, die über einen vorkonfigurierten Web- und Datenbankserver verfügt und darüber hinaus alle Magento 2-Versionen beinhaltet. Damit stellt die MageVM den mit Abstand einfachsten Weg dar, um ohne technisches Wissen an eine lokale Magento-Installation zu kommen. Zudem fallen für die Nutzung von MageVM keinerlei Kosten an, weswegen die MageVM von jedermann, selbst für kommerzielle Zwecke, eingesetzt werden kann.</p>
+            <p class="standard">Damit Sie die MageVM betreiben können, müssen Sie diese zuerst herunterladen. Rufen Sie hierfür die URL <span class="url"><a href="http://www.alexander-steireif.com/portfolio/magevm-magento-2-virtuelle-maschine/">http://www.alexander-steireif.com/portfolio/magevm-magento-2-virtuelle-maschine/</a></span> auf. Auf dieser Seite finden Sie alle für das System benötigten Zugangsdaten, den Download sowie eine kurze Installationsanleitung. Scrollen Sie etwas nach unten, und klicken Sie auf den Button <span class="screenelement smallcaps">Jetzt kostenlos herunterladen</span>, um den Download zu beginnen. Da es sich um eine knapp 6 GB große Datei handelt, wird der Download bei Ihnen voraussichtlich ein paar Minuten bis hin zu einer Stunde dauern. Sie haben also jetzt die Möglichkeit, sich einen Kaffee zu holen und eine kurze Verschnaufpause einzulegen. ;)</p>
+            <div class="box_standard">
+                <h6 class="boxheading">MageVM enthält alle Magento 2-Versionen</h6>
+                <p class="standard">Ein großer Vorteil der MageVM besteht unter anderem darin, dass Sie Zugriff auf alle Versionen von Magento 2 haben. Diese sind sowohl mit den Dummy-Daten als auch jeweils ohne Dummy-Daten bereits vorinstalliert. In der aktuellen Version der MageVM können Sie dadurch auf alle Magento-Versionen von 2.0.0 bis 2.1.7 zugreifen.</p>
+            </div>
+            <p class="standard">Nachdem Sie die MageVM heruntergeladen haben, müssen Sie diese entpacken. Die MageVM wird, um die Download-Größe zu minimieren, als gepacktes Zip-Archiv ausgeliefert. Dementsprechend benötigen Sie ein Programm, um dieses Zip-Archiv zu entpacken. Unabhängig von Ihrem gewählten Betriebssystem sollte ein solches Programm von Haus aus in Ihrem Betriebssystem enthalten sein. Sollte dies nicht der Fall sein, kann ich Ihnen zumindest unter Windows die kostenfreie Anwendung 7-Zip empfehlen, die Sie unter <span class="url"><a href="http://www.7-zip.de/">http://www.7-zip.de/</a></span> herunterladen können. Sobald Sie die MageVM entpackt haben, öffnen Sie bitte die VirtualBox, und klicken Sie auf <span class="screenelement smallcaps">Datei</span> • <span class="screenelement smallcaps">Appliance importieren</span>, wie in <span class="crossreference "><a href="03_004.html#b3.29">Abbildung 3.29</a></span> zu sehen.</p>
+            <div class="imagebox "><a href="img-b3.29.html" id="b3.29"><img alt="Zuerst müssen Sie die MageVM in Ihre VirtualBox importieren." id="img-b3.29" src="bilderklein/kleinabbildung-3-14.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 3.29</b>    Zuerst müssen Sie die MageVM in Ihre VirtualBox importieren.</p>
+            <p class="standard">Daraufhin öffnet sich ein Dialogfenster, in dem Sie nach einer Datei gefragt werden. Wählen Sie anschließend die Datei <span class="italic">MageVM-2-1-0.ova</span> aus, die durch das Entpacken der MageVM zur Verfügung steht. Klicken Sie anschließend auf <span class="screenelement smallcaps">Weiter</span>. Im nächsten Dialogfeld haben Sie die Möglichkeit, Appliance-Einstellungen zu ändern. Diesen Dialog können Sie getrost ignorieren, Sie müssen keine Anpassungen bei den Einstellungen vornehmen. Um den Importprozess zu starten, klicken Sie bitte auf <span class="screenelement smallcaps">Importieren</span>. VirtualBox importiert jetzt die MageVM, Sie sehen das in <span class="crossreference "><a href="03_004.html#b3.30">Abbildung 3.30</a></span>. Dieser Vorgang kann je nach Hardware Ihres Computers bis zu 30 Minuten dauern.</p>
+            <div class="imagebox "><a href="img-b3.30.html" id="b3.30"><img alt="Importvorgang der MageVM" id="img-b3.30" src="bilderklein/kleinabbildung-3-15.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 3.30</b>    Importvorgang der MageVM</p>
+            <p class="standard">Sobald der Importvorgang erfolgreich abgeschlossen wurde, sehen Sie in Ihrer VirtualBox-Anwendung auf der linken Seite die MageVM. Wählen Sie diese aus, und klicken Sie auf den Button <span class="screenelement smallcaps">Starten</span>. Daraufhin wird das Betriebssystem der MageVM gestartet.</p>
+            <div class="box_standard">
+                <h6 class="boxheading">Die Zugangsdaten<a class="indexanchor" id="i03_20"/> im Überblick</h6>
+                <p class="standard">Für die Nutzung der MageVM benötigen Sie folgende Zugangsdaten:</p>
+                <p class="standard">Linux</p>
+                <ul>
+                    <li>
+                        Benutzername: root
+                    </li>
+                    <li>
+                        Passwort: magevm
+                    </li>
+                    <li>
+                        Benutzername: magevm
+                    </li>
+                    <li>
+                        Passwort: magevm
+                    </li>
+                </ul>
+                <p class="standard">MySQL</p>
+                <ul>
+                    <li>
+                        Benutzername: root
+                    </li>
+                    <li>
+                        Passwort: magevm
+                    </li>
+                </ul>
+                <p class="standard">Magento-Backend</p>
+                <ul>
+                    <li>
+                        Benutzername: magevm
+                    </li>
+                    <li>
+                        Passwort: magevm123
+                    </li>
+                </ul>
+            </div>
+            <p class="standard">Sobald der Start der MageVM abgeschlossen ist, sehen Sie einen Desktop bzw. das Betriebssystem. Auf dem Desktop befindet sich in der oberen linken Ecke eine gut sichtbare Verknüpfung namens <span class="screenelement smallcaps">Start</span>, die Sie nun durch einen Doppelklick starten. Damit starten Sie den Mozilla-Firefox-Browser, bei dem als Startseite die aktuellste Magento-Installation hinterlegt ist. Darüber hinaus haben Sie innerhalb des Mozilla Firefox unter der Browserleiste eine Favoritenleiste, in der Sie alle Links zu allen installierten Magento-Instanzen vorfinden. Sie können dies in <span class="crossreference "><a href="03_004.html#b3.31">Abbildung 3.31</a></span> sehen. Zusätzlich stehen Ihnen weitere Tools wie phpMyAdmin, aber auch Eclipse als Entwicklungsumgebung sowie MySQL Workbench zur Verfügung. Mit der MageVM haben Sie also ein sehr rundes Programm bestehend aus Betriebssystem, Web- und Datenbankserver, Magento-Instanzen sowie Hilfsprogrammen.</p>
+            <div class="imagebox "><a href="img-b3.31.html" id="b3.31"><img alt="Die MageVM beinhaltet alle bereits veröffentlichten Versionen von Magento 2." id="img-b3.31" src="bilderklein/kleinabbildung-3-16.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 3.31</b>    Die MageVM beinhaltet alle bereits veröffentlichten Versionen von Magento 2.</p>
+            <p class="standard">Sollten Sie noch Fragen zur Nutzung oder gar technische Probleme mit der MageVM haben, können Sie diese übrigens direkt unter <span class="url"><a href="http://www.alexander-steireif.com/portfolio/magevm-magento-2-virtuelle-maschine/">http://www.alexander-steireif.com/portfolio/magevm-magento-2-virtuelle-maschine/</a></span> kundtun.</p>
+        
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

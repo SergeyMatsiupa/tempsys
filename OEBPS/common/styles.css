@@ -1,0 +1,1102 @@
+
+/* --- Reset and Normalize --- */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;text-indent:0;text-align:left;white-space:normal;word-spacing:normal;letter-spacing:normal;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+*,p,ul,ol,li,table,tr,td,th{text-indent:0;text-align:left;}
+
+button,hr,input{overflow:visible}
+html{font-family:sans-serif;line-height:1.15;}
+body{margin:0}
+figcaption,menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent;}
+a:active,a:hover{outline-width:0}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0}
+mark{background-color:#ff0;color:black}
+small{font-size:80%}
+img{border-style:none}
+svg:not(:root){overflow:hidden}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}
+button,input,optgroup,select,textarea{font:inherit;margin:0}
+optgroup{font-weight:700}
+button,input{}
+button,select{text-transform:none}
+[type=submit]{border-style:none;padding:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+textarea{overflow:auto}
+[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}
+
+
+/* --- Display --- */
+
+table{ display:table; }
+caption { display:table-caption; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tr { display:table-row; }
+td { display: table-cell; }
+li { display:list-item; }
+
+
+/* --- Colors --- */
+
+/* Font colors */
+
+h1.t1, h2.t2, h3.t3, h4.t4 { color:#8d1f41; }
+    
+h6.boxheading { color:#1f5689; }
+
+body.Computing_Einsteiger_4c h6.boxheading,
+div.realworldscenario h6.boxheading 
+    { color:black; }
+
+table.standardtable thead,
+table.standardtable thead a,  
+table.standardtable .tablehead, 
+table.standardtable tr.tablehead td,
+table.standardtable tr.tablehead td a 
+    { color:white; }
+
+table.boxtable thead
+table.boxtable .tablehead, 
+table.boxtable tr.tablehead td 
+    { color:black; }
+
+
+/* Background colors - always define at the td/th element */
+
+div.box, 
+table td.tablecell 
+{ background-color:#ececec; }
+
+td.tablehead, 
+th.tablehead
+    { background-color:#2f6489; }
+
+table.boxtable td.tablecell,
+table.boxtable th.tablehead,
+table.boxtable td.tablehead,
+table.listingtable td.tablecell
+    { background-color:white; }
+
+tr.tablehead2 td, 
+td.tablehead2 { 
+    background-color:#ababab; 
+    color:white; }
+
+body.SAP tr.tablehead2 td, 
+body.SAP td.tablehead2 
+    { background-color:#71A0BE; }
+
+tr.double_colored_row td { 
+    background-color:#a2a2a2; }
+
+table.informaltable td.tablecell,
+table.informaltable th.tablehead
+    { background-color:transparent; }
+
+
+/* Border colors */
+
+.box { border-top-color:#1f5689; }
+
+table.standardtable th, 
+table.standardtable td 
+    { border-color:white; }
+
+table.boxtable th,
+table.boxtable td 
+    { border-color:#777777;
+    border-left:none; }
+
+table.boxtable *.tablecell_last 
+    { border-right:none; }
+
+
+/* --- Main --- */
+
+body {
+    font-family:sans-serif;
+    font-size:medium; 
+    line-height:1.35;
+    padding:1em; }
+
+
+/* --- Font --- */
+
+@font-face {
+    font-family: TheAntiquaB;
+    src: url(../keys/TheAntiquaB-W4SemiLight.otf);
+    font-style:normal;
+    font-weight:normal; }
+@font-face {
+    font-family: TheAntiquaB;
+    src: url(../keys/TheAntiquaB-W4SemiLightItalic.otf);
+    font-style:italic;
+    font-weight:normal; }
+@font-face {
+    font-family: TheAntiquaB;
+    src: url(../keys/TheAntiquaB-W6SemiBold.otf);
+    font-style:normal;
+    font-weight:bold; }
+@font-face {
+    font-family: TheAntiquaB;
+    src: url(../keys/TheAntiquaB-W6SemiBoldItalic.otf);
+    font-style:italic;
+    font-weight:bold; }
+
+div.use_antiqua_font {
+    font-family: TheAntiquaB, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, 
+div.box, 
+div.box_standard,
+table.standardtable, 
+table.normal,
+p.caption,
+p.indexnav, 
+p.acronym,
+div.glossary_entry > strong, /* Glossary term */
+div#extra-leser span.bold
+    { font-family: sans-serif; }
+
+
+/* --- Special pages --- */
+
+div#service a, 
+div#autor a 
+    { font-style:italic; }
+
+div#service span.crossreference a { font-style:normal; }
+
+
+/* --- Paragraphs --- */
+
+/* Page break, orphans, widows */
+
+div.pageturn { page-break-after:always; }
+
+h1, h2, h3, h4, h5, h6, 
+div.imagebox
+    { page-break-inside:avoid;
+    page-break-after:avoid; }
+
+h6, 
+p.caption,
+div.imagebox
+    { page-break-before:avoid; }
+
+tr, td, th { page-break-inside:avoid; }
+
+p.standard, 
+p.formula, 
+p.ebite_ad, 
+blockquote > p 
+    { orphans:2;
+    widows:2; }
+
+span.listparagraph {
+    display: inline-block;
+    max-width: 90%;  /* actually it should be padding-right:1em, but that doesn't work in ADE (and iBooks) */
+}
+
+
+/* Margins */
+
+p.standard, 
+p.formula, 
+blockquote > p, 
+div.listing, 
+p.caption,
+span.listparagraph
+    { margin-top:.67em; }
+
+h6.boxheading { margin-top:.25em; }
+
+div.listing { margin-bottom:1em; }
+
+div.listing_no_margin_bottom { margin-bottom:0; }
+
+div.listing + p.standard, 
+div.listing + p.formula, 
+div.listing + blockquote > p, 
+div.listing + div.listing 
+    { margin-top:0; }
+
+p.formula { margin-left:1em; }
+
+blockquote > p,
+blockquote > ul,
+blockquote > ol,
+blockquote > table,
+blockquote > div.box_standard { 
+	margin-left:1.33em; }
+
+p.introductorynote { margin:1.33em 0 1em; }
+
+div.glossary_entry { margin-bottom:1.33em; }
+
+p.dedication { margin-top:3em; }
+
+h6.step_title { margin-top:1.33em; }
+
+h6.step_heading { margin-top:1em; }
+
+p.caption { margin-bottom:1.33em; }
+    
+p.caption_last { margin-bottom:.33em; }
+    
+.part_page_indent { margin-left:15%; }
+
+div.image_full_size { margin-top: 3em; }
+
+
+/* Font */
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+
+table.standardtable tr.tablehead2, 
+td.tablehead 
+    { font-weight:bold; }
+
+blockquote > p, 
+p.introductorynote, 
+p.dedication 
+    { font-style:italic; }
+
+body.SAP p.formula { font-style: italic; }
+
+ul.checkliste, ul.checkliste2 {
+    list-style-type: square;
+    background-color: rgb(231, 185, 127);
+    padding: .3em 1em 1.0em;
+    font-family: monospace;
+    font-size: 1.2em; }
+
+ul.checkliste li, 
+ul.checkliste2 li {
+    border-bottom: 1px solid black;
+    padding-bottom: .35em; }
+
+ul.checkliste2 {
+    list-style-type: none; }
+
+p.dedication { text-align:right; }
+
+div.glossary_entry { font-size:90%; }
+
+p.caption { font-size: small; }
+
+div.image_full_size p.caption { font-size:large; }
+
+img.inline_image { 
+	vertical-align:text-bottom;
+	max-height: 2em; }
+
+img.formula_image { padding-top:.33em; 
+    vertical-align:bottom; }
+
+
+/* Listing */
+
+div.listing > pre, div.listing > pre * {
+    font-family:monospace;
+    font-size:small;
+    white-space:pre-wrap; }
+
+div.listing_border_black {
+    border:.1em solid black;
+    padding:.25em; }
+
+div.listing_api { 
+    border:.1em solid #828282;
+    padding:.5em; }
+
+div.listing_line_gray {
+    display:block;
+    padding:.2em 0;
+    background-color:#e1eeff; }
+
+
+/* Lists */
+
+ul, ol { list-style-position:outside; }
+    
+ul { list-style-type:disc; }
+ol { list-style-type:decimal; }
+ul.apiliste { list-style-type:square; }
+ul > li > ul { list-style-type:circle; }
+ol > li > ol { list-style-type:lower-alpha; }
+
+ol { margin-left: .8em; }
+ol.double_digit { margin-left: 1.3em; }
+
+li { margin-left:1em;
+     margin-top:.5em; }
+
+/* Outdent tables, table captions (p), and boxes in lists and in sublists */
+li table.standardtable,
+li table.standardtable + p,
+li div.box_standard
+    { margin-left:-1em; }
+
+li > * > li table.standardtable,
+li > * > li table.standardtable + p,
+li > * > li div.box_standard
+    { margin-left:-2em; }
+
+
+/* Images */
+
+div.imagebox { margin-top:.67em; }
+
+div.imagebox_chapter_entry img {
+    max-width:100%;
+    max-height:18em; }
+
+
+/* --- Font styles --- */
+
+.screenelement, 
+.bold, 
+.smallcaps 
+    { font-weight:bold; }
+
+.listingcharacter { font-family:monospace; }
+
+.italic, 
+.url 
+    { font-style:italic;}
+
+.underlined { text-decoration:underline; }
+
+.strikethrough { text-decoration:line-through; }
+
+.upright { font-style:normal; }
+
+.screenelement, 
+.smallcaps {
+    color:#666666; }
+
+.smallcaps { font-variant:small-caps; }
+
+.specialcharacter img { vertical-align:baseline; }
+
+div.glossary_entry > strong { font-size:larger; } /* Glossary term */
+
+span.step_title_color, 
+span.step_heading_numbering 
+    { color:green; }
+
+span.step_heading_numbering { font-size:128%; }
+
+.listingcomment {
+    font-family:sans-serif;
+    font-size:inherit;
+    font-style:normal;
+    font-weight:normal;
+    color:black; }
+
+.megaziffer {
+    font-size:2em;
+    vertical-align:top;
+    margin-top:-.2em;
+    margin-right:.2em; }
+
+
+/* --- Keyboard, Callouts --- */
+
+@font-face { 
+   font-family:Callout;
+   src: url(../keys/RheinwerkCallout.otf);
+   font-weight:normal; }
+   
+@font-face { 
+   font-family:CalloutTS;
+   src:url(../keys/RheinwerkCalloutTS2.otf);
+   font-weight:normal; }
+
+@font-face { 
+   font-family:KeyboardUniversal;
+   src:url(../keys/KeyboardUniversal.otf);
+   font-weight:normal; }
+   
+span.keyboard, 
+span.callout, 
+span.calloutTS { 
+    font-style:normal;
+    color:black; }
+
+span.keyboard,
+div.listing > pre span.keyboard 
+    { font-family:KeyboardUniversal, sans-serif; }
+
+span.callout, 
+span.calloutTS {
+	vertical-align: top;
+	position: relative; }
+
+span.callout { 
+    font-family:Callout, sans-serif; 
+    font-size:1.1em; 
+    top: -2px; }
+
+span.calloutTS { 
+    font-family:CalloutTS, sans-serif; 
+    font-size:1.2em; 
+    top: -4px; }
+
+
+/* --- Tables --- */
+
+td, th { vertical-align:top; }
+
+table td, 
+table th { 
+    padding:.33em;
+    border-width:.15em;
+    border-style:solid; }
+    
+
+table.informaltable td, 
+table.informaltable th 
+    { padding-left:0; }
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-top:.67em;
+    max-width:100%; }
+
+table.informaltable {
+    color:inherit;
+    background-color:transparent;
+    page-break-inside:auto; }
+
+table.informaltable td,
+table.informaltable th,
+div.listingtable_container > table td,
+div.listingtable_container > table th { 
+	border:none;
+    padding-top:0;
+    padding-left:0; 
+    padding-bottom: 0;
+    /* keep only padidng-right at .33em */
+    }
+
+/* re-insert padding bottom for informal tables if used for callout lists */
+table.informaltable.table_callout td,
+table.informaltable.table_callout th {
+    padding-bottom: .33em;
+}
+
+div.listingtable_container > table {
+    margin:0;
+    border-left:1px solid black;
+    background-color:transparent; }
+
+div.listingtable_container > table div.listing { margin:0; }
+
+div.listingtable_container { 
+    margin-top:.67em;
+    width:100%; 
+    border:1px solid black;
+    border-left:0; }
+
+
+/* --- Footnotes --- */
+
+span.footenote_anchor {
+    color:#333333;
+    font-size:smaller; }
+
+h1 span.footenote_anchor a, 
+h2 span.footenote_anchor a, 
+h3 span.footenote_anchor a, 
+h4 span.footenote_anchor a, 
+h5 span.footenote_anchor a, 
+h6 span.footenote_anchor a
+    { color:inherit; }
+
+
+/* --- Boxes --- */
+
+div.box { 
+	border-top-width:thick;
+	border-top-style:solid; }
+
+div.box_standard, 
+div.realworldscenario {
+    background-color:#ECECEC;
+    margin-top:1em;
+    padding:.35em .5em .67em; }
+
+div.box_standard {
+    border-top:thick solid #1f5689; }
+
+div.box_no_line {
+    border-top:none; 
+    border-bottom:none;
+    padding-top:.3em; }
+
+div.box_todobox, 
+div.box_black_border { 
+    border:thin solid black;
+    margin:1em 0;
+    padding:.5em; }
+
+div.box_todobox { 
+    border-top:medium solid black; }
+
+div.box_bar { 
+    border-left:4px solid #646464;
+    padding-left:1em; }
+    
+div.box_bar h6.boxheading {
+    padding-left:0;
+    color:#646464; }
+
+
+/*--- TOC ---*/
+
+h1.content0,
+h1.content1,
+h1.contentextra 
+    { margin-top:1em; }
+
+h1.content0 {
+    font-size:x-large;
+    color:#727272; }
+
+h1.content1, 
+h1.contentextra {
+    font-size:x-large;
+    color:#8d1f41;
+    font-weight:normal; }
+
+h1.content1 { border-bottom:medium solid #8d1f41; }
+
+h2.content2 {
+    font-size:large;
+    font-weight:normal;
+    margin-top:.5em; }
+
+h3.content3, 
+h2.contentextra {
+    font-size:medium;
+    font-weight:normal; }
+    
+h3.content3 { margin-left:1em; }
+    
+h2.contentextra + h2.content2, 
+h2.contentextra + h1.content1, 
+h1.content1 + h2.contentextra 
+    { margin-top:2.5em; }
+
+
+/*--- Headings ---*/
+
+h1.t0,
+p.parttext,
+p.part_page_text,
+p.part_page_text + * {
+    margin-left:15%;
+    text-align:left;
+    padding-right:1em; }
+
+h1.t0 {
+    font-size:2.2em;
+    margin-top:20%;
+    margin-bottom:1em;
+    text-transform:uppercase; }
+
+p.parttext {
+    font-size:1.8em;
+    margin-bottom:2em; }
+
+h1.t1 {
+    font-size:x-large;
+    font-weight:normal; }
+
+h2.t2 { font-size:large; }
+
+h3.t3, 
+h4.t4, 
+h5.t5 { font-size:medium; }
+
+
+h1.t1 {
+    margin-bottom:2em;
+    margin-top:.5em; }
+    
+h2.t2 { margin-top:1em; }
+
+h1.t1 + h2.t2 { margin-top:-1.25em; }
+
+p + h1.t1 { margin-top:3em; }
+
+p + h2.t2, 
+div + h2.t2, 
+h3.t3, 
+h4.t4, 
+h5.t5 
+  { margin-top:2em; }
+
+h3.t3 + h4.t4, 
+h4.t4 + h5.t5 
+  { margin-top:1em; }
+
+h5.t5 { font-style:italic; }
+
+h5.checkliste {
+    font-style: normal;
+    background-color: rgb(231, 185, 127);
+    font-family: monospace;
+    padding-left: 2em;
+    padding-top: .75em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid;
+    font-size: 1.2em; }
+
+hr { margin-top: 1.67em; } /* LPIC question separator */
+
+
+/*--- E-Bite ---*/
+
+.ebite_color { color:rgb(0,93,167); }
+
+div.front-matter-ebite-notice {
+    border:1px solid black;
+    padding:.5em;
+    margin-top:10em; 
+    margin-bottom:-7em; /* compensates logo top margin */ 
+    font-size:.85em; }
+
+div#main > h2.ebite_color { color:rgb(0,93,167); }
+
+p.ebite_toc span.toc1 > a, 
+p.ebite_toc span.toc2 > a { 
+    color:rgb(0,93,167);
+    text-decoration:none; }
+
+span.toc1 > a { font-weight:bold; }
+
+span.toc2 { margin-left:1.2em; }
+
+p.ebite_toc { margin-top:.33em; }
+
+a.ebite_link {
+    text-decoration:underline;
+    color:rgb(0,93,167); }
+
+p.ebite_ad { 
+    color:rgb(0,93,167);
+    margin-top:1.67em;
+    margin-bottom:.67em;
+    text-indent:0; }
+
+p.ebite_ad_end { font-size:.85em; }
+
+div.ebite_trademarks {
+    margin-top:2em; 
+       -moz-column-count:2;
+    -webkit-column-count:2;
+            column-count:2; }
+
+div.ebite_trademarks p.standard {
+    font-size:x-small;
+    margin-top:.67em; }
+
+#usage_service_notes a, 
+p.ebite_ad_end a {
+    text-decoration:underline;
+    color:rgb(0,93,167);
+    font-style:normal; }
+
+#main div.ebite_box { 
+    background-color:rgb(203,227,242);
+    border-top-color:rgb(0,93,167); }
+
+#main div.ebite_box > p { background-color:rgb(203,227,242); }
+
+
+/*--- 'Programmieren lernen' ---*/
+
+table.informaltable td.background_color_orange_0,
+table.informaltable td.background_color_orange_15,
+table.informaltable td.background_color_orange_30 
+    { padding:0; }
+
+table.informaltable td.background_color_padding_vertical { 
+    padding:0 .67em; 
+    border-top:2px solid #FCECD4; 
+    border-bottom:2px solid #FCECD4; }
+
+table.informaltable td.background_color_padding_horizontal { 
+    padding:.33em; 
+    border:2px solid #FCECD4; }
+
+table.informaltable td.tablecell_first.background_color_padding { padding-left:.33em; }
+table.informaltable td.tablecell_last.background_color_padding { padding-right:.33em; }
+
+table.informaltable td.vertical_padding_left  { padding-left:.33em; }
+table.informaltable td.vertical_padding_right { padding-right:.33em; }
+table.informaltable td.vertical_padding_top { padding-top:.33em; }
+table.informaltable td.vertical_padding_bottom { padding-bottom:.33em; }
+
+.background_color_orange_15 { background-color:#FCECD4; } /*hsl(36, 87%, 91%)*/
+.background_color_orange_30 { background-color:#FCE1B8; } /*hsl(36, 92%, 85%)*/
+
+p.subtitle { 
+    margin-top:-2em; 
+    margin-bottom:2em; 
+    color:#8d1f41; 
+    font-size:medium; }
+
+p.question { 
+    margin-top:.67em; 
+    font-style:italic; 
+    text-align:right; }
+
+
+/*--- Design layout ---*/
+
+p.capterheading {
+    font-size:x-large;
+    color:green;
+    font-weight:bold;
+    margin-top:.75em; }
+    
+/* 
+p.subtitle + ul { margin-top:2em; }
+
+ul + h1.t1 { margin-top:2em; }
+
+div.capternumber {
+    float:left;
+    margin-right:.3em;
+    font-size:525%;
+    font-weight:700;
+    color:#A9D8A9; }
+    
+    -- float needs to be cleared after the element
+    
+div.exkurs {
+    padding:.5em 1em;
+    background-color:#E2FFE5; }
+
+div.exkurs div.box_standard *, 
+div.exkurs div.box_standard * 
+{ background-color:white; }
+
+*/
+
+
+/* --- Links --- */
+
+a {
+    color:inherit;
+    text-decoration:none; }
+
+span.crossreference > a {
+    color: #17365d;
+    text-decoration:underline; }
+
+a.footnote { text-decoration:underline; }
+
+
+/*--- Index ---*/
+
+a.indexanchor { visibility:hidden; }
+
+p.index1 {
+    font-size:medium;
+    margin:.67em 1.33em 0; }
+
+p.index2 {
+    font-style:italic;
+    margin:.35em 1.67em 0em 3em; }
+
+p.index3 {
+    font-style:italic;
+    margin:.35em 1.67em 0em 6em; }
+
+p.index2 > a, 
+p.index3 > a
+    { font-style:normal; }
+
+p.acronym {
+    border-bottom:medium solid #8d1f41;
+    margin-top:1em;
+    color:#8d1f41;
+    font-size:x-large; }
+
+
+/*--- Front Matter ---*/
+
+/* Imprint - imprint.html */
+
+div.imprint { text-align:left; }
+
+div.imprint h1.t1 { margin-top:.33em; }
+
+div.imprint p { margin-top:.5em; }
+
+
+/* Title page - title.html */
+
+p.author {
+    font-size:medium;
+    margin-top:1em; }
+
+h1.maintitle {
+    font-size:x-large;
+    margin-top:3em; }
+
+p.description {
+    font-weight:bold;
+    font-size:medium;
+    margin-top:.5em; }
+
+p.edition {
+    font-size:medium;
+    padding-top:1.5em; }
+
+div.img_container {
+    margin-top:10em;
+    text-align:right; }
+
+/* Notes */
+
+h1#bildschirm { padding-top:1.1em; } /* compensates for body padding, see in ADE */
+
+
+/* --- Back matter --- */
+
+/* About the author - about_the_author.html */
+
+#author { margin-top:.13em; }
+
+span.authorname {
+    color:#17365d;
+    font-weight:700; }
+
+img.authorimage { 
+    float:left; 
+    padding-right:.67em; }
+
+#author p:nth-child(1n+2) { 
+    clear:both; 
+    padding-top:.67em; }
+
+
+/*--- Misc ---*/
+
+/* Signatures */
+
+p.signatur, 
+p.signaturgross {
+    color:#666666;
+    font-weight:bold; }
+    
+p.signatur {
+    margin-top:3em;
+    text-align:center; }
+
+p.signaturgross {
+    margin-top:1em;
+    text-align:left; }
+
+/* Media */
+
+p.alternativetext {
+    font-size:85%;
+    color:gray;
+    border:1px solid gray;
+    padding:.75em; }
+
+/* Syntax-Highlighting */
+
+span.magenta    { color:#680753; }
+span.hellblau   { color:#0068b4; }
+span.dunkelblau { color:#004788; }
+span.violett    { color:#46237f; }
+span.gruen      { color:#006932; }
+span.orange     { color:#cf312f; }
+span.braun      { color:#953600; }
+span.gelbgruen  { color:#97913b; }
+span.mattrot    { color:#9b0b09; }
+span.schwarz    { color:black; }
+
+
+/* Farben Einsteiger 4c / Social Media 
+
+ * Farben:
+ * 
+ * dunkelblau:  0189CB
+ * hellblau:    CAD9F1
+ * gruen:       76BA57
+ * hellgruen:   DCEBD1
+ * gelb:        F2BC51
+ * gelb_ueberschriften: F2B800
+ * hellgelb:    FCEBCF
+ * violett:     835EA4
+ * hellviolett: D7CEE7
+ * rot:         E05D08
+ * hellrot:     F8D2B6
+ */
+
+/* kapitelfarbe_blau_dunkel */
+
+.kapitelfarbe_blau_dunkel h1.t1, 
+.kapitelfarbe_blau_dunkel h2.t2, 
+.kapitelfarbe_blau_dunkel h3.t3, 
+.kapitelfarbe_blau_dunkel h4.t4
+    { color:#0189CB; }
+
+.kapitelfarbe_blau_dunkel .box_standard, 
+.kapitelfarbe_blau_dunkel .box
+    { border-color:#0189CB; }
+
+.kapitelfarbe_blau_dunkel thead, 
+.kapitelfarbe_blau_dunkel .tablehead, 
+.kapitelfarbe_blau_dunkel .tablehead, 
+.kapitelfarbe_blau_dunkel tr.tablehead td.tablecell
+    { background-color:#0189CB; }
+
+.kapitelfarbe_blau_dunkel div.box_standard, 
+.kapitelfarbe_blau_dunkel table td 
+    { background-color:#CAD9F1; }
+
+.kapitelfarbe_blau_dunkel table tr.light td 
+    { background-color:#E4EBF7; }
+
+.kapitelfarbe_blau_dunkel table tr.light td.tablehead 
+    { background-color:#0189CB; }
+
+/* kapitelfarbe_gruen_dunkel */
+
+.kapitelfarbe_gruen_dunkel h1.t1, 
+.kapitelfarbe_gruen_dunkel h2.t2, 
+.kapitelfarbe_gruen_dunkel h3.t3, 
+.kapitelfarbe_gruen_dunkel h4.t4
+    { color:#76BA57; }
+
+.kapitelfarbe_gruen_dunkel .box_standard, 
+.kapitelfarbe_gruen_dunkel .box
+    { border-color:#76BA57; }
+
+.kapitelfarbe_gruen_dunkel thead, 
+.kapitelfarbe_gruen_dunkel .tablehead, 
+.kapitelfarbe_gruen_dunkel .tablehead, 
+.kapitelfarbe_gruen_dunkel tr.tablehead td.tablecell
+    { background-color:#76BA57; }
+
+.kapitelfarbe_gruen_dunkel div.box_standard, 
+.kapitelfarbe_gruen_dunkel table td 
+    { background-color:#DCEBD1; }
+
+.kapitelfarbe_gruen_dunkel table tr.light td 
+    { background-color:#EDF4E7; }
+
+.kapitelfarbe_gruen_dunkel table tr.light td.tablehead 
+    { background-color:#76BA57; }
+
+/* kapitelfarbe_gelb_dunkel */
+
+.kapitelfarbe_gelb_dunkel h1.t1, 
+.kapitelfarbe_gelb_dunkel h2.t2, 
+.kapitelfarbe_gelb_dunkel h3.t3, 
+.kapitelfarbe_gelb_dunkel h4.t4
+    { color:#F2B800; }
+
+.kapitelfarbe_gelb_dunkel .box_standard, 
+.kapitelfarbe_gelb_dunkel .box
+    { border-color:#F2B800; }
+
+.kapitelfarbe_gelb_dunkel thead, 
+.kapitelfarbe_gelb_dunkel .tablehead, 
+.kapitelfarbe_gelb_dunkel .tablehead, 
+.kapitelfarbe_gelb_dunkel tr.tablehead td.tablecell
+    { background-color:#F2B800; }
+
+.kapitelfarbe_gelb_dunkel div.box_standard, 
+.kapitelfarbe_gelb_dunkel table td 
+    { background-color:#FCEBCF;}
+
+.kapitelfarbe_gelb_dunkel table tr.light td 
+    { background-color:#FDF4E6; }
+
+.kapitelfarbe_gelb_dunkel table tr.light td.tablehead 
+    { background-color:#F2B800; }
+
+/* kapitelfarbe_violett_dunkel */
+
+.kapitelfarbe_violett_dunkel h1.t1, 
+.kapitelfarbe_violett_dunkel h2.t2, 
+.kapitelfarbe_violett_dunkel h3.t3, 
+.kapitelfarbe_violett_dunkel h4.t4
+    { color:#835EA4; }
+
+.kapitelfarbe_violett_dunkel .box_standard, 
+.kapitelfarbe_violett_dunkel .box
+    { border-color:#835EA4; }
+
+.kapitelfarbe_violett_dunkel thead, 
+.kapitelfarbe_violett_dunkel .tablehead, 
+.kapitelfarbe_violett_dunkel .tablehead, 
+.kapitelfarbe_violett_dunkel tr.tablehead td.tablecell
+    { background-color:#835EA4; }
+
+.kapitelfarbe_violett_dunkel div.box_standard, 
+.kapitelfarbe_violett_dunkel table td 
+    { background-color:#D7CEE7; }
+
+.kapitelfarbe_violett_dunkel table tr.light td 
+    { background-color:#EAE6F2; }
+
+.kapitelfarbe_violett_dunkel table tr.light td.tablehead 
+    { background-color:#835EA4; } 
+
+/* kapitelfarbe_rot_dunkel */
+
+.kapitelfarbe_rot_dunkel h1.t1, 
+.kapitelfarbe_rot_dunkel h2.t2, 
+.kapitelfarbe_rot_dunkel h3.t3, 
+.kapitelfarbe_rot_dunkel h4.t4
+    { color:#E05D08; }
+
+.kapitelfarbe_rot_dunkel .box_standard, 
+.kapitelfarbe_rot_dunkel .box
+    { border-color:#E05D08; }
+
+.kapitelfarbe_rot_dunkel thead, 
+.kapitelfarbe_rot_dunkel .tablehead, 
+.kapitelfarbe_rot_dunkel .tablehead, 
+.kapitelfarbe_rot_dunkel tr.tablehead td.tablecell 
+    { background-color:#E05D08; }
+
+.kapitelfarbe_rot_dunkel div.box_standard, 
+.kapitelfarbe_rot_dunkel table td
+    { background-color:#F8D2B6; }
+
+.kapitelfarbe_rot_dunkel table tr.light td 
+    { background-color:#FBE8DA; }
+
+.kapitelfarbe_rot_dunkel table tr.light td.tablehead 
+    { background-color:#FBE8DA; }

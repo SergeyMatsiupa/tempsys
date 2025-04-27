@@ -1,0 +1,762 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Content Management mit Magento" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Content Management mit Magento" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Content Management mit Magento</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u11.4">11.4    Seiten<a class="indexanchor" id="i11_26"/> verwalten und gestalten</h2>
+        <p class="standard">Variablen, Widgets und Blöcke sind, seien wir an dieser Stelle mal ganz ehrlich, »nice to have«. Auch wenn Ihnen diese Content-Typen definitiv Vorteile verschaffen, so müssen Sie diese nicht nutzen. Bei den Seiten handelt es sich hingegen um eine Content-Art, um die Sie nicht herumkommen und die Sie nutzen müssen, da Sie verpflichtet sind, Ihren Kunden Inhalte wie ein Impressum, eine Datenschutzerklärung sowie AGB darzustellen. Dementsprechend führt um die Seiten kein Weg herum, was aber auch nicht tragisch ist. Denn Magento hat mit den Seiten ein recht einfaches, aber praktikables Content-Management-System geschaffen, mit dem Sie schnell klarkommen werden und das Ihnen alle benötigten Funktionen zur Verfügung stellt. Details hierzu folgen, Sie werden dies sicherlich bereits vermuten, im folgenden Abschnitt.</p>
+        
+            <h3 class="t3" id="u11.4.1">11.4.1    Eine neue Seite anlegen<a class="indexanchor" id="i11_27"/></h3>
+            <p class="standard">Der Ausgangspunkt, um eine neue Seite zu erstellen, ist das Backend. Melden Sie sich daher im Backend an, und klicken Sie anschließend auf <span class="screenelement smallcaps">Inhalt</span> • <span class="screenelement smallcaps">Elemente</span> • <span class="screenelement smallcaps">Seiten</span>. Sie gelangen zur Übersicht aller im System bereits angelegten Elemente, und im Gegensatz zu den Blöcken oder auch Widgets, enthält die in der Ansicht vorhandene Tabelle bereits Elemente. Nach der Installation legt Magento insgesamt vier Seiten an, die für die Systemstabilität notwendig sind. Hierzu zählen die Startseite, eine 404-Fehlerseite, eine Seite mit Informationen, falls Cookies deaktiviert sind, sowie eine Inhaltsseite mit Informationen zu Cookies und dem Datenschutz. Letztere Seite ist tatsächlich nicht überlebensnotwendig, die Startseite und die 404-Fehlerseite benötigt Magento jedoch, um korrekt zu funktionieren. Lassen Sie sich an dieser Stelle aber nicht von den bereits vorhandenen Seiten irritieren, und klicken Sie stattdessen auf den Button <span class="screenelement smallcaps">Neue Seite hinzufügen</span>. Magento leitet Sie daraufhin zu einer neuen Ansicht, in der Sie die Informationen für die zu erstellende Seite hinterlegen können.</p>
+            <p class="standard">Lassen Sie uns, wie zuvor bereits auch, ein konkretes Beispiel bei der Anlage der Seite heranziehen. Wie jeder andere Online-Shop werden Sie ein Impressum benötigen. Daher ist das Impressum das perfekte Beispiel, wenn es um die Erstellung einer neuen Seite geht, da Sie das Impressum in jedem Fall benötigen.</p>
+            <p class="standard">Ähnlich wie bei einem Block müssen Sie Magento zuerst mitteilen, ob Sie den Datensatz, in diesem Fall die Seite, aktivieren bzw. deaktivieren möchten. Ist eine Seite deaktiviert, kann diese nicht aufgerufen werden. Magento gibt in diesem Fall eine Fehlermeldung zurück. Lassen Sie daher die Option <span class="screenelement smallcaps">Enable Page</span> auf dem Standardwert stehen, da die Seite im Standard immer als aktiv angelegt wird. Im nächsten Feld namens <span class="screenelement smallcaps">Seitentitel</span> definieren Sie den Namen der Seite. Im Prinzip wird der Name nur an sehr wenigen Stellen verwendet, primär dient er zur Orientierung innerhalb des Backends, sodass Sie im Backend in der Übersicht der Seiten sehen, welche Seite welchen Inhalt beinhaltet. Es kann jedoch auch sein, dass der Seitentitel im Frontend ausgegeben wird. Dies ist beispielsweise bei Widgets der Fall, mit denen Sie auf Seiten verlinken können. Geben Sie im Widget keinen speziellen Link-Text an – Sie erinnern sich gegebenenfalls an unser vorheriges Beispiel –, zieht Magento den Seitenteil heran. Achten Sie daher darauf, keine kryptischen Werte zu hinterlegen. In diesem Beispiel wähle ich als Seitentitel ganz unspektakulär die Bezeichnung »Impressum«. Sofern Sie den Seitentitel hinterlegt haben, scrollen Sie bitte zum nächsten Abschnitt namens <span class="screenelement smallcaps">Inhalt</span>.</p>
+            <p class="standard">Der Inhalt einer Seite wird durch insgesamt zwei Eingabefelder beeinflusst. Zuallererst definieren Sie eine Überschrift, wofür Ihnen das Feld <span class="screenelement smallcaps">Inhaltsüberschrift</span> zur Verfügung steht. Als Überschrift wähle ich an dieser Stelle ebenfalls das Wort »Impressum«. Die im Frontend dargestellte Überschrift kann sich aber natürlich auch vom Seitentitel unterscheiden, d. h., Sie müssen nicht in beiden Fällen den identischen Wert hinterlegen. Neben der Überschrift, das ist an sich das interessante Feld, können Sie den gesamten Seiteninhalt mittels WYSIWYG-Editor hinterlegen. Sie sehen diesen in <span class="crossreference "><a href="11_004.html#b11.19">Abbildung 11.19</a></span> mit dem von mir beigefügten Dummy-Content.</p>
+            <div class="imagebox "><a href="img-b11.19.html" id="b11.19"><img alt="Mit dem WYSIWYG-Editor können Sie die gesamte Seite grafisch gestalten." id="img-b11.19" src="bilderklein/kleinabbildung-11-19.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.19</b>    Mit dem WYSIWYG-Editor können Sie die gesamte Seite grafisch gestalten.</p>
+            <p class="standard">Den WYSIWYG-Editor kennen Sie ja bereits aus den vorherigen Beispielen. Auch an dieser Stelle haben Sie die Möglichkeit, den Text grafisch zu formatieren, Tabellen einzufügen und sich, bezogen auf den Inhalt, komplett auszutoben. Ich habe nun schlicht und einfach ein beispielhaftes Impressum eingefügt. Sie können an dieser Stelle, sollten Sie noch kein Impressum erstellt haben, gern auf Services wie <span class="url"><a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a></span> zurückgreifen und sich ein Impressum erstellen lassen. Anschließend erhalten Sie einen Text, den Sie mit dem WYSIWYG-Editor einfügen können.</p>
+            <p class="standard">Scrollen Sie danach zum nächsten Abschnitt namens <span class="screenelement smallcaps">Search Engine Optimisation</span>,<a class="indexanchor" id="i11_28"/> und öffnen Sie diesen durch einen Klick auf den Namen bzw. die Zeile, falls der Abschnitt geschlossen sein sollte. Wie auch bei Produkten und Kategorien können Sie bei einer Seite den <span class="screenelement smallcaps">URL-Schlüssel</span> definieren. Der URL-Schlüssel ist die Bezeichnung, die nach der Domain folgt und die URL bildet. Vergeben Sie an dieser Stelle keinen URL-Schlüssel, nimmt Magento einfach den Seitentitel. In diesem Fall, der Seitentitel lautet Impressum, würde die URL ohne Eingreifen <span class="italic">http://www.foodbaer.de/impressum</span> lauten. Da ich in meinem System jedoch englische URLs bevorzuge, was an dieser Stelle aber nur zur Verdeutlichung der Funktionen dient, hinterlege ich beim URL-Schlüssel den Wert »imprint«. Die nächsten drei Eingabefelder ermöglichen Ihnen die Definition der Metainformationen. Neben dem Meta-Title, der übrigens auch in der Browserleiste angezeigt wird, können Sie die Meta-Keywords und Meta-Description hinterlegen. Über Metainformationen hatte ich Sie in den vergangenen Kapiteln bereits aufgeklärt, letztendlich sollten Sie an dieser Stelle halbwegs sinnvolle Werte hinterlegen, damit Sie später von Google so gut wie möglich gefunden werden. In diesem Szenario, speziell auf Ihrem lokalen Magento-System, spielen Metainformationen nur eine untergeordnete Rolle, weswegen Sie diese an dieser Stelle gern überspringen können.</p>
+            <p class="standard">Im nächsten Abschnitt mit dem Namen <span class="screenelement smallcaps">Page in Websites</span> haben Sie die Möglichkeit, die Seite einem oder mehreren Store Views zuzuweisen. Dieses Feature spielt wiederum nur eine Rolle, wenn Sie die Multistore-Fähigkeit von Magento nutzen. Eine Seite kann nur dann innerhalb eines Store Views, also einer Sprachversion, aufgerufen werden, wenn diese dem Store View zugewiesen wurde. Haben Sie also beispielsweise drei Store Views – Englisch, Deutsch, Französisch – und weisen das Impressum nur dem englischen Store View zu, so kann der Nutzer im Frontend, befindet er sich im deutschen Store View, das Impressum nicht aufrufen. Sie werden das aber in <span class="crossreference "><a href="17_001.html#u17">Kapitel 17</a></span>, »<span class="crossreference ">Magento-Multistore-Funktionalität konfigurieren und nutzen</span>«, noch im Detail sehen. Wählen Sie an dieser Stelle einfach die Option <span class="screenelement smallcaps">Alle Store Views</span> aus.</p>
+            <p class="standard">Im nächsten Abschnitt <span class="screenelement smallcaps">Design</span> haben Sie weitere Möglichkeiten, das Aussehen der Seite zu verändern. Ein Augenmerk sollten Sie an dieser Stelle auf das Dropdown-Menü <span class="screenelement smallcaps">Layout</span><a class="indexanchor" id="i11_29"/> legen. Oftmals haben Online-Shops ein zweispaltiges Design, da sich linkerhand eine Navigationsleiste, in der Regel mit den Kategorien befindet und rechterhand die Produkte dargestellt werden. Auf der Startseite oder in Inhaltsseiten möchte man aber aus diesem Raster ausbrechen, da Sie ja keine Kategorie Navigation im Impressum brauchen. Mittels des Layout-Dropdowns haben Sie nun die Möglichkeit das Layout auszuwählen, wobei Ihnen die folgenden Optionen zur Verfügung stehen:</p>
+            <ul>
+                <li>
+                    Empty
+                </li>
+                <li>
+                    1 column
+                </li>
+                <li>
+                    2 columns with left bar
+                </li>
+                <li>
+                    2 columns with right bar
+                </li>
+                <li>
+                    3 columns
+                </li>
+            </ul>
+            <p class="standard">Wählen Sie die erste Option, schneidet Magento sowohl Header als auch Footer ab. Daher passt der Name <span class="screenelement smallcaps">empty</span> recht gut auf diese Layout-Option, die Sie in der Praxis eigentlich nie wählen. Die restlichen Layout-Optionen sind recht selbsterklärend, im Prinzip bestimmen sie die Anzahl der Spalten und dadurch die Breite des Inhaltbereichs. Wählen Sie an dieser Stelle die Option <span class="screenelement smallcaps">1 column</span>, da ich weder auf der rechten noch auf der linken Seite eine Leiste mit Inhalten haben möchte. Weiterführende Anpassungen können Sie zudem über die Box <span class="screenelement smallcaps">Layout XML aktualisieren</span><a class="indexanchor" id="i11_30"/> vornehmen, wobei Sie an der Stelle direkt mit XML-Anweisungen arbeiten müssen und dafür schon ein solides Magento-Frontend-Developer-Wissen benötigen. Aus diesem Grund möchte ich Ihnen an dieser Stelle diese Komplexität ersparen, behalten Sie nur im Hinterkopf, dass jede Seite mittels XML-Anweisungen komplett individuell angepasst und erweitert werden kann.</p>
+            <p class="standard">Scrollen Sie jetzt bitte zum letzten Abschnitt, dort können Sie zeitlich gesteuerte Layout- und Design-Anpassungen vornehmen.</p>
+            <div class="imagebox "><a href="img-b11.20.html" id="b11.20"><img alt="Durch die Angabe eines Start- und Enddatums lassen sich Änderungen am Theme und Layout zeitlich terminieren." id="img-b11.20" src="bilderklein/kleinabbildung-11-20.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.20</b>    Durch die Angabe eines Start- und Enddatums lassen sich Änderungen am Theme und Layout zeitlich terminieren.</p>
+            <p class="standard">Wie Sie in <span class="crossreference "><a href="11_004.html#b11.20">Abbildung 11.20</a></span> sehen, lassen sich sowohl das Theme, sprich das eigentliche Design, als auch das Layout zeitlich überschreiben. Durch die Festlegung eines Zeitraums in den Feldern <span class="screenelement smallcaps">Von</span> und <span class="screenelement smallcaps">Bis</span> wird ein Zeitraum festgelegt und die Änderungen werden automatisch angewendet. Läuft der Zeitraum ab, wechselt Magento wieder auf die Grundeinstellungen zurück und alle Anpassungen werden automatisiert zurückgenommen. Die Auswahl im Dropdown-Feld <span class="screenelement smallcaps">Neues Theme</span> zeigt die von Ihnen installierten Themes. Beim Startdatum sowie Enddatum können Sie, wie gewohnt, das Datum mittels Date Picker auswählen, die Angabe einer bestimmten Uhrzeit ist jedoch nicht möglich. Abschließend stehen Ihnen die bereits bekannten Layouts zur Verfügung. Änderungen im Abschnitt <span class="screenelement smallcaps">Custom Design Update</span><a class="indexanchor" id="i11_31"/> müssen Sie nicht vornehmen, da für dieses konkrete Beispiel eine zeitliche Überschreibung des Layouts bzw. der Themes nicht notwendig ist.</p>
+            <p class="standard">Nachdem Sie alle Inhalte hinterlegt haben, klicken Sie bitte auf den Button <span class="screenelement smallcaps">speichern,</span> und rufen Sie die soeben angelegte Seite im Frontend auf. Da die Seite nicht verlinkt ist, müssen Sie die URL manuell eingeben. Letztendlich genügt ein Aufruf der Startseite, an diese URL fügen Sie anschließend den <span class="screenelement smallcaps">URL-Schlüssel</span> an, wodurch in meinem Fall die korrekte URL <span class="italic">http://www.foodbaer.de/imprint</span> lautet. Magento zeigt mir, wenn ich diese URL aufrufe, Sie sehen das in <span class="crossreference "><a href="11_004.html#b11.21">Abbildung 11.21</a></span>, anschließend ein wunderschön gestaltetes Impressum an.</p>
+            <div class="imagebox "><a href="img-b11.21.html" id="b11.21"><img alt="Nachdem Sie die Seite im Backend angelegt haben, können Sie mit dem URL-Schlüssel die Seite auch im Frontend aufrufen." id="img-b11.21" src="bilderklein/kleinabbildung-11-21.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.21</b>    Nachdem Sie die Seite im Backend angelegt haben, können Sie mit dem URL-Schlüssel die Seite auch im Frontend aufrufen.</p>
+            <p class="standard">Wie Sie sehen, ist die Erstellung und Veröffentlichung einer Seite kein Hexenwerk. Sobald Sie einen Titel und Inhalt hinterlegt haben, steht die Seite nach dem Speichervorgang im Frontend zur Verfügung. Weitere Einstellungen und Anpassungen müssen Sie nicht mehr vornehmen.</p>
+        
+        
+            <h3 class="t3" id="u11.4.2">11.4.2    Vorhandene Seiten verwalten</h3>
+            <p class="standard">Bestehende und bereits veröffentlichte Seiten lassen sich innerhalb des Magento-Backends problemlos abändern. Öffnen Sie hierzu den Menüpunkt <span class="screenelement smallcaps">Inhalt</span> • <span class="screenelement smallcaps">Elemente</span> • <span class="screenelement smallcaps">Seiten</span>. Daraufhin zeigt Ihnen Magento in Form einer Tabelle alle im System vorhandenen Seiten an. Wählen Sie anschließend eine bestimmte Seite aus, gelangen Sie zur Detailansicht. Die Detailansicht entspricht der Maske, in der Sie eine neue Seite anlegen. Beim Editieren einer bestehenden Seite können Sie zudem alle hinterlegten Informationen abändern. Im Gegensatz zu den Widgets bestehen keine Limitierungen, welche die Neuanlage einer Seite erfordern würden. Wenn Sie eine Seite bearbeiten, können Sie die Seite zudem komplett löschen. Dazu dient der Button, den Sie in der oberen Bildschirmhälfte sehen.</p>
+            <p class="standard">Das Bearbeiten einer bestehenden Seite ist recht intuitiv, daher sollten Sie hierbei keine Probleme haben. Weitere Funktionen innerhalb der Seiten stehen an dieser Stelle übrigens nicht zur Verfügung. Die Magento Enterprise Edition erweitert speziell den Bereich <span class="italic">Seiten</span> recht stark. Dadurch haben Sie Möglichkeit, die Seiten zu strukturieren und ganze Navigationsbäume zu erstellen. Da es sich hierbei jedoch um ein Feature der Enterprise Edition handelt, müssten Sie diese erst lizenzieren, um diese Funktion nutzen zu können.</p>
+        
+        
+            <h3 class="t3" id="u11.4.3">11.4.3    Der WYSIWYG-Editor<a class="indexanchor" id="i11_32"/> im Detail erklärt</h3>
+            <p class="standard">Ihnen ist bereits an vielen Stellen der WYSIWYG-Editor begegnet, und an sich ist der Editor recht intuitiv zu handhaben. Jedoch bietet der WYSIWYG-Editor so viele Funktionen und Möglichkeiten, dass Sie die eine oder interessante Funktion sicherlich übersehen werden. Damit dies nicht passiert, möchte ich Ihnen im Schnelldurchgang die verschiedenen Buttons und Funktionen vorstellen. Als Basis dient die Funktionsleiste des WYSIWYG-Editors in <span class="crossreference "><a href="11_004.html#b11.22">Abbildung 11.22</a></span>.</p>
+            <div class="imagebox "><a href="img-b11.22.html" id="b11.22"><img alt="Der in Magento integrierte grafische Editor bietet vielfältige Funktionen." id="img-b11.22" src="bilderklein/kleinabbildung-11-22.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.22</b>    Der in Magento integrierte grafische Editor bietet vielfältige Funktionen.</p>
+            <p class="standard">Lassen Sie mich in der ersten Zeile bei dem ersten Icon anfangen und von links nach rechts durchgehen.</p>
+            
+                <h4 class="t4" id="u11.4.3.1">Zeile 1</h4>
+                <table class="standardtable" id="t_ohne_11_00">
+                    <thead>
+                        <tr class="">
+                            <th class="tablehead tablecell_first top_border_cell">
+                                Icon
+                            </th>
+                            <th class="tablehead tablecell_last top_border_cell">
+                                Funktion
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="tablecell tablecell_first top_border_cell">
+                                Insert Variable<a class="indexanchor" id="i11_33"/>
+                            </td>
+                            <td class="tablecell tablecell_last top_border_cell">
+                                Erlaubt Ihnen das Hinzufügen einer Variable mittels grafischer Oberfläche. Alternativ hierzu können Sie aber auch direkt eine Variable mittels Quellcode eingeben, am Ergebnis wird dies nichts verändern.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert Widget<a class="indexanchor" id="i11_34"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Diese Funktion haben Sie ebenfalls bereits kennengelernt. Über diesen Button können Sie ein Widget hinzufügen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Bold<a class="indexanchor" id="i11_35"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert den eingegebenen Text fett. Sie können hierfür zudem die Tastenkombination <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(B)</span> drücken.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Italic<a class="indexanchor" id="i11_36"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert den eingegebenen Text kursiv. Sie können hierfür zudem die Tastenkombination <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(I)</span> drücken.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Underline<a class="indexanchor" id="i11_37"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Unterstreicht den eingegebenen Text. Als Tastenkombination steht <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(U)</span> zur Verfügung.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Strikethrough<a class="indexanchor" id="i11_38"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Streicht den eingegebenen Text durch.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Align Left<a class="indexanchor" id="i11_39"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Positioniert den Inhalt (Text oder Bild), linksbündig.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Align Center<a class="indexanchor" id="i11_40"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Positioniert den Inhalt mittig.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Align Right<a class="indexanchor" id="i11_41"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Positioniert den Inhalt rechtsbündig.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Align Full<a class="indexanchor" id="i11_42"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Stellt den Text als Blocksatz dar.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Styles<a class="indexanchor" id="i11_43"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Ermöglicht die Auswahl einer Formatierung, sofern diese im Vorfeld hinterlegt wird. Kann im Standard nicht ausgewählt werden.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Paragraph<a class="indexanchor" id="i11_44"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                An dieser Stelle können Sie bestimmten Formatierungen auswählen, beispielsweise Überschriften wie H1 bis H6 oder einen Paragraphen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Font Family<a class="indexanchor" id="i11_45"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Ermöglicht die Auswahl einer Schriftart.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Font Size<a class="indexanchor" id="i11_46"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                An dieser Stelle können Sie eine Schriftgröße für den ausgewählten Text auswählen.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="standard">Wie Sie anhand der aufgezählten Optionen sehen, beinhaltet die erste Reihe vor allem Funktionen, die einen Text formatieren oder positionieren. Dabei handelt es sich jedoch um Klassiker, die Sie aus Programmen wie Microsoft Word oder Open Office kennen werden. Werfen Sie nun bitte einen Blick auf die zweite Reihe, welche die folgenden Optionen enthält.</p>
+            
+            
+                <h4 class="t4" id="u11.4.3.2">Zeile 2</h4>
+                <table class="standardtable" id="t_ohne_11_01">
+                    <thead>
+                        <tr class="">
+                            <th class="tablehead tablecell_first top_border_cell">
+                                Icon
+                            </th>
+                            <th class="tablehead tablecell_last top_border_cell">
+                                Funktion
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="tablecell tablecell_first top_border_cell">
+                                Cut<a class="indexanchor" id="i11_47"/>
+                            </td>
+                            <td class="tablecell tablecell_last top_border_cell">
+                                Erlaubt das Ausschneiden eines markierten Elements, beispielsweise eines Textes. Wie unter Windows steht hierfür ebenfalls mit <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(X)</span> ein Shortcut zur Verfügung.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Copy<a class="indexanchor" id="i11_48"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Drücken Sie auf diesen Knopf, können Sie ein markiertes Element kopieren (alternativ: <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(C)</span>).
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Paste<a class="indexanchor" id="i11_49"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Sollten Sie etwas in der Zwischenablage gespeichert haben, fügen Sie es mit diesem Button wieder ein (alternativ: <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(V)</span>)
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Paste as plain text<a class="indexanchor" id="i11_50"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Haben Sie einen Text samt Formatierungen in der Zwischenablage, können Sie mit diesem Button tatsächlich nur den eigentlichen Text in den WYSIWYG-Editor einfügen. Formatierungen gehen dabei verloren.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Paste from Word<a class="indexanchor" id="i11_51"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Kopieren Sie in Word einen Text und fügen diesen anschließend in Magento ein, so werden sehr viele Formatierungen übernommen und eingefügt, die Ihnen die Darstellung im Frontend zerstören können. Hierbei geht es in erster Linie nicht um einen fett hervorgehobenen Text oder ein farbiges Wort, sondern um übermittelte Layout-Informationen.
+                                <div class="imagebox "><a href="img-b11.23.html" id="b11.23"><img alt="Magento kann alle durch Word übermittelten Formatierungen entfernen." id="img-b11.23" src="bilderklein/kleinabbildung-11-23.png"/></a></div>
+        
+    
+                                <p class="caption "><b>Abbildung 11.23</b>    Magento kann alle durch Word übermittelten Formatierungen entfernen.</p>
+                                Daher sollten Sie, wenn Sie einen Text aus Word einfügen möchten, immer diesen Button verwenden und den Text zuerst in die Textbox, die Sie in <span class="crossreference "><a href="11_004.html#b11.23">Abbildung 11.23</a></span> sehen, einfügen. Magento wird daraufhin alle Word-Formatierungen, die nicht den eigentlichen Text betreffen, entfernen, sodass tatsächlich nur der Text eingefügt wird.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Find<a class="indexanchor" id="i11_52"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erweiterte Suchfunktion, mit deren Hilfe Sie den Inhalt des WYSIWYG-Editors durchsuchen können.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Find/Replace<a class="indexanchor" id="i11_53"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Mit dieser Funktion können Sie nach beliebigen Wörtern bzw. einem ganzen Text suchen und diesen automatisch durch andere Inhalte ersetzen. Die Funktion kennen Sie sicherlich aus anderen Programmen wie Microsoft Word oder von Texteditoren wie Notepad++.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert/Remove Bulleted List<a class="indexanchor" id="i11_54"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erlaubt das Einfügen einer nicht nummerierten Liste.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert/Remove Numbered List<a class="indexanchor" id="i11_55"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt eine nummerierte Liste ein.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Decrease Indent<a class="indexanchor" id="i11_56"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Verkleinert den Zeileneinzug. Das heißt, falls ein Zeileneinzug vorhanden ist, werden Texte oder Grafiken nach links geschoben.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Increase Indent<a class="indexanchor" id="i11_57"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erhöht den Zeileneinzug, wodurch Texte oder Grafiken nach rechts geschoben werden.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Block-Quote<a class="indexanchor" id="i11_58"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert den ausgewählten Text als Zitat.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Undo<a class="indexanchor" id="i11_59"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Macht eine Änderung rückgängig. Als Tastenkombination können Sie alternativ <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(Z)</span> verwenden.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Redo<a class="indexanchor" id="i11_60"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Nimmt die rückgängig gemachte Änderung zurück. Als Tastenkombination können Sie alternativ <span class="keyboard">(Ctrl)</span> + <span class="keyboard">(Y)</span> verwenden.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert/Edit Link<a class="indexanchor" id="i11_61"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Das Icon wird nur dann aktiv, wenn Sie im Editor einen Textabschnitt oder ein Bild markiert haben. Mit einem Klick können Sie das markierte Element verlinken. Magento öffnet dazu ein neues Fenster, in dem Sie die Ziel-URL hinterlegen können. Sie haben dabei die Wahl, ob sich die verlinkte Seite in einem neuen Fenster oder im aktuellen Fenster öffnet.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Unlink<a class="indexanchor" id="i11_62"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Löscht die Verlinkung markierter Inhalte.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert/Edit Anchor<a class="indexanchor" id="i11_63"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erlaubt das Einfügen eines Anchor-Tags. Einen Anchor-Tag benötigen Sie immer dann, wenn Sie innerhalb einer in der Regel recht langen Seite verschiedene Abschnitte verlinken möchten. Diese zu verlinkenden Abschnitte müssen zuerst mit einem solchen Anchor-Tag gekennzeichnet werden.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert/Edit Image<a class="indexanchor" id="i11_64"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Neben dem reinen Text können Sie in die Seite natürlich auch Grafiken einfügen. Soweit ist dies an dieser Stelle unspektakulär, denn wenn Sie auf dieses Icon klicken, öffnet sich ein neues Fenster, und Sie können den Link zum Bild hinterlegen, einen Alt-Tag definieren etc. An dieser Stelle können Sie letztendlich alles einstellen, was bei einem Bild relevant sein könnte. Interessant ist an dieser Stelle jedoch der Button neben der Image-URL. Wenn Sie auf diesen klicken, öffnet sich ein weiteres Fenster wie in <span class="crossreference "><a href="11_004.html#b11.24">Abbildung 11.24</a></span>.
+                                <div class="imagebox "><a href="img-b11.24.html" id="b11.24"><img alt="Magento besitzt eine vollständige Grafikverwaltung. Sie können mithilfe von Unterordnern alle Uploads strukturieren." id="img-b11.24" src="bilderklein/kleinabbildung-11-24.png"/></a></div>
+        
+    
+                                <p class="caption "><b>Abbildung 11.24</b>    Magento besitzt eine vollständige Grafikverwaltung. Sie können mithilfe von Unterordnern alle Uploads strukturieren.</p>
+                                Sie landen nämlich im Magento-Medienspeicher. Magento erlaubt Ihnen die Strukturierung und den Upload von Grafiken mithilfe genau dieses Medienspeichers. Sie können Ordner und Unterordner anlegen, in diese Verzeichnisse beliebig viele Dateien hochladen und anschließend, wenn Sie eine Grafik in den Inhalt einfügen möchten, genau auf diesen Medienspeicher zugreifen. Das ist praktisch, da Sie nicht parallel mit einem FTP-Client Bilder und Grafiken hochladen müssen, sondern dies bequem über diese Oberfläche erledigen können. Die Funktion nimmt Ihnen also viel Arbeit ab und optimiert und den gesamten Grafik-Management-Prozess.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Clean up Messy Code<a class="indexanchor" id="i11_65"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Korrigiert fehlerhafte bzw. unvollständige HTML-Codes, die sich gegebenenfalls durch Copy &amp; Paste eingeschlichen haben.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Help<a class="indexanchor" id="i11_66"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Öffnet ein »Über Uns«-Fenster der Entwickler des WYSIWG-Editors. Für Sie dürfte dieser Button keinen wirklichen Nutzen haben.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Edit HTML Source<a class="indexanchor" id="i11_67"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Wenn Sie direkt in den HTML-Code eingreifen und diesen bearbeiten möchten, können Sie entweder den gesamten WYSIWYG-Editor deaktivieren oder auf diesen Button drücken. Anschließend öffnet sich, wie Sie in <span class="crossreference "><a href="11_004.html#b11.25">Abbildung 11.25</a></span> sehen, ein neues Fenster samt Quellcode des Inhalts. Den Quellcode können Sie an dieser Stelle direkt editieren und abspeichern.
+                                <div class="imagebox "><a href="img-b11.25.html" id="b11.25"><img alt="Alternativ zur grafischen Eingabe können Sie Ihren Wunschinhalt auch direkt als HTML-Code hinterlegen." id="img-b11.25" src="bilderklein/kleinabbildung-11-25.png"/></a></div>
+        
+    
+                                <p class="caption "><b>Abbildung 11.25</b>    Alternativ zur grafischen Eingabe können Sie Ihren Wunschinhalt auch direkt als HTML-Code hinterlegen.</p>
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Select Text Color<a class="indexanchor" id="i11_68"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Ermöglicht Ihnen die Auswahl der Textfarbe. Neben vordefinierten Farben können Sie mithilfe eines Pickers bzw. einer Palette einen beliebigen Farbcode auswählen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Select Background Color<a class="indexanchor" id="i11_69"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Ermöglicht Ihnen die Auswahl der Hintergrundfarbe eines Texts.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="standard">Mit dieser letzten Farbauswahl haben Sie auch die zweite Reihe samt allen Funktionen einmal im Detail gesehen. Eine ganz klare Fokussierung gibt es nicht, primär sind jedoch Funktionen erhalten, die das Einfügen von Inhalten bzw. Grafiken ermöglichen. Zudem verstecken sich weitere Formatierungsmöglichkeiten sowie die Listenfunktionen in der zweiten Zeile. Werfen Sie nun einen Blick auf die nächste Zeile.</p>
+            
+            
+                <h4 class="t4" id="u11.4.3.3">Zeile 3</h4>
+                <table class="standardtable" id="t_ohne_11_02">
+                    <thead>
+                        <tr class="">
+                            <th class="tablehead tablecell_first top_border_cell">
+                                Icon
+                            </th>
+                            <th class="tablehead tablecell_last top_border_cell">
+                                Funktion
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="tablecell tablecell_first top_border_cell">
+                                Insert/Edit Table<a class="indexanchor" id="i11_70"/>
+                            </td>
+                            <td class="tablecell tablecell_last top_border_cell">
+                                Um einen Text zu strukturieren und beispielsweise zweispaltig darzustellen, können Sie Tabellen verwenden. Aber auch für die klassische Abbildung einer Tabelle steht diese Funktion zur Verfügung. Wenn Sie auf diesen Button klicken, öffnet sich ein neues Fenster, in dem Sie Spalten, Zeilen, Abstände, Farben etc. definieren können.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Table Row Properties<a class="indexanchor" id="i11_71"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erlaubt, sofern eine Tabelle vorliegt, die Änderung einer Zeile. Beispielsweise könnten Sie eine Hintergrundfarbe hinterlegen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Table Cell Properties<a class="indexanchor" id="i11_72"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Mithilfe dieser Funktion können Sie die Eigenschaften einer Zelle editieren. Voraussetzung hierfür ist eine bereits vorhandene Tabelle.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert Row Before<a class="indexanchor" id="i11_73"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt eine neue Zeile über der markierten ein.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert Row After<a class="indexanchor" id="i11_74"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt eine neue Zeile unter der markierten ein.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Delete Row<a class="indexanchor" id="i11_75"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Löscht eine markierte Zeile.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert Column Before<a class="indexanchor" id="i11_76"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt eine neue Spalte vor der markierten ein.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert Column After<a class="indexanchor" id="i11_77"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt eine neue Spalte nach der markierten ein.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Delete Column<a class="indexanchor" id="i11_78"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Löscht eine markierte Spalte.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Split Merged Table Cells<a class="indexanchor" id="i11_79"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Sofern Sie zwei Zeilen miteinander verbunden haben, können Sie, wenn Sie auf diesen Button drücken, diese Zeile wieder in zwei Zeilen trennen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Merge Table Cells<a class="indexanchor" id="i11_80"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Verbindet zwei bestehende Zeilen.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert Horizontal Line<a class="indexanchor" id="i11_81"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt eine horizontale Linie auf ganzer Breite ein.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Remove Formatting<a class="indexanchor" id="i11_82"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Entfernt vorhandene Formatierungen eines markierten Texts.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Show/Hide Guidelines/Invisible Elements<a class="indexanchor" id="i11_83"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Dieser Button fungiert als eine Art Umschalter. Sie können damit unsichtbare Elemente anzeigen bzw. ausblenden. Ein unsichtbares Element könnte beispielsweise eine Tabelle mit transparentem Gitter sein (Gitter werden, sofern keine Farbe definiert ist, als transparent gekennzeichnet und leicht angedeutet).
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Subscript<a class="indexanchor" id="i11_84"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert den markierten Text und stellt diesen tiefer.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Superscript<a class="indexanchor" id="i11_85"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert den markierten Text und stellt diesen höher.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert Special Character<a class="indexanchor" id="i11_86"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erlaubt Ihnen das Einfügen von Sonderzeichen. Magento öffnet dafür, wie Sie in <span class="crossreference "><a href="11_004.html#b11.26">Abbildung 11.26</a></span> sehen, ein neues Fenster. Darin können Sie beliebige Sonderzeichen auswählen und in den Text einfügen.
+                                <div class="imagebox "><a href="img-b11.26.html" id="b11.26"><img alt="Magento bietet für das Einfügen von Sonderzeichen eine spezielle Maske und stellt verschiedenste Sonderzeichen zur Verfügung." id="img-b11.26" src="bilderklein/kleinabbildung-11-26.png"/></a></div>
+        
+    
+                                <p class="caption "><b>Abbildung 11.26</b>    Magento bietet für das Einfügen von Sonderzeichen eine spezielle Maske und stellt verschiedenste Sonderzeichen zur Verfügung.</p>
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert/Edit Embedded Media<a class="indexanchor" id="i11_87"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Diese Option stellt eine große Auswahl an einzufügenden Inhalten bereit. Beispielsweise können Sie ein iFrame oder auch ein Flash-Element sowie ein HTML5-Video einfügen. Sobald Sie daher einen komplexeren Medientyp, im Prinzip alles außer einem Bild, einfügen möchten, sollten Sie sich diese Funktion im Detail anschauen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert Horizontal Line<a class="indexanchor" id="i11_88"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                An dieser Stelle werden Sie jetzt vermutlich aufschreien, denn eine horizontale Linie konnten Sie doch bereits mit einem anderen Button einfügen. Richtig, doch bietet Ihnen diese Funktion zusätzliche Features. So können Sie die Breite und Höhe dieser horizontalen Linie definieren und auch einen Schatten erzeugen.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Direction Left to Right<a class="indexanchor" id="i11_89"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Lässt den Textfluss links beginnen, so wie Sie es von der lateinischen Schrift her gewohnt sind (Standardeinstellung).
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Direction Right to Left<a class="indexanchor" id="i11_90"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Mit dieser Option können Sie den Textfluss abändern, sodass Texte von rechts nach links fließen. Im Arabischen beispielsweise ist dies die normale Schreibrichtung.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Toggle Full Screen Mode<a class="indexanchor" id="i11_91"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Der WYSIWYG-Editor wird bildschirmfüllend dargestellt. Andere Elemente, die zum Magento-Backend zählen, werden komplett ausgeblendet, wodurch die Texteingabe und die Hinterlegung der Texte primär im Vordergrund stehen.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="standard">Die dritte Zeile, in der Sie sich gerade befinden, enthält ein buntes Sammelsurium an verschiedensten Funktionen und Möglichkeiten. Ein spezielles Augenmerk sollten Sie in dieser Zeile sicherlich auf die Tabellen-Funktionalitäten legen. Denn bei der täglichen Content-Pflege werden Sie sicherlich das eine oder andere Mal in die Situation kommen, eine Tabelle einfügen, bzw. die Tabelle als Gestaltungsmittel zweckentfremden zu müssen. Werfen Sie daher jetzt noch einen Blick in die vierte und letzte Zeile.</p>
+            
+            
+                <h4 class="t4" id="u11.4.3.4">Zeile 4</h4>
+                <table class="standardtable" id="t_ohne_11_03">
+                    <thead>
+                        <tr class="">
+                            <th class="tablehead tablecell_first top_border_cell">
+                                Icon
+                            </th>
+                            <th class="tablehead tablecell_last top_border_cell">
+                                Funktion
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="tablecell tablecell_first top_border_cell">
+                                Insert New Layer<a class="indexanchor" id="i11_92"/>
+                            </td>
+                            <td class="tablecell tablecell_last top_border_cell">
+                                Fügt eine Ebene hinzu. Bei einer Ebene handelt es sich um einen Abschnitt, der beispielsweise über einem Bild oder einem Text liegen kann. Sie können mittels Layer also Grafiken überlappen lassen bzw. Texte frei platzieren.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Move Forward<a class="indexanchor" id="i11_93"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Rückt das Layer in der Ebenenhierarchie nach oben bzw. nach vorn, d. h., Sie stellen das Element weiter in den Vordergrund.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Move Backward<a class="indexanchor" id="i11_94"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Stellt das Layer eine Ebene nach unten bzw. das Element nach hinten.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Toggle Absolute Positioning<a class="indexanchor" id="i11_95"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Entfernt die absolute Positionierung des Layers. Dadurch kann sich das Layer nicht über ein anderes Element schieben. Die absolute Positionierung können Sie mit diesem Button jedoch auch wieder aktivieren.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Edit CSS Style<a class="indexanchor" id="i11_96"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Erlaubt das Einfügen von CSS-Code. Bei CSS handelt es sich um Style-Informationen, mit denen Sie das Aussehen der Seite oder von Elementen, die in der Seite integriert sind, verändern können. Magento bietet Ihnen hier umfangreiche Möglichkeiten, wie Sie in <span class="crossreference "><a href="11_004.html#b11.27">Abbildung 11.27</a></span> sehen.
+                                <div class="imagebox "><a href="img-b11.27.html" id="b11.27"><img alt="CSS-Informationen können mittels einfacher Eingabemaske hinterlegt werden." id="img-b11.27" src="bilderklein/kleinabbildung-11-27.png"/></a></div>
+        
+    
+                                <p class="caption "><b>Abbildung 11.27</b>    CSS-Informationen können mittels einfacher Eingabemaske hinterlegt werden.</p>
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Citation<a class="indexanchor" id="i11_97"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert einen Text als Zitat und stellt weiterführende Optionen hinsichtlich der Formatierung bereit.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Abbreviation<a class="indexanchor" id="i11_98"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Verhält sich ähnlich wie das vorherige Element, nur dass hierbei kein Zitat, sondern eine Abkürzung gemeint ist.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Acronym<a class="indexanchor" id="i11_99"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Formatiert Text als Akronym.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Deletion<a class="indexanchor" id="i11_100"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Durchstreicht Text und gibt Ihnen Gelegenheit, weitere Informationen zu hinterlegen. Die Funktion erlaubt Ihnen sozusagen, etwas als »gelöscht« darzustellen.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insertion<a class="indexanchor" id="i11_101"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Sozusagen das Gegenteil von »Deletion«. Hiermit können Sie einen Text als eingefügten Text kennzeichnen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert/Edit Attributes<a class="indexanchor" id="i11_102"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt ein Element hinzu, das aus einer CSS-Klasse oder einer Style-Formatierung bestehen kann.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Show/Hide Visual Control Characters<a class="indexanchor" id="i11_103"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Aktiviert oder deaktiviert die Sichtkontrollzeichen.
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="tablecell tablecell_first">
+                                Insert Non-Breaking Space Character<a class="indexanchor" id="i11_104"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Fügt einen leeren Absatz hinzu. Diesen können Sie zur Formatierung von Texten verwenden.
+                            </td>
+                        </tr>
+                        <tr class="light">
+                            <td class="tablecell tablecell_first">
+                                Insert Page Break for Printing<a class="indexanchor" id="i11_105"/>
+                            </td>
+                            <td class="tablecell tablecell_last">
+                                Ergänzt einen Umbruch, der speziell für die Druckansicht gilt.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="standard">Je weiter Sie mit den Zeilen nach unten gewandert sind, desto exotischer sind die Funktionen geworden. Sie sehen dies anhand der vierten und letzten Zeile. Die dort versammelten Funktionen und Möglichkeiten werden Sie in der Praxis erfahrungsgemäß eher seltener verwenden. Magento hat innerhalb des WYSIWYG-Editors sozusagen die wichtigen Funktionen weit oben und die weniger wichtigen Funktionen unten positioniert.</p>
+                <p class="standard">Egal, welche Formatierung Sie mittels WYSIWYG-Editor einfügen möchten, Magento hat, zumindest in 99 % aller Fälle, die entsprechende Lösung parat. Wie Sie auf den vergangenen Seiten gesehen haben, ist der grafische Editor enorm umfangreich und bietet Ihnen eine Vielzahl von Formatierungsoptionen. Sollten Sie dennoch an die Grenzen stoßen, haben Sie immer die Möglichkeit, HTML- oder CSS-Code direkt einzufügen. Somit werden Sie im Prinzip nie an die Grenzen des Möglichen kommen und können alle Ihre Anforderungen und Wünsche mithilfe des integrierten WYSIWYG-Editors umsetzen.</p>
+            
+        
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

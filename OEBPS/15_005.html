@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Mit Magento Business Intelligence umfangreiche Berichte und Analysen erstellen" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Mit Magento Business Intelligence umfangreiche Berichte und Analysen erstellen" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Mit Magento Business Intelligence umfangreiche Berichte und Analysen erstellen</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u15.5">15.5    Metriken<a class="indexanchor" id="i15_08"/> und Filter<a class="indexanchor" id="i15_09"/> verwalten</h2>
+        <p class="standard">Bevor Sie Reports erstellen, sollten Sie im nächsten Schritt, nachdem Sie weitere Datenquellen angebunden haben, einen Blick in den Bereich <span class="screenelement smallcaps">Manage Data</span> werfen. Dieser Abschnitt, der direkt unter dem Punkt <span class="screenelement smallcaps">Integrations</span> auftaucht, befindet sich ebenfalls in dem Hauptmenüpunkt namens <span class="screenelement smallcaps">Manage Data</span>.</p>
+        <p class="standard">Besonders wichtig im Abschnitt <span class="screenelement smallcaps">Manage Data</span> ist der Menüpunkt <span class="screenelement smallcaps">Metrics</span>, auf den Sie an dieser Stelle bitte klicken. Im Punkt Metrics definieren Sie die Kennzahlen, auf die Sie wiederum in den Berichten zurückgreifen. In den Berichten, das sehen Sie später aber noch im Detail, können Sie ausschließlich auf Elemente aus dem Punkt Metrics zurückgreifen. Haben Sie an dieser Stelle jedoch keine Metriken angelegt, können Sie auch keine Berichte erstellen. Magento BI legt nach dem Setup direkt Metriken an, die Sie in <span class="crossreference "><a href="15_005.html#b15.7">Abbildung 15.7</a></span> sehen.</p>
+        <div class="imagebox "><a href="img-b15.7.html" id="b15.7"><img alt="Metriken bilden die Grundlage für die Berichte, die innerhalb des Dashboards verwendet werden." id="img-b15.7" src="bilderklein/kleinabbildung-15-7.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 15.7</b>    Metriken bilden die Grundlage für die Berichte, die innerhalb des Dashboards verwendet werden.</p>
+        <p class="standard">Hierbei handelt es sich um Einträge wie z. B. »Avg order value«. Die Intention ist sicherlich aufgrund des Namens klar. Sie möchten eine Metrik bereitstellen, die den durchschnittlichen Bestellwert abbildet. Später könnten Sie auf dieser Basis im Dashboard einen Bericht anlegen, der den durchschnittlichen Umsatz pro Bestellung in einem gewissen Zeitraum ausgibt. Um auf diese Information in einem Bericht zugreifen zu können, benötigen Sie als Basis jedoch erst einmal die Metrik.</p>
+        <p class="standard">Das mag auf den ersten Blick etwas komplex bzw. irritierend sein, ich zeige Ihnen jetzt jedoch im Detail, was ich damit meine. Klicken Sie bei dem Eintrag »Avg order value« auf das Zahnrad, das sich an der rechten Seite befindet, und in dem sich anschließend öffnenden Menü auf den Link <span class="screenelement smallcaps">Edit</span>. Daraufhin gelangen Sie zur Detailansicht dieser Metrik. An dieser Stelle wird nun definiert, wie der durchschnittliche Wert pro Bestellung tatsächlich errechnet wird, denn dieser liegt in dieser Form in Ihrem Magento-System überhaupt nicht vor. Daher müssen Sie an dieser Stelle zuerst die Logik entwickeln, damit dieser Wert überhaupt bereitgestellt werden kann.</p>
+        <p class="standard">Im ersten Schritt benötigt jede Metrik einen Namen, wobei Sie an dieser Stelle irgendeinen Wert bzw. Text hinterlegen können. In diesem Beispiel wurde der Name »Avg order value« verwendet, den Sie theoretisch abändern können. Nachdem Sie den Namen definiert haben, müssen Sie eine Aktion auswählen, d. h., was soll Magento BI an dieser Stelle mit welcher Tabelle tun. Da Sie sich für den durchschnittlichen Wert einer Bestellung interessieren, ergibt z. B. der Operator »Count« keinen Sinn, damit würden Sie die Anzahl der Bestellungen zählen. Jedoch ist an dieser Stelle der Operator »Average« genau richtig, denn dieser errechnet den Durchschnitt übermittelter Werte. Bei den Operatoren stehen Ihnen verschiedenste zur Verfügung, die Sie je nach Einsatzzweck verwenden können:</p>
+        <ul>
+            <li>
+                Count
+            </li>
+            <li>
+                Sum
+            </li>
+            <li>
+                Average
+            </li>
+            <li>
+                Maximum Value
+            </li>
+            <li>
+                Minimum Value
+            </li>
+            <li>
+                Count Distinct Values
+            </li>
+            <li>
+                Median
+            </li>
+            <li>
+                First Quartile
+            </li>
+            <li>
+                Third Quartile
+            </li>
+            <li>
+                Tenth Quartile
+            </li>
+            <li>
+                Ninetieth Percentile
+            </li>
+        </ul>
+        <p class="standard">Die primäre Frage an dieser Stelle lautet immer, was genau Sie errechnen bzw. ermitteln möchten. Wenn Sie an dieser Stelle die Auswahl bei Average belassen, wissen Sie zumindest, dass Sie den Durchschnitt errechnen möchten. Im nächsten Schritt geben Sie nun an, wovon Sie den Durchschnitt errechnen. Hierfür müssen Sie die Tabelle der Datenbank und das spezifische Datenbankfeld angeben. Beim durchschnittlichen Umsatz einer Bestellung ist als Tabelle »sales_order« hinterlegt, da dort alle in Magento gespeicherten Bestellungen vorhanden sind. Diese Tabelle enthält viele Spalten, wobei in diesem Szenario nur die Spalte <span class="screenelement smallcaps">base_grand_total</span> relevant ist, denn diese enthält die Bestellumsätze inkl. Steuer.</p>
+        <div class="box_standard">
+            <h6 class="boxheading">Sie müssen sich mit der Struktur der Magento 2-Datenbank beschäftigen</h6>
+            <p class="standard">Damit Sie die Metriken erstellen können, brauchen Sie ein solides Wissen bezüglich der Datenbankstruktur von Magento. Sie müssen wissen, welche Tabellen existieren und aus welchen Spalten die verschiedensten Tabellen bestehen. Letztendlich benötigen Sie dieses Wissen, um einschätzen zu können, aus welcher Spalte bzw. Tabelle die benötigten Werte herangezogen werden können.</p>
+        </div>
+        <p class="standard">Würden Sie an dieser Stelle anstelle von <span class="screenelement smallcaps">base_grand_total</span> z. B. die Spalte <span class="screenelement smallcaps">base_shipping_amount</span> auswählen, so würden Sie nachgelagert die durchschnittlichen Versandkosten errechnen. Die im ersten Schritt ausgewählte Operation wird daher auf die in diesem Schritt ausgewählte Spalte angewandt, ganz gleich, welche Information dort hinterlegt ist.</p>
+        <p class="standard">Sollten Sie die Ergebnismenge noch stärker eingrenzen wollen, stehen Ihnen zudem Filter zur Verfügung. Beispielsweise könnten Sie nur Bestellungen berücksichtigen, die nicht storniert wurden. Bei den Filtern haben Sie zudem die Möglichkeit, auf zentral definierte Filter zurückzugreifen oder für jede Metrik individuelle Filter zu erstellen. Die Kombination mehrerer Filter ist natürlich möglich und auch an vielen Stellen sinnvoll.</p>
+        <div class="box_standard">
+            <h6 class="boxheading">Filter Sets helfen bei der Verwaltung von zentralen Datenfiltern</h6>
+            <p class="standard">Theoretisch könnten Sie bei jeder Metrik einen individuellen Filter erstellen. Oftmals benötigen Sie bei den verschiedenen Metriken jedoch identische Filter, z. B. sollen immer nur bezahlte und ausgelieferte Bestellungen berücksichtigt werden. Um dies abzubilden, müssen Sie nicht bei jeder Metrik den identischen Filter erstellen, sondern können zentral im Punkt <span class="screenelement smallcaps">Filter Sets</span> die benötigten Filter definieren und anschließend in der jeweiligen Metrik nutzen.</p>
+        </div>
+        <p class="standard">Nachdem Sie die Filter definiert haben, an dieser Stelle müssen Sie keine weiteren Anpassungen vornehmen, sehen Sie als nächsten Bereich die Dimensionen. Magento BI stellt an dieser Stelle alle Spalten aus der ausgewählten Tabelle dar. Diese Spalten wiederum können Sie anhaken und somit als Dimension verwenden. Beispielsweise existiert in der ausgewählten Tabelle die Spalte <span class="screenelement smallcaps">base_currency_code</span>. Wenn Sie diese Spalte als Dimension verwenden, können Sie später den durchschnittlichen Umsatz pro Bestellung anhand der Währung darstellen, da in der Spalte <span class="screenelement smallcaps">base_currency_code</span> die Währung definiert ist. Würden Sie die Spalte <span class="screenelement smallcaps">billing_address_country</span> als Dimension hinzufügen, könnten Sie den durchschnittlichen Bestellumsatz anhand der Länder darstellen. Dimensionen sind immer dann wichtig, wenn Sie nicht nur das nüchterne Ergebnis betrachten möchten, sondern dieses nochmals untergliedern wollen.</p>
+        <p class="standard">Abschließend haben Sie noch die Möglichkeit, die Rechte für diese Metrik einzuschränken, wenn Sie einem bestimmten Nutzer diese Metrik nicht zur Verfügung stellen möchten. Zudem können Sie sich anzeigen lassen, in welchen Reports diese Metrik verwendet wird. In diesem konkreten Beispiel, das Sie in <span class="crossreference "><a href="15_005.html#b15.8">Abbildung 15.8</a></span> sehen, wird die Metrik in zwei Dashboards und insgesamt sechs Reports verwendet. Die Relationen und Abhängigkeiten sind immer dann interessant, wenn Sie die Logik einer Metrik anpassen und anschließend nachprüfen wollen, ob die Reports dadurch negativ beeinflusst wurden. So sehen Sie direkt, welche Reports Sie prüfen müssen.</p>
+        <p class="standard">So wie Sie bestehende Metriken einsehen und editieren können, haben Sie natürlich auch die Möglichkeit, komplett neue Metriken zu erstellen. Klicken Sie hierzu auf der Seite <span class="screenelement smallcaps">Metrics</span> einfach auf den grünen Button namens <span class="screenelement smallcaps">Create New Metric</span>. Daraufhin müssen Sie eine Tabelle auswählen, die Sie als Basis bzw. Grundlage für die Metrik verwenden möchten. Wählen Sie an dieser Stelle als kleines Beispiel die Tabelle <span class="screenelement smallcaps">customer_group</span> aus.</p>
+        <div class="imagebox "><a href="img-b15.8.html" id="b15.8"><img alt="An welcher Stelle die Metrik verwendet wird, sehen Sie, wenn Sie an das Ende der Seite scrollen." id="img-b15.8" src="bilderklein/kleinabbildung-15-8.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 15.8</b>    An welcher Stelle die Metrik verwendet wird, sehen Sie, wenn Sie an das Ende der Seite scrollen.</p>
+        <p class="standard">Daraufhin sehen Sie dieselbe Ansicht, die Sie bei der Editierung einer Metrik erhalten haben. Im ersten Schritt müssen Sie einen Namen hinterlegen und eine Operation, z. B. Sum, auswählen. Die Tabelle haben Sie bereits definiert, also müssen Sie als letzten Schritt nur noch die Spalte auswählen, auf die sich Ihre Operation bezieht. Weiterhin können Sie Filter und Dimensionen wählen und die Metrik anschließend speichern und verwenden.</p>
+        <p class="standard">Beachten Sie bitte an dieser Stelle, dass der Funktionsumfang der Essentials-Version, die Sie an dieser Stelle verwenden, im Vergleich zu den anderen Editionen etwas eingeschränkter daherkommt. Aus diesem Grund konnten Sie bei den Tabellen auch nicht auf alle in Magento vorhandene Tabellen zurückgreifen und erhalten bei der Tabelle <span class="screenelement smallcaps">customer_group</span> ebenfalls eine limitierte Auswahl der Spalten. Die Essentials-Version, der Name impliziert das bereits, konzentriert sich auf einen minimalen Umfang, dementsprechend müssen Sie an der einen oder anderen Stelle Einschränkungen hinnehmen. In den größeren Versionen von Magento BI bestehen diese Einschränkungen hingegen nicht, d. h., es handelt sich an dieser Stelle nicht um eine technische Limitierung, sondern eine Limitierung aufgrund des Lizenzmodells. Lassen Sie sich aber von dieser Tatsache nicht irritieren, letztendlich möchte ich Ihnen in diesem Kapitel einen Überblick über Magento BI geben, auch wenn es an der einen oder anderen Stelle mit gewissen Limitierungen behaftet ist.</p>
+        <p class="standard">Neben der Definition der Metriken können Sie zudem im Punkt <span class="screenelement smallcaps">Manage Data</span> auch die sogenannten <span class="screenelement smallcaps">Filter Sets</span> erstellen und verwalten. Filter Sets sind letztendlich Filter, die Sie bei der Erstellung bzw. Überarbeitung von Metriken verwenden können. Diese ersparen Ihnen in der Praxis viel Arbeit, da Sie nicht immer bei jeder Metrik denselben Filter manuell erstellen müssen. Klicken Sie nun bitte auf den Punkt <span class="screenelement smallcaps">Filter Sets</span>, woraufhin Sie eine Auflistung wie in <span class="crossreference "><a href="15_005.html#b15.9">Abbildung 15.9</a></span> erhalten sollten.</p>
+        <div class="imagebox "><a href="img-b15.9.html" id="b15.9"><img alt="Filter können auf Metriken angewendet werden, um die Ergebnismenge einzugrenzen." id="img-b15.9" src="bilderklein/kleinabbildung-15-9.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 15.9</b>    Filter können auf Metriken angewendet werden, um die Ergebnismenge einzugrenzen.</p>
+        <p class="standard">Innerhalb dieser Ansicht können Sie ein neues Filter Set erstellen oder bestehende Filter Sets editieren. Klicken Sie beim Filter Set <span class="screenelement smallcaps">Orders we count</span> auf <span class="screenelement smallcaps">Edit</span>. Sie gelangen daraufhin zur Detailansicht und sehen als erstes Feld den Filter-Set-Namen. Auch hier können Sie im Prinzip irgendeinen beliebigen Wert hinterlegen, mit dem Sie persönlich die Funktion des Filters assoziieren. Interessant wird es letztendlich, hierfür müssen Sie ein wenig nach unten scrollen, im Bereich <span class="screenelement smallcaps">Current Filters</span>. Denn aktuell besitzt dieses Filter Set noch keinerlei Filter, Sie können aber beliebige hinzufügen. Unter der Überschrift »Add a filter« müssen Sie zuerst eine Spalte aus der Tabelle »sales_order« auswählen. Die Tabelle können Sie bei einem angelegten Filter Set nachträglich nicht mehr editieren, d. h., Sie müssten das Filter Set löschen und ein neues anlegen. Bei der Anlage geben Sie dabei die Tabelle an, die anschließend festgelegt wird. Möchten Sie zukünftig bei der Nutzung dieses Filter Sets nur abgeschlossene Bestellungen berücksichtigen, wählen Sie bitte den Eintrag <span class="screenelement smallcaps">status</span>, den Operator = und den Wert <span class="screenelement smallcaps">complete</span>. Dadurch berücksichtigen Sie nur diejenigen Bestellungen, die in der Spalte Status den Wert complete besitzen. Bei den Operatoren stehen Ihnen zudem alle relevanten Möglichkeiten zur Verfügung wie:</p>
+        <ul>
+            <li>
+                != (ungleich)
+            </li>
+            <li>
+                &gt; (größer)
+            </li>
+            <li>
+                &gt;= (größer gleich)
+            </li>
+            <li>
+                &lt; (kleiner)
+            </li>
+            <li>
+                &lt;= (kleiner gleich)
+            </li>
+            <li>
+                = (gleich)
+            </li>
+            <li>
+                IN
+            </li>
+            <li>
+                IS
+            </li>
+            <li>
+                IS NOT
+            </li>
+            <li>
+                LIKE
+            </li>
+            <li>
+                NOT IN
+            </li>
+            <li>
+                NOT LIKE
+            </li>
+        </ul>
+        <p class="standard">Wie erwähnt, kann ein Filter Set zudem aus mehreren Filtern bestehen. Einzig muss sich jeder Filter auf die ausgewählte Tabelle beziehen, d. h., an dieser Stelle können Sie nicht mit Verweisen arbeiten.</p>
+        <p class="standard">Neben der Bearbeitung bestehender Filter Sets haben Sie zudem die Möglichkeit, komplett neue Filter Sets zu erstellen. Dies können Sie tun, indem Sie in der Ansicht <span class="screenelement smallcaps">Filter Sets</span> auf den Link <span class="screenelement smallcaps">Add Filter Sets</span> klicken. Magento BI fragt Sie daraufhin, auf welche Tabelle sich das Filter Set beziehen soll, wobei Ihnen auch an dieser Stelle die Tabellen <span class="italic">customer_entity</span>, <span class="italic">customer_group</span>, <span class="italic">sales_order</span>, <span class="italic">sales_order_address</span>, <span class="italic">sales_order_item</span> sowie <span class="italic">store</span> zur Verfügung stehen. Haben Sie eine der Tabellen ausgewählt, können Sie nachgelagert erneut die Spalten zur Filterung auswählen und das Filter Set speichern.</p>
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

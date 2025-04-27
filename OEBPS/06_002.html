@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Steuerregeln und Währungen" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Steuerregeln und Währungen" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Steuerregeln und Währungen</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u6.2">6.2    Währungen</h2>
+        <p class="standard">Ein weiteres wichtiges Thema neben den Steuersätzen sind die Währungen. Magento unterstützt alle auf der Welt verfügbaren Währungen, wodurch Sie Ihre Produkte und Dienstleistungen im Handumdrehen in allen Währungen anbieten können. Währungen können Sie dabei, ganz ohne großen Aufwand, direkt über das Magento-Backend verwalten und steuern. Lassen Sie mich Ihnen anhand eines konkreten Beispiels zeigen, wie Sie in Magento mit den verschiedensten Währungen und Umrechnungskursen umgehen können. Das Ziel besteht darin, neben dem Euro noch Britische Pfund, US-Dollar und Schweizer Franken zum System hinzuzufügen.</p>
+        
+            <h3 class="t3" id="u6.2.1">6.2.1    Währungseinstellungen<a class="indexanchor" id="i06_09"/></h3>
+            <p class="standard">Öffnen Sie zuerst das Magento-Backend, und melden Sie sich im Anschluss mit Ihren Zugangsdaten an. Klicken Sie dann im linken Menü auf <span class="screenelement smallcaps">Shops</span> und anschließend auf den Punkt <span class="screenelement smallcaps">Konfiguration</span>. Die Systemkonfiguration haben Sie bereits in <span class="crossreference "><a href="04_004.html#u4.4">Abschnitt 4.4</a></span> kennengelernt (Bereich »Währungseinstellungen«), und diese dient auch bei der Konfiguration der Währungen als Basis. Nachdem Sie die Systemkonfiguration geöffnet haben, rufen Sie im linken Navigationsmenü den Punkt <span class="screenelement smallcaps">Währungseinstellungen</span> auf. Im Anschluss erhalten Sie die Konfigurationsübersicht wie in <span class="crossreference "><a href="06_002.html#b6.7">Abbildung 6.7</a></span>.</p>
+            <div class="imagebox "><a href="img-b6.7.html" id="b6.7"><img alt="Die Aktivierung der verschiedenen Währungen erfolgt über die Mehrfachauswahl »Erlaubte Währungen«." id="img-b6.7" src="bilderklein/kleinabbildung-6-neu-7.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.7</b>    Die Aktivierung der verschiedenen Währungen erfolgt über die Mehrfachauswahl »Erlaubte Währungen«.</p>
+            <p class="standard">Bei der<a class="indexanchor" id="i06_10"/> <span class="screenelement smallcaps">Basiswährung</span> sollte bei Ihnen genau wie bei der <span class="screenelement smallcaps">Standard-Anzeigewährung</span> Euro hinterlegt sein. Sollten Sie in Ihrem Online-Shop nicht in Euro verkaufen, können Sie diese beiden Konfigurationsoptionen gern anpassen. Diese bilden, wie der Name bereits suggeriert, die Standardwährung bzw. -anzeige innerhalb des Online-Shops.</p>
+            <p class="standard">Über das Multi-Select-Feld <span class="screenelement smallcaps">Erlaubte Währungen</span> können Sie jetzt die zusätzlichen Währungen aktivieren. Wählen Sie in diesem Feld neben dem Euro bitte noch die Einträge Britisches Pfund Sterling, Schweizer Franken sowie US-Dollar aus. Damit die Änderungen im System hinterlegt werden können, bestätigen Sie die Auswahl, indem Sie auf den Button <span class="screenelement smallcaps">Konfiguration speichern</span> klicken. Damit haben Sie den Grundstein dafür gelegt, dass Magento mit mehreren Währungen umgehen kann, da Sie über diese Konfigurationsoption Magento mitteilen, welche Währungen grundsätzlich erlaubt sind.</p>
+            <p class="standard">Wenn Sie ein wenig nach unten scrollen, werden Sie über die Konfigurationsbereiche Yahoo Finance Exchange, Fixer.io sowie WebserviceX stolpern. Einstellungen müssen Sie bei diesen Bereichen nicht anpassen, grundsätzlich wird hier nur der Timeout in Sekunden hinterlegt. Es handelt sich bei diesen Konfigurationsabschnitten um Webservices, die aktuelle Umrechnungskurse liefern. Auch wenn Sie Umrechnungskurse manuell hinterlegen können, aus irgendeiner Quelle müssen automatisiert die Währungsumrechnungskurse bereitgestellt werden. In Magento haben Sie die Wahl zwischen Yahoo Finance Exchange, WebserviceX bzw. Fixer.io Webservice. Große Unterschiede zwischen den verschiedenen Webservices gibt es letztendlich nicht, greifen Sie einfach zu demjenigen, der Sie am ehesten anspricht.</p>
+            <p class="standard">Im letzten Konfigurationsabschnitt auf dieser Seite mit dem Titel <span class="screenelement smallcaps">Einstellungen für geplante Imports</span> können Sie Einstellungen für den automatisierten zeitlichen Import der Währungskurse festlegen. Zuerst haben Sie die Wahl, den zeitlichen Import der Währungskurse zu aktivieren bzw. diesen deaktiviert zu lassen. Ist der automatisierte Import der Währungskurse deaktiviert, können Sie diese an anderer Stelle manuell importieren oder auch manuell definieren. Wenn Sie den automatisierten Import aktivieren, können Sie im nächsten Schritt den Webservice auswählen, der Ihnen die Währungsumrechnungskurse bereitstellt. Ich für meinen Teil belasse diese Auswahl bei der Standardoption Yahoo Finance Exchange. Last, but not least können Sie die Startzeit und die Frequenz für den automatisierten Import definieren. Diese Optionen sind an sich selbsterklärend, bei Bedarf können Sie aber nochmals einen Blick in <span class="crossreference "><a href="06_001.html#u6.1.3">Abschnitt 6.1.3</a></span>, »<span class="crossreference ">Import/Export Steuersätze</span>«, werfen, der die Konfigurationsoptionen im Detail beschreibt.</p>
+        
+        
+            <h3 class="t3" id="u6.2.2">6.2.2    Währungskurse<a class="indexanchor" id="i06_11"/></h3>
+            <p class="standard">Nachdem Sie grundsätzlich die erlaubten Währungen definiert haben, müssen Sie im nächsten Schritt die Währungskurse hinterlegen. Klicken Sie hierfür im Magento-Backend auf den Menüeintrag <span class="screenelement smallcaps">Shops</span> und dann auf den Eintrag <span class="screenelement smallcaps">Währungskurse</span>. Daraufhin erhalten Sie eine Darstellung wie in <span class="crossreference "><a href="06_002.html#b6.8">Abbildung 6.8</a></span>.</p>
+            <div class="imagebox "><a href="img-b6.8.html" id="b6.8"><img alt="Aktuell sind noch keinerlei Umrechnungskurse hinterlegt." id="img-b6.8" src="bilderklein/kleinabbildung-6-neu-8.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.8</b>    Aktuell sind noch keinerlei Umrechnungskurse hinterlegt.</p>
+            <p class="standard">Da die Basis-Währung bei Ihnen sowie bei mir der Euro ist, sehen Sie in der Tabelle mit den verschiedenen Währungen beim Euro nur den hinterlegten Wert 1.0000, den Sie auch nicht abändern können. Da der Euro die Basis ist, werden alle Umrechnungskurse aus Sicht des Euro definiert.</p>
+            <p class="standard">Neben dem Euro sehen Sie zudem den Schweizer Franken, das Britische Pfund und den US-Dollar. Beim Schweizer Franken und Britischen Pfund fehlt der Umrechnungsfaktor, beim US-Dollar ist bereits einer hinterlegt. Sie haben an dieser Stelle die Wahl, pro Währung einen Umrechnungsfaktor manuell zu hinterlegen oder die Werte mithilfe eines Webservice automatisiert abzufragen.</p>
+            <p class="standard">Wenn Sie Letzteres tun möchten, wählen Sie im Dropdown-Feld <span class="screenelement smallcaps">Import-Service</span> einen Dienst aus, und klicken Sie auf <span class="screenelement smallcaps">Importoptionen</span>. Auch wenn die Beschriftung des Buttons etwas irreführend ist, wird durch den Klick der Import der Währungsumrechnungskurse gestartet und diese direkt in die vorhandenen Textfelder geschrieben. Bestehende Umrechnungskurse, in diesem Fall der US-Dollar, werden entsprechend aktualisiert, fehlende Währungsumrechnungskurse werden ergänzt. Nach dem Import haben Sie zudem immer noch die Möglichkeit, manuell bei den Umrechnungsfaktoren einzugreifen und den manuell definierten Wert zu speichern.</p>
+            <p class="standard">Sofern Sie die Währungsumrechnungskurse importiert haben, klicken Sie auf <span class="screenelement smallcaps">Konfiguration speichern</span>, um die Änderungen im System zu hinterlegen. Anschließend müssen Sie noch den Cache leeren, und die Änderungen werden auch im Frontend ersichtlich.</p>
+        
+        
+            <h3 class="t3" id="u6.2.3">6.2.3    Währungssymbole<a class="indexanchor" id="i06_12"/></h3>
+            <p class="standard">Abgesehen von den Währungsumrechnungskursen, können Sie in Magento auch die Währungssymbole über das Backend steuern. Klicken Sie hierfür innerhalb des Magento-Backends auf <span class="screenelement smallcaps">Shops</span> und dann auf <span class="screenelement smallcaps">Währungssymbole</span>. Anschließend gelangen Sie zur Ansicht wie in <span class="crossreference "><a href="06_002.html#b6.9">Abbildung 6.9</a></span>, und Sie haben die Möglichkeit, die Symbole jeder Währung abzuändern.</p>
+            <p class="standard">Wie Sie sehen, ist beim Euro beispielsweise das €-Zeichen hinterlegt. Alternativ können Sie jedoch auch den Wert EUR in das Textfeld schreiben. Selbiges gilt ebenfalls bei den anderen Währungen. Da der Schweizer Franken kein Symbol hat, ist hier direkt die Abkürzung CHF hinterlegt. Wenn Sie eine Anpassung vornehmen möchten, entfernen Sie bei der entsprechenden Position den Haken bei <span class="screenelement smallcaps">Standard verwenden</span>, editieren Sie den Inhalt des Textfeldes, und klicken Sie anschließend auf <span class="screenelement smallcaps">Währungssymbole speichern</span>. Denken Sie außerdem nach der Änderung daran, den Cache zu leeren, um innerhalb des Frontends ein aktuelles Ergebnis zu erhalten.</p>
+            <div class="imagebox "><a href="img-b6.9.html" id="b6.9"><img alt="Bei jeder Währung lässt sich das Symbol beliebig editieren." id="img-b6.9" src="bilderklein/kleinabbildung-6-neu-9.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.9</b>    Bei jeder Währung lässt sich das Symbol beliebig editieren.</p>
+        
+        
+            <h3 class="t3" id="u6.2.4">6.2.4    Darstellung der Währungen innerhalb des Online-Shops</h3>
+            <p class="standard">Sie haben erfolgreich zusätzliche Währungen hinzugefügt, Währungsumrechnungskurse importiert und gegebenenfalls die Währungssymbole abgeändert. Nachdem Sie diese administrativen Tätigkeiten erledigt haben, steht jetzt im Frontend eine Währungsauswahl zur Verfügung. Die Darstellung dieser Option hängt vom gewählten Template bzw. individuellen Design ab, dennoch möchte ich Ihnen an dieser Stelle einen kurzen Einblick geben, wie ein Besucher oder Kunde im Frontend die Währung wechseln kann. In dem aktuell noch sehr leeren Demo-Shop haben Sie in der rechten oberen Ecke ab sofort ein Währungsauswahlfeld. Sie sehen dieses in <span class="crossreference "><a href="06_002.html#b6.10">Abbildung 6.10</a></span> im oberen rechten Bereich des Frontends.</p>
+            <div class="imagebox "><a href="img-b6.10.html" id="b6.10"><img alt="Der Wechsel der Währung erfolgt mithilfe eines Dropdown-Felds." id="img-b6.10" src="bilderklein/kleinabbildung-6-neu-10.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.10</b>    Der Wechsel der Währung erfolgt mithilfe eines Dropdown-Felds.</p>
+            <p class="standard">Dieser »Währungswechsler« steht den Kunden und Besuchern im Frontend auf jeder Seite zur Verfügung. Ganz egal, ob man sich auf der Startseite, im Warenkorb oder auf einer Produktdetailseite aufhält. Die Währung kann in Magento grundsätzlich an jedem Punkt geändert werden. Entscheidet man sich für den Wechsel der Währung, werden zudem alle Preise und Angaben ab diesem Zeitpunkt in der gewählten Währung angezeigt und selbstverständlich zum hinterlegten Kurs umgerechnet.</p>
+        
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

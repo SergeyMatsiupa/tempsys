@@ -1,0 +1,229 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Content Management mit Magento" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Content Management mit Magento" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Content Management mit Magento</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u11.3">11.3    Widgets<a class="indexanchor" id="i11_08"/> hinzufügen und nutzen</h2>
+        <p class="standard">In den vorherigen Abschnitten haben Sie bereits Variablen und Blöcke kennengelernt. Diese beiden Inhaltselemente sind recht ähnlich, speziell bezüglich der dahinterliegenden Prinzipien. In eine komplett andere Richtung gehen die Widgets, die Sie in diesem Abschnitt kennenlernen werden. Widgets sind, vereinfach gesagt, kleine Helferlein. Jedes der vorhandenen Widgets, von denen es im Standard eine gewisse Auswahl gibt, besitzt eine nicht zu verachtende Logik und kann etwas für Sie tun, wofür Sie normalerweise einen Entwickler bräuchten. Oder anders gesagt, sobald bei der Content-Pflege etwas komplexere Anforderungen gestellt werden, können diese durch Widgets gelöst werden. Jedes Widget hat eine Bedienoberfläche und dient daher dazu, Ihnen die Arbeit so weit abzunehmen, dass Sie nicht mit HTML- oder JavaScript-Code direkt in den Seiten oder Blöcken hantieren müssen. Widgets sind zudem recht autark. Auch wenn Sie innerhalb von Seiten und Blöcken Widgets einbinden können, so können sich Widgets auch direkt in das Design Ihres Online-Shops integrieren, ohne dass dafür ein Entwickler ein Template anpassen muss. Das klingt doch schon ziemlich interessant, oder? Auf den folgenden Seiten werde ich die im Standard vorhandenen Widgets etwas genauer beleuchten.</p>
+        
+            <h3 class="t3" id="u11.3.1">11.3.1    Die Magento-Standard-Widgets kennenlernen</h3>
+            <p class="standard">An dieser Stelle muss ich Sie zuerst mit dem theoretischen Teil überfallen und damit etwas vorgreifen. Magento verfügt von Haus aus über eine gewisse Anzahl an Widgets, deren Funktionsweise ich Ihnen gern vorab vorstellen möchte. Wenn Ihnen die im Standard vorhandenen Widgets nicht reichen sollten, so können Sie sich übrigens auch komplett individuelle Widgets entwickeln lassen. Speziell bei Projekten mit einem hohen Content-Anteil führt meiner Meinung nach kein Weg an individuellen Widgets vorbei. Glücklicherweise lassen sich Widgets relativ einfach entwickeln, weswegen Sie hierbei auch nicht mit allzu hohen Aufwänden rechnen müssen. Aber das ist an sich ein anderes Thema, lassen Sie mich Ihnen die im Standard vorhandenen Widgets kurz erklären, als da wären:</p>
+            <ul>
+                <li>
+                    Bestellungen und Rücksendungen
+                </li>
+                <li>
+                    CMS-Seiten-Link
+                </li>
+                <li>
+                    Katalogkategorielink<a class="indexanchor" id="i11_09"/>
+                </li>
+                <li>
+                    Katalogproduktlink<a class="indexanchor" id="i11_10"/>
+                </li>
+                <li>
+                    Liste der Katalogprodukte
+                </li>
+                <li>
+                    Liste von neuen Katalogprodukten<a class="indexanchor" id="i11_11"/>
+                </li>
+                <li>
+                    Statischer CMS-Block
+                </li>
+                <li>
+                    Zuletzt angesehene Artikel
+                </li>
+                <li>
+                    Zuletzt verglichene Artikel<a class="indexanchor" id="i11_12"/>
+                </li>
+            </ul>
+            
+                <h4 class="t4" id="u11.3.1.1">Bestellungen und Rücksendungen<a class="indexanchor" id="i11_13"/></h4>
+                <p class="standard">Das Widget »Bestellungen und Rücksendungen« ermöglicht das Einfügen eines Formulars, mit dem Bestellungen geprüft bzw. Rücksendungen ausgelöst werden können. Das ist speziell für Gäste interessant, die keinen Zugriff auf das Benutzerkonto haben. Für registrierte Kunden ist das Widget hingegen weniger interessant, da aktuelle Bestellungen und Rücksendungen eben über das besagte Benutzerkonto geprüft bzw. ausgelöst werden können.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.2">CMS-Seiten-Link<a class="indexanchor" id="i11_14"/></h4>
+                <p class="standard">Mithilfe von CMS-Seiten-Links können Sie einen Link auf eine Seite einfügen. Die Auswahl der Seite und die Generierung des Links erfolgt automatisiert, d. h., Sie müssen keine URL im Vorfeld kennen, sondern können die zu verlinkende Seite aus einer Liste auswählen.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.3">Katalogkategorielink<a class="indexanchor" id="i11_15"/></h4>
+                <p class="standard">Beim Katalogkategorielink handelt es sich im Prinzip um eine ähnliche Funktion wie beim CMS-Seiten-Link, nur dass Sie keinen Link auf eine Seite, sondern in eine Kategorie einfügen. Die jeweilige Kategorie kann ebenfalls grafisch ausgewählt werden, Sie müssen sich im Vorfeld keine Gedanken über die zu verlinkende URL machen.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.4">Katalogproduktlink<a class="indexanchor" id="i11_16"/></h4>
+                <p class="standard">Anhand der Produktliste können Sie ein zu verlinkendes Produkt auswählen, Magento ermittelt automatisch die URL und fügt den Link ein. Dieses Widget ist immer dann praktisch, wenn Sie in einem Text auf ein Produkt verlinken möchten, jedoch nicht die URL des Produktes kennen. Wie Sie in <span class="crossreference "><a href="11_003.html#b11.11">Abbildung 11.11</a></span> sehen, erfolgt die Auswahl des gewünschten Produkts auf einfache Art und Weise.</p>
+                <div class="imagebox "><a href="img-b11.11.html" id="b11.11"><img alt="Bei der Verlinkung eines Produkts steht Ihnen eine Produktliste samt Kategorie-Baum zur Verfügung." id="img-b11.11" src="bilderklein/kleinabbildung-11-11.png"/></a></div>
+        
+    
+                <p class="caption "><b>Abbildung 11.11</b>    Bei der Verlinkung eines Produkts steht Ihnen eine Produktliste samt Kategorie-Baum zur Verfügung.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.5">Liste der Katalogprodukte<a class="indexanchor" id="i11_17"/></h4>
+                <p class="standard">Mit dem Widget Liste der Katalogprodukte haben Sie im Verlauf des Buches bereits gearbeitet, weswegen es Ihnen an dieser Stelle vertraut vorkommen sollte. Sie haben die Möglichkeit, Produkte im Frontend darzustellen, und können diese anhand der Attribute eingrenzen. Dadurch können Sie beispielsweise nur Produkte mit einem gewissen Preis oder Produkte von einem bestimmten Hersteller auslesen und darstellen. Magento erlaubt Ihnen den Zugriff auf alle Produktattribute und ermöglicht das Einschränken der Ergebnismenge durch eine Limitierung der anzuzeigenden Produkte.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.6">Liste von neuen Katalogprodukten<a class="indexanchor" id="i11_18"/></h4>
+                <p class="standard">Das Widget Liste von neuen Katalogprodukten stellt ausschließlich neue Produkte dar. Bei der Wahl der Darstellung stehen Ihnen verschiedene Vorlagen zur Auswahl, und Sie können sich dementsprechend für eine Darstellungsform entscheiden, die Ihnen am sinnvollsten erscheint.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.7">Statischer CMS-Block<a class="indexanchor" id="i11_19"/></h4>
+                <p class="standard">Wenn Sie einen Block einbinden möchten, haben Sie mit diesem Widget die Möglichkeit, dies auf grafische Art und Weise zu tun. Den Statischen CMS-Block haben Sie bereits auf den vergangenen Seiten kennengelernt, daher erspare ich Ihnen an dieser Stelle eine erneute Erklärung.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.8">Zuletzt angesehene Artikel<a class="indexanchor" id="i11_20"/></h4>
+                <p class="standard">Auch mit diesem Widget sind Sie bereits in Kontakt gekommen. Wenn Sie Ihren Besuchern und Kunden die zuletzt angesehenen Produkte anzeigen möchten, können Sie dies mit diesem Widget tun. Jeder Kunde bzw. Besucher sieht dabei natürlich nur die von ihm angesehenen Produkte. Es ist ein Widget mit einem hohen Personalisierungsgrad, da es pro Nutzer bzw. Kunde unterschiedliche Inhalte ausspielt.</p>
+            
+            
+                <h4 class="t4" id="u11.3.1.9">Zuletzt verglichene Artikel<a class="indexanchor" id="i11_21"/></h4>
+                <p class="standard">Hat ein Nutzer bzw. Kunde Produkte auf seiner Vergleichsliste, so können Sie ihm mit diesem Widget diese Informationen ebenfalls ausgeben. Das Widget ersetzt jedoch nicht die Vergleichsliste, sondern weist letztendlich auf die Vergleichsliste hin, indem die zuletzt hinzugefügten Produkte dargestellt werden.</p>
+                <p class="standard">Wie Sie sehen, bietet Magento von Haus aus bereits eine recht interessante Auswahl von Widgets an. Welche der Widgets Sie später nutzen, kommt immer ganz auf das Projekt bzw. den Online-Shop an. So gibt es beispielsweise Magento-Shop-Betreiber, die ganz auf Widgets verzichten. Andere Shop-Betreiber lassen sich wiederum sehr viele individuelle Widgets entwickeln, um Slideshows, Banner, Top-Seller etc. abzubilden.</p>
+                <div class="box_standard">
+                    <h6 class="boxheading">Zusätzliche Widgets können auch über Erweiterungen eingespielt werden</h6>
+                    <p class="standard">Mittlerweile gibt es immer mehr Entwickler und Unternehmen, die zusätzliche Widgets in Form von Erweiterungen bereitstellen. Das heißt, Sie müssen gegebenenfalls gar nicht in die Individualentwicklung einsteigen, sondern können auf bereits entwickelte und zur Verfügung gestellte Widgets zurückgreifen. Aheadworks, ein für seine Magento-Erweiterungen sehr bekanntes Unternehmen, hat beispielsweise bereits erweiterte Widgets im Angebot. Mehr hierzu erfahren Sie unter <span class="url"><a href="https://ecommerce.aheadworks.com/magento-2-extensions/product-and-content-widgets/">https://ecommerce.aheadworks.com/magento-2-extensions/product-and-content-widgets/</a></span>.</p>
+                </div>
+                <p class="standard">Nachdem Sie auf den vorherigen Seiten gesehen haben, welche Widgets in Magento existieren, möchte ich Ihnen nun auf den folgenden Seiten zeigen, wie Sie Widgets erstellen und hinzufügen können. Folgen Sie mir an dieser Stelle gern Schritt für Schritt, und legen Sie idealerweise in Ihrem lokalen Magento-System ebenfalls die Widgets an. Auch bei den Widgets gilt wieder: Learning by doing. Sobald Sie selbst mit den Widgets und Funktionen experimentieren, werden Sie alle Eigenheiten und Kniffe kennenlernen.</p>
+            
+        
+        
+            <h3 class="t3" id="u11.3.2">11.3.2    Ein Widget hinzufügen und im Frontend darstellen</h3>
+            <p class="standard">Um ein neues Widget hinzuzufügen und im Frontend darzustellen, begeben Sie sich in das Magento-Backend, und melden Sie sich, falls Sie nicht eingeloggt sind, mit Ihren persönlichen Zugangsdaten an. Im Backend angekommen, klicken Sie bitte auf <span class="screenelement smallcaps">Inhalt</span> • <span class="screenelement smallcaps">Widgets</span>. Sie erhalten eine Auflistung aller bereits hinzugefügten Widgets, dementsprechend dürfte die Tabelle keine Datensätze enthalten. Es gibt im Gegensatz zu Seiten keine Widgets, die nach der Installation von Magento sozusagen out of the box hinzugefügt werden. Klicken Sie daher auf den Button <span class="screenelement smallcaps">Widget hinzufügen</span>, den Sie in der oberen Bildschirmhälfte vorfinden.</p>
+            <p class="standard">Daraufhin gelangen Sie zu einer neuen Eingabemaske, die Sie in <span class="crossreference "><a href="11_003.html#b11.12">Abbildung 11.12</a></span> sehen. Es handelt sich bei dieser Maske sozusagen um den ersten Schritt bei der Anlage eines Widgets, denn Sie müssen zu allererst allgemeine Einstellungen auswählen.</p>
+            <p class="standard">Als kleines praxisnahes Beispiel schlage ich an dieser Stelle folgendes Szenario vor: Ich möchte auf allen Seiten innerhalb des Frontends einen Link zur Seite »Privacy and Cookie Policy« einfügen und diese Anforderung mittels Widget abbilden. Ich wähle an dieser Stelle übrigens bewusst die Seite »Privacy and Cookie Policy«, da diese standardmäßig von Magento direkt nach der Installation angelegt wird. Sie müssen daher zuvor keine CMS-Seite hinzufügen oder weitere Anpassungen vornehmen und können alle Schritte direkt mit mir durchgehen.</p>
+            <div class="imagebox "><a href="img-b11.12.html" id="b11.12"><img alt="Wenn Sie ein Widget anlegen möchten, müssen Sie zuerst einen Typ definieren und das Design bestimmen." id="img-b11.12" src="bilderklein/kleinabbildung-11-12.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.12</b>    Wenn Sie ein Widget anlegen möchten, müssen Sie zuerst einen Typ definieren und das Design bestimmen.</p>
+            <p class="standard">Bei der ersten Option, die Sie in <span class="crossreference "><a href="11_003.html#b11.12">Abbildung 11.12</a></span> sehen, handelt es sich um den Widget-Typ. Die Widget-Typen habe ich Ihnen auf den vorherigen Seiten bereits im Detail erläutert, und an dieser Stelle müssen Sie einen dieser vorhandenen Widget-Typen auswählen. Um den Link auf die Seite »Privacy and Cookie Policy« zu realisieren, wähle ich beim <span class="screenelement smallcaps">Typ</span> die Option »CMS-Seiten-Link«. Bitte treffen Sie an dieser Stelle dieselbe Auswahl, und springen Sie anschließend zum nächsten Dropdown-Menü namens <span class="screenelement smallcaps">Design Theme</span>. Ohne an dieser Stelle zu weit vorzugreifen, denn das Thema Design und Themes wird in <span class="crossreference "><a href="14_003.html#u14.3">Abschnitt 14.3</a></span> noch behandelt, verfügt Magento von Haus aus über mehrere Themes bzw. Designs. Mit Theme bzw. Design ist die Visualisierung des Frontends gemeint. Hier bietet Magento unendlich viele Möglichkeiten, und innerhalb eines Systems können Sie zudem problemlos beliebig viele Themes installieren und betreiben. Ein Widget benötigt, das hat in erster Linie technische Hintergründe, immer die Information, in welchem Design es genutzt werden soll. Wählen Sie an dieser Stelle die Option <span class="screenelement smallcaps">Magento Luma</span>, da es sich hierbei um das Design handelt, das standardmäßig von Magento genutzt wird und auch bei Ihnen aktiv ist. Haben Sie in beiden Dropdown-Menüs die angesprochenen Optionen ausgewählt, klicken Sie auf den Button <span class="screenelement smallcaps">Fortsetzen</span>.</p>
+            <p class="standard">Sie gelangen daraufhin zum nächsten Schritt und sehen eine stark modifizierte Eingabemaske. Die ersten beiden Felder dürften Ihnen bekannt vorkommen, denn hierbei handelt es sich um den Typ und Design-Paket/Theme. An dieser Stelle werden Sie bestimmt bemerken, dass diese beiden Dropdown-Menüs ausgegraut sind, d. h., Sie werden, wenn Sie ein Widget angelegt haben, diese beiden Optionen nachträglich nicht mehr ändern können. Das bedeutet, wenn Sie ein bestehendes Widget haben und den Typ ändern möchten, müssen Sie das bestehende Widget löschen und ein neues anlegen. Eine Alternative zu dieser Vorgehensweise existiert leider nicht, was jedoch halb so tragisch ist, da ein Widget recht schnell angelegt ist. Wenn Sie ein wenig nach unten scrollen, gelangen Sie zum nächsten Eingabefeld namens <span class="screenelement smallcaps">Widget-Titel</span><a class="indexanchor" id="i11_22"/>. Beim Widget-Titel können Sie eine beliebige Bezeichnung für das Widget hinterlegen. Diese Bezeichnung wird bei den Magento-Standard-Widgets nicht im Frontend dargestellt, dementsprechend können Sie an dieser Stelle eine beliebige Bezeichnung hinterlegen, mit der Sie selbst gut klarkommen. Kryptische Namen oder Bezeichnungen sind daher kein Problem, auch wenn ich an dieser Stelle den einfachen Namen »Privacy and Cookie Policy Link« hinterlege. Neben dem Namen müssen Sie im nächsten Schritt das Widget einem oder mehreren Store Views zuweisen, wofür die Mehrfachauswahl <span class="screenelement smallcaps">Zu Store Views zuweisen</span> bereitsteht. Zum jetzigen Zeitpunkt werden Sie nur einen Store View im System angelegt haben, weswegen Ihnen an dieser Stelle die Auswahl leichtfallen dürfte. Ebenso wichtig wie die Store-View-Zuweisung ist die <span class="screenelement smallcaps">Sortierreihenfolge</span>, die Sie direkt darunter finden. Speziell wenn Sie mehrere Widgets an derselben Stelle darstellen möchten, spielt die Reihenfolge eine Rolle, denn Sie möchten sicherlich definieren, welches Widget zuerst, bzw. an welcher Stelle in der Reihenfolge es dargestellt werden soll. Bei der Reihenfolge greift an dieser Stelle dieselbe Logik wie bei der Priorisierung, d. h., das Widget mit der niedrigsten Zahl im Feld <span class="screenelement smallcaps">Sortierreihenfolge</span> wird zuerst ausgelesen und dargestellt. In diesem Beispiel können Sie die Sortierreihenfolge jedoch auch leerlassen, da Sie nur dieses eine Widget hinzufügen.</p>
+            <p class="standard">Spannend wird es jetzt im nächsten Abschnitt namens <span class="screenelement smallcaps">Layout-Updates</span>, den Sie in der unteren Bildschirmhälfte vorfinden. Bevor Sie bestimmen, wie sich das Widget verhalten soll, also beispielsweise, auf welche Seite verlinkt wird, müssen Sie die Positionen des Widgets definieren. Sie können das Widget prinzipiell auf bestimmten Seiten an bestimmten Positionen erscheinen lassen. Auf welcher Seite das Widget an welcher Position auftaucht, definieren Sie im Abschnitt <span class="screenelement smallcaps">Layout-Updates,</span> und Sie können sowohl mehrere Seiten als auch mehrere Abschnitte auswählen. Bevor ich es Ihnen an dieser Stelle jedoch zu kompliziert mache, lassen Sie uns in den praktischen Teil einsteigen. Dafür klicken Sie bitte auf den Button <span class="screenelement smallcaps">Layout-Update hinzufügen</span>, worauf sich ein neues Dropdown-Menü, wie in <span class="crossreference "><a href="11_003.html#b11.13">Abbildung 11.13</a></span> zu sehen ist, öffnet.</p>
+            <div class="imagebox "><a href="img-b11.13.html" id="b11.13"><img alt="Um ein Widget zu positionieren, müssen Sie zuerst ein Layout-Update erstellen." id="img-b11.13" src="bilderklein/kleinabbildung-11-13.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.13</b>    Um ein Widget zu positionieren, müssen Sie zuerst ein Layout-Update erstellen.</p>
+            <p class="standard">In diesem neuen Dropdown-Menü mit dem Namen <span class="screenelement smallcaps">Display on</span> können Sie nun definieren, auf welchen Seiten das Widget geladen werden soll. Magento kennt hierfür drei unterschiedliche Arten von Seitentypen. Sie haben die Wahl, das Widget auf Kategorie-, Produkt- oder generischen Seiten zu positionieren. Die <span class="italic">Kategorien</span> unterteilen sich in diejenigen mit aktivierter und diejenigen mit deaktivierter Filternavigation. Sie erinnern sich bestimmt an die Option bei der Erstellung von Kategorien, die den Namen <span class="screenelement smallcaps">is anchor</span> trägt. An dieser Stelle können Sie eine Differenzierung vornehmen und das Widget in denjenigen Kategorien anzeigen, die diese Option gesetzt haben bzw. die diese Option nicht gesetzt haben. Bei den <span class="italic">Produkten</span> ist es etwas einfacher, denn hier können Sie das Widget auf allen Produktseiten oder auf Produktseiten abhängig vom Produkttyp darstellen. Beispielsweise könnte das Widget nur bei Bündelprodukten dargestellt werden. Die dritte Kategorie namens <span class="italic">Generische Seiten</span> umfasst alle im System vorhandenen Seiten, ganz unabhängig davon, ob es sich um Produkte, Kategorien oder auch den Checkout-Prozess handelt. Darüber hinaus ermöglicht die Option <span class="screenelement smallcaps">Angegebene Seiten</span> – an dieser Stelle ist die Übersetzung erneut etwas schwammig – die Auswahl einer jeden der im System vorhandenen Seiten, wie Sie in <span class="crossreference "><a href="11_003.html#b11.14">Abbildung 11.14</a></span> sehen können.</p>
+            <div class="imagebox "><a href="img-b11.14.html" id="b11.14"><img alt="Ein Widget kann sehr granular platziert werden, da jede im System vorhandene Seite zur Verfügung steht." id="img-b11.14" src="bilderklein/kleinabbildung-11-14.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.14</b>    Ein Widget kann sehr granular platziert werden, da jede im System vorhandene Seite zur Verfügung steht.</p>
+            <p class="standard">So könnten Sie das Widget mithilfe dieser Option nur auf einer Seite des Kundenkontos positionieren oder in einem bestimmten Schritt innerhalb des Checkouts. Diese Option sollten Sie immer dann wählen, wenn Sie das Widget tatsächlich nur auf einer ganz speziellen Seite einbinden möchten. In meinem Beispiel, in dem ich den Link letztendlich auf allen Seiten positionieren möchte, wähle ich die Option <span class="screenelement smallcaps">Alle Seiten</span>. Sie erhalten nach der Auswahl der Option im Dropdown-Menü weitere Dropdown-Listen, die sich direkt darunter öffnen. Teilen Sie Magento nun mit, dass das Widget auf allen Seiten im System geladen werden soll, und geben Sie im nächsten Schritt eine Position an. Denn Magento kann aktuell noch gar nicht wissen, an welcher Stelle das Widget ausgegeben werden soll. Die exakte Positionierung können Sie im Dropdown-Feld <span class="screenelement smallcaps">Container</span> vornehmen. Magento untergliedert das Frontend, beispielsweise die Startseite, in sogenannte Container. Container sind Abschnitte, in denen das Design aufgeteilt ist. So ist der Kopfbereich, auch Header genannt, ein Container, oder der Fußbereich, der auch als Footer bezeichnet wird. Magento teilt das Design jedoch etwas granularer auf, und es gibt nicht nur drei bis vier Container, sondern wesentlich mehr. Welcher Container sich an welcher Stelle befindet, ist übrigens von Design zu Design unterschiedlich. Sprich, wenn Sie später ein eigenes Design entwickeln, könnte der Header-Container ein ganz anderer sein als im Magento-Standard-Design. Zur Auswahl stehen nun insgesamt die folgenden Container:</p>
+            <ul>
+                <li>
+                    After Page Header
+                </li>
+                <li>
+                    After Page Header Top
+                </li>
+                <li>
+                    Before Main Columns
+                </li>
+                <li>
+                    Before Page Footer
+                </li>
+                <li>
+                    Before Page Footer Container
+                </li>
+                <li>
+                    CMS Footer Links
+                </li>
+                <li>
+                    Compare Link Wrapper
+                </li>
+                <li>
+                    Main Content Area
+                </li>
+                <li>
+                    Main Content Aside
+                </li>
+                <li>
+                    Main Content Bottom
+                </li>
+                <li>
+                    Main Content Container
+                </li>
+                <li>
+                    Main Content Top
+                </li>
+                <li>
+                    Mini-cart promotion block
+                </li>
+                <li>
+                    Page Bottom
+                </li>
+                <li>
+                    Page Footer
+                </li>
+                <li>
+                    Page Footer Container
+                </li>
+                <li>
+                    Page Header
+                </li>
+                <li>
+                    Page Header Container
+                </li>
+                <li>
+                    Page Header Panel
+                </li>
+                <li>
+                    Page Top
+                </li>
+                <li>
+                    Sidebar Additional
+                </li>
+                <li>
+                    Sidebar Main
+                </li>
+            </ul>
+            <p class="standard">Anhand der Benennung können Sie sich bestimmt recht gut vorstellen, welcher Container für welchen Bereich im Frontend zuständig ist, daher möchte ich Ihnen an dieser Stelle keine Detaileinführung in die verschiedenen Container-Bereiche geben. Sie können an dieser Stelle auch gern etwas mit dem System experimentieren und prüfen, welcher Bereich durch den jeweiligen Container definiert wird. Wählen Sie bitte die Option <span class="screenelement smallcaps">CMS Footer Links</span> aus, da ich die Verlinkung gern im Footer platzieren möchte. Nachdem Sie die Position gewählt haben, können Sie zudem eine Vorlage für die eigentliche Ausgabe des Inhalts wählen. Diese Option hängt stark vom gewählten Widget ab. So gibt es Widgets, die mehrere Vorlagen unterstützen. Wiederum gibt es jedoch auch Widgets, bei denen Sie nicht aus weiteren Vorlagen auswählen können. In diesem Fall haben Sie die Möglichkeit, eine Vorlage zu wählen, belassen Sie die Option jedoch ruhig beim Standard. Auch wenn es inhaltlich und optisch nicht wirklich Sinn ergibt, möchte Ihnen an dieser Stelle demonstrieren, dass Sie ein Widget in verschiedenen Positionen im Frontend darstellen können. Klicken Sie hierzu erneut auf den Button <span class="screenelement smallcaps">Layout-Update hinzufügen,</span> und wählen Sie erneut die Option <span class="screenelement smallcaps">Alle Seiten</span> aus. Sobald das Dropdown-Menü »Container« erscheint, suchen Sie die Option <span class="screenelement smallcaps">Page Header</span> und bestätigen die Auswahl. Ihre Konfiguration müsste wie meine, die Sie in <span class="crossreference "><a href="11_003.html#b11.15">Abbildung 11.15</a></span> sehen, ausschauen. Falls nicht, passen Sie Ihre Einstellungen bitte entsprechend an.</p>
+            <div class="imagebox "><a href="img-b11.15.html" id="b11.15"><img alt="Ein einzelnes Widget kann auf beliebigen Seiten und an beliebigen Stellen auftauchen." id="img-b11.15" src="bilderklein/kleinabbildung-11-15.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.15</b>    Ein einzelnes Widget kann auf beliebigen Seiten und an beliebigen Stellen auftauchen.</p>
+            <p class="standard">Mit diesen Einstellungen teilen Sie dem Widget also mit, auf allen Seiten jeweils im Container »CMS Footer Links« sowie im Container »Page Header« aufzutauchen. Nachdem Sie diese Definition vorgenommen haben, ist der nächste Schritt die Definition des eigentlichen Inhalts.</p>
+            <p class="standard">Scrollen Sie nun erneut nach oben bis zur oberen Bildschirmhälfte. Linkerhand sehen Sie daraufhin zwei Tabs. Beim ersten Tab handelt es sich um die <span class="screenelement smallcaps">Storefront-Eigenschaften</span>. In diesen befinden Sie sich aktuell, und die Storefront-Eigenschaften sind für die Positionierung sowie die Definition allgemeiner Informationen des Widgets notwendig. Der zweite Tab trägt den Namen <span class="screenelement smallcaps">Widget-Optionen</span><a class="indexanchor" id="i11_23"/> und regelt den Inhalt und das Verhalten des Widgets. Da Sie nun den Inhalt des Widgets definieren werden, klicken Sie auf diesen Tab. Magento lädt anschließend zwar nicht die gesamte Seite neu, Sie werden auf der rechten Bildschirmhälfte jedoch eine andere Oberfläche vorfinden. Diese Oberfläche unterscheidet sich dabei je nach Widget-Typ. Wenn Sie etwas komplexere Widget-Typen verwenden, haben Sie zwangsläufig mehr und vor allem auch andere Optionen als bei weniger komplexen Widget-Typen. Je Typ unterscheidet sich daher diese Oberfläche, behalten Sie das im Hinterkopf, wenn Sie später auf eigene Faust Widgets erstellen und sich wundern, warum die Widget-Optionen anders als von mir beschrieben aussehen. Im Fall eines Widgets vom Typ CMS-Seiten-Link haben Sie in den Widget-Optionen genau drei Eingabefelder. Zuallererst können Sie, müssen aber nicht, einen benutzerdefinierten Ankertext hinterlegen, indem Sie in dem Feld <span class="screenelement smallcaps">Benutzerdefinierter Ankertext</span> den Namen des Links angeben. Wenn Sie keinen Namen angeben, wird einfach der Name der zu verlinkenden Seite genommen. Da ich dies jedoch nicht möchte, hinterlege ich an dieser Stelle den Wert »Datenschutzinformationen«. Das nächste Feld namens <span class="screenelement smallcaps">Benutzerdefinierter Ankertitel</span> stellt eine primär über den Quellcode ersichtliche Information zur Verfügung. Speziell Suchmaschinen und Crawler lesen dieses Feld gern, um nähere Informationen zum Link zu erhalten und den Link zu verstehen. Auch dieses Feld müssen Sie theoretisch nicht ausfüllen, Sie können aber an dieser Stelle wie ich erneut den Wert »Datenschutzinformationen« hinterlegen. Richtig interessant wird es bei der nächsten und letzten Option namens <span class="screenelement smallcaps">CMS-Seite</span>. Klicken Sie zuerst auf den Button <span class="screenelement smallcaps">Seite wählen...</span>, woraufhin sich eine neue Ansicht, wie in <span class="crossreference "><a href="11_003.html#b11.16">Abbildung 11.16</a></span> zu sehen ist, öffnet.</p>
+            <div class="imagebox "><a href="img-b11.16.html" id="b11.16"><img alt="Die zu verlinkende Seite können Sie recht einfach dank einer Auflistung aller im System vorhandenen Seiten auswählen." id="img-b11.16" src="bilderklein/kleinabbildung-11-16.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.16</b>    Die zu verlinkende Seite können Sie recht einfach dank einer Auflistung aller im System vorhandenen Seiten auswählen.</p>
+            <p class="standard">Magento zeigt Ihnen in dieser neuen Ansicht alle im System vorhandenen Seiten an. Wählen Sie an dieser Stelle bitte den Eintrag <span class="screenelement smallcaps">Privacy and Cookie Policy</span> aus, woraufhin Sie wieder bei der vorherigen Maske im Tab <span class="screenelement smallcaps">Widget-Optionen</span> landen. Da Sie alle für das Widget relevanten Informationen hinterlegt haben, können Sie das Widget nun abspeichern. Klicken Sie hierfür auf den Button <span class="screenelement smallcaps">speichern</span> oder <span class="screenelement smallcaps">Speichern und weiter bearbeiten</span>, je nachdem ob Sie in der Widget-Übersicht landen möchten oder nicht.</p>
+            <div class="box_standard">
+                <h6 class="boxheading">Vergessen Sie nicht, den Cache<a class="indexanchor" id="i11_24"/> zu leeren!</h6>
+                <p class="standard">Nachdem Sie ein Widget angelegt oder editiert haben, müssen Sie zwangsläufig den Cache, d. h. den Magento-Zwischenspeicher, leeren. Tun Sie das nicht, werden Sie keine aktuelle Ausgabe im Frontend sehen, sprich, das Widget wird nicht auftauchen. Den Cache leeren Sie, indem Sie im Backend auf <span class="screenelement smallcaps">System</span> • <span class="screenelement smallcaps">Cache Management</span> und in dieser Ansicht auf den Button <span class="screenelement smallcaps">Magento-Cache leeren</span> klicken. Anschließend wird Ihnen Magento innerhalb des Frontends eine aktualisierte Ansicht ausgeben.</p>
+            </div>
+            <p class="standard">Nachdem Sie den Cache geleert haben – andernfalls erhalten Sie im Frontend keine aktuelle Ausgabe, und Sie werden das Widget nicht sehen –, wechseln Sie in das Frontend. Unabhängig davon, welche Seite Sie nun aufrufen, werden Sie sowohl unter dem Logo, wie in <span class="crossreference "><a href="11_003.html#b11.17">Abbildung 11.17</a></span> zu erkennen, als auch im Footer den von Ihnen per Widget eingefügten Link sehen.</p>
+            <div class="imagebox "><a href="img-b11.17.html" id="b11.17"><img alt="Wie definiert, integriert sich das Widget in den Kopfbereich sowie in den Footer, wobei Sie dies im Screenshot nicht sehen können." id="img-b11.17" src="bilderklein/kleinabbildung-11-17.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.17</b>    Wie definiert, integriert sich das Widget in den Kopfbereich sowie in den Footer, wobei Sie dies im Screenshot nicht sehen können.</p>
+            <p class="standard">Das von Ihnen erstellte Widget wird also sauber im Frontend dargestellt und taucht in den von Ihnen definierten Positionen aus. Auch der Link-Text wurde entsprechend Ihrer Eingabe herangezogen. Herzlich Glückwunsch, Sie haben erfolgreich ein Widget erstellt und innerhalb des Frontends integriert!</p>
+            <p class="standard">Widgets lassen sich, wie ich anfangs bereits angedeutet hatte, jedoch auch auf eine andere Art integrieren. Zugegebenermaßen ist die soeben vorgestellte Methode recht umfangreich, und Sie können ein beliebiges Widget dank der Container an einer Vielzahl von Stellen positionieren. Möchten Sie jedoch ein Widget direkt innerhalb eines Textes, beispielsweise auf der Startseite, integrieren, so stoßen Sie bei der Nutzung von Containern relativ schnell an Grenzen, denn mithilfe von Containern können Sie nicht direkt auf Texte oder bestimmte Stellen innerhalb von Texten zugreifen. Aber auch hierfür hat sich Magento eine Lösung ausgedacht, die Sie sogar bereits kennengelernt haben. Dennoch finde ich an dieser Stelle eine kleine Wiederholung sinnvoll.</p>
+            <p class="standard">Begeben Sie sich jetzt erneut ins Magento-Backend, und klicken Sie auf <span class="screenelement smallcaps">Inhalt</span> • <span class="screenelement smallcaps">Seiten</span>. Öffnen Sie die Startseite, und scrollen Sie zum Bereich Inhalt. Sie sehen nun den Inhalt der Startseite, bestehend aus einer Variable und mehreren Widgets. Das ist an dieser Stelle genau die Funktionalität, die ich Ihnen zeigen möchte, die Sie aber im Verlauf des Buches schon genutzt haben. Neben der Positionierung von Widgets mittels Container können Sie nämlich mithilfe des WYSIWYG-Editors direkt in Seiten Widgets einfügen. Dadurch können Sie ein Widget an einer beliebigen Stelle innerhalb des Inhalts platzieren und haben somit eine noch größere Flexibilität. Wenn Sie ein Widget einfügen möchten, klicken Sie in der ersten Zeile des WYSIWYG-Editors auf das Icon. Ich habe Ihnen zur besseren Übersichtlichkeit an dieser Stelle auch nochmals einen Screenshot dieser Ansicht erstellt, den Sie in <span class="crossreference "><a href="11_003.html#b11.18">Abbildung 11.18</a></span> sehen.</p>
+            <div class="imagebox "><a href="img-b11.18.html" id="b11.18"><img alt="Ein Widget können Sie problemlos mithilfe des WYSIWYG-Editors einfügen." id="img-b11.18" src="bilderklein/kleinabbildung-11-18.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 11.18</b>    Ein Widget können Sie problemlos mithilfe des WYSIWYG-Editors einfügen.</p>
+            <p class="standard">Sobald Sie auf das besagte Icon klicken, öffnet sich ein neues Fenster, in dem Sie einen Widget-Typ auswählen können. Wählen Sie an dieser Stelle den Typ »CMS-Seiten-Link«, werden Sie daraufhin dieselben Eingabefelder sehen wie schon beim vorherigen Widget, das Sie angelegt haben. Die dahinterliegende Logik und die Eingabefelder sind identisch, einzig die optische Darstellung der Maske unterscheidet sich leicht, da Sie in dieser Ansicht keine Tabs vorfinden. Im Prinzip können Sie nun exakt dasselbe Widget wie zuvor erstellen und einfügen. Beachten Sie an dieser Stelle, dass Sie hiermit ein neues Widget erstellen. Sie referenzieren also nicht auf das im Vorfeld bereits angelegte Widget, sondern würden ein komplett neues hinzufügen. Magento differenziert an dieser Stelle recht stark, d. h., die in den Seiten erstellten Widgets tauchen auch nicht in der Übersicht unter <span class="screenelement smallcaps">Inhalt</span> • <span class="screenelement smallcaps">Elemente</span> • <span class="screenelement smallcaps">Widgets</span> auf, sondern existieren nur rein in den Seiten. Für Magento handelt es sich daher um zwei komplett voneinander getrennte und autark arbeitende Widget-Pools.</p>
+            <p class="standard">Füllen Sie gern an dieser Stelle die Eingabemaske aus, erstellen Sie das Widget, und speichern Sie anschließend die Seite. Rufen Sie daraufhin die Startseite innerhalb des Frontends auf, werden Sie, je nachdem an welcher Stelle Sie das Widget platziert haben, die Ausgabe des Links sehen.</p>
+        
+        
+            <h3 class="t3" id="u11.3.3">11.3.3    Bestehende Widgets verwalten<a class="indexanchor" id="i11_25"/></h3>
+            <p class="standard">Sofern Sie bestehende Widgets verwalten bzw. löschen möchten, können Sie dies im Punkt <span class="screenelement smallcaps">Inhalt</span> • <span class="screenelement smallcaps">Elemente</span> • <span class="screenelement smallcaps">Widgets</span> tun. Sie erhalten dort eine Auflistung aller im System vorhandenen Widgets, mit Ausnahme von Widgets, die Sie direkt innerhalb von Seiten eingefügt haben. Wie eingangs erwähnt, können Sie bei einem bestehenden Widget weder den Typ noch das zugeordnete Design editieren. Diese beiden Punkte sind fix, möchten Sie diese ändern, hilft nur eine komplette Neuanlage des Widgets. Das bestehende Widget müssten Sie zudem löschen, um Doppelungen zu vermeiden. Ansonsten unterscheidet sich die Bearbeitungsmaske nicht von derjenigen, die Sie bereits bei der Neuanlage kennengelernt haben.</p>
+            <p class="standard">Meiner Meinung nach zählen die Widgets zu einer der mächtigsten, aber auch am häufigsten unterschätzten Funktionen innerhalb von Magento. Die im Standard vorhandenen Widgets werden oft belächelt und als weniger hilfreich abgetan. Das mag zum Teil auch stimmen, aber das Ziel der Widgets ist es auch nicht, von Haus aus alle von Ihnen benötigten Funktionen abzudecken. Die Widget-Funktionalität schafft in erster Linie die Basis, die Sie durch eigene Widgets, seien es Eigenentwicklungen oder Modifikationen von Drittanbietern, sinnvoll erweitern können. Gerade diese Erweiterbarkeit ist letztendlich die große Stärke, die Ihnen ermöglicht, ohne Programmierkenntnisse und Support durch eine Agentur oder Entwickler auch komplexe Inhalte einfach und mittels grafischer Oberfläche pflegen zu können. Nutzen Sie daher die Widgets, und machen Sie sich auch mit den am Markt verfügbaren Erweiterungen vertraut. Es wird Ihnen, das ist zumindest meine Meinung, sehr viel nützen!</p>
+        
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Einstieg und Konfiguration von Magento" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Einstieg und Konfiguration von Magento" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Einstieg und Konfiguration von Magento</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main">
+        <h2 class="t2" id="u4.2">4.2    Das Magento-Backend<a class="indexanchor" id="i04_02"/> im Überblick</h2>
+        <p class="standard">Nachdem Sie an dieser Stelle genau wie ich über eine Magento-Instanz inklusive deutschem Sprachpaket verfügen, möchte ich Ihnen im Folgenden einen Ein- und Überblick über das Magento-Backend geben. Rufen Sie hierfür zuallererst das Magento-Backend auf. Sie erinnern sich sicherlich an den Installationsprozess und die dort vermerkte Admin-URL. Entweder haben Sie auf die von Magento generierte URL gesetzt oder eine eigene namens <span class="italic">admin</span> hinterlegt. Am Ende des Installationsprozesses wurde diese URL übrigens nochmals aufgeführt. Rufen Sie nun die hinterlegte Backend-URL auf. Da ich ab sofort zu dem im Buch thematisierten Demo-Shop wechsle, handelt es sich in meinem Fall um die URL <span class="url"><a href="http://www.foodbaer.de/admin">http://www.foodbaer.de/admin</a></span>. Durch den Zusatz <span class="italic">/admin</span> komme ich vom Frontend ins Backend und werde zuerst nach dem Benutzernamen und Passwort gefragt, wie Sie in <span class="crossreference "><a href="04_002.html#b4.2">Abbildung 4.2</a></span> sehen.</p>
+        <div class="imagebox "><a href="img-b4.2.html" id="b4.2"><img alt="Um in das Magento-Backend zu gelangen, müssen Sie sich im ersten Schritt mit Ihrem Benutzernamen und Passwort anmelden." id="img-b4.2" src="bilderklein/kleinabbildung-4-2.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 4.2</b>    Um in das Magento-Backend zu gelangen, müssen Sie sich im ersten Schritt mit Ihrem Benutzernamen und Passwort anmelden.</p>
+        <p class="standard">Geben Sie die im Installationsprozess vermerkten Zugangsdaten bestehend aus einem Benutzernamen und Passwort ein, und klicken Sie auf <span class="screenelement smallcaps">Anmelden</span>. Sollten Sie Ihre Zugangsdaten vergessen haben, was zu einem späteren Zeitpunkt sicherlich passieren kann, können Sie auf den Link <span class="screenelement smallcaps">Haben Sie Ihr Passwort vergessen?</span> klicken. Anschließend können Sie Ihre E-Mail-Adresse hinterlegen, um ein neues Passwort anzufordern. Beachten Sie bitte, dass Sie für diese Funktion einen funktionierenden und lokal installierten Mail-Server benötigen. Sollten Sie aus irgendeinem Grund keine E-Mail erhalten, wenn Sie ein neues Passwort anfordern, ist der nicht existente bzw. fehlerhaft arbeitende Mail-Server in der Regel die Problemquelle Nummer eins.</p>
+        <div class="box_standard">
+            <h6 class="boxheading">Zugangsdaten<a class="indexanchor" id="i04_03"/> für www.foodbaer.de</h6>
+            <p class="standard">Sollten Sie keine lokale Installation von Magento aufsetzen können bzw. dürfen und falls VirtualBox samt MageVM für Sie ebenfalls keine Option darstellt, können Sie alle Änderungen ebenso in dem Demo-System <span class="url"><a href="http://www.foodbaer.de">www.foodbaer.de</a></span> nachvollziehen. Es handelt sich um eine Magento-Installation, die alle zwei Stunden zurückgesetzt wird; innerhalb der zwei Stunden haben Sie aber die Möglichkeit, alles zu editieren und nachzuvollziehen.</p>
+            <ul>
+                <li>
+                    Frontend: <span class="url"><a href="http://www.foodbaer.de">http://www.foodbaer.de</a></span>
+                </li>
+                <li>
+                    Backend: <span class="url"><a href="http://www.foodbaer.de/admin">http://www.foodbaer.de/admin</a></span>
+                </li>
+                <li>
+                    Benutzername: magentobuch
+                </li>
+                <li>
+                    Passwort: magento123!
+                </li>
+            </ul>
+        </div>
+        <p class="standard">Sobald Sie sich erfolgreich mit Ihrem Benutzernamen und Passwort angemeldet haben, landen Sie direkt im Magento-Backend. Standardmäßig ist als Startseite das Dashboard hinterlegt, in dem Sie sich nun befinden. Wenn Sie sich die Elemente des Backends nun im Detail ansehen, werden Sie relativ schnell feststellen, dass alle Begriffe weiterhin auf Englisch ausgegeben werden. Sie haben zwar, genau wie ich, bei der Installation die Sprache auf Deutsch gestellt, diese Einstellung bezieht sich aber nur auf das Frontend. Würden Sie an dieser Stelle in das Frontend springen, würden Sie eine vollständig auf Deutsch erscheinende Oberfläche vorfinden. Für das Backend hingegen müssen Sie, um die Sprache zu wechseln, zuerst in Ihr Benutzerkonto gehen.</p>
+        <p class="standard">Klicken Sie hierfür in der oberen rechten Ecke auf Ihren Benutzernamen, worauf sich ein neues Menü öffnet. Wählen Sie den ersten Menüpunkt namens <span class="screenelement smallcaps">Account Setting</span>. Über diesen Link landen Sie in Ihren persönlichen Kontoeinstellungen. Innerhalb dieser Ansicht können Sie folgende Informationen bearbeiten:</p>
+        <ul>
+            <li>
+                User Name
+            </li>
+            <li>
+                First Name
+            </li>
+            <li>
+                Last Name
+            </li>
+            <li>
+                Email
+            </li>
+            <li>
+                Password
+            </li>
+            <li>
+                Interface Locale
+            </li>
+        </ul>
+        <p class="standard">Kurz gesagt, haben Sie in dieser Maske die Möglichkeit, Ihren Namen, Ihre E-Mail-Adresse, Ihren Benutzernamen und Ihr Kennwort abzuändern. Zudem können Sie auch die Sprache des Backends ändern, diese Einstellung bezieht sich exklusiv auf Ihr Benutzerkonto. Wählen Sie beim Punkt <span class="screenelement smallcaps">Interface Locale</span> den Eintrag <span class="screenelement smallcaps">Deutsch (Deutschland) / German (Germany)</span> aus, geben Sie zur Bestätigung der Änderung Ihr Kennwort im Feld <span class="screenelement smallcaps">Your Password</span> ein, und klicken Sie auf <span class="screenelement smallcaps">Save Account</span>. Zur besseren Orientierung können Sie einen Blick auf <span class="crossreference "><a href="04_002.html#b4.3">Abbildung 4.3</a></span> werfen, in der Sie das entsprechende Dropdown-Feld und auch den Button zum Speichern erkennen können.</p>
+        <div class="imagebox "><a href="img-b4.3.html" id="b4.3"><img alt="In Ihrem Benutzerkonto können Sie die Sprache, aber auch persönliche Daten abändern." id="img-b4.3" src="bilderklein/kleinabbildung-4-3.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 4.3</b>    In Ihrem Benutzerkonto können Sie die Sprache, aber auch persönliche Daten abändern.</p>
+        <p class="standard">Nachdem Sie auf <span class="screenelement smallcaps">Save Account</span> geklickt haben, werden die Änderungen gespeichert, und das Backend ist anschließend in deutscher Sprache verfügbar. Bitte beachten Sie, dass Sie grundsätzlich für Änderungen in Ihrem Benutzerkonto immer Ihr Passwort als Bestätigung eingeben müssen. Sollten Sie das nicht tun, wird Sie Magento mit einem entsprechenden Hinweis darauf aufmerksam machen.</p>
+        <p class="standard">Klicken Sie nun auf den Link <span class="screenelement smallcaps">Dashboard</span><a class="indexanchor" id="i04_04"/>, der sich in der linken Navigationsleiste ganz oben befindet. Da sich das Dashboard immer direkt nach einem erfolgreichen Login öffnet, möchte ich an dieser Stelle mit dieser Ansicht starten und Ihnen den Sinn und Zweck des Dashboards erklären. Das Magento, Ihre im Standard definierte Startseite, zeigt Ihnen alle wichtigen Kennzahlen und Informationen Ihres Online-Shops auf einen Blick an. Dashboard bedeutet, wörtlich übersetzt, Armaturenbrett, und genau als solches dient das Magento Dashboard. Aus diesem Grund ist das Dashboard zudem die ideale Startseite, da Sie nach jedem Login einen schnellen und übersichtlichen Überblick darüber erhalten, was in Ihrem Online-Shop passiert. Wie Sie in <span class="crossreference "><a href="04_002.html#b4.4">Abbildung 4.4</a></span> erkennen können, unterteilt sich das Dashboard, vereinfacht gesagt, in zwei Informationsbereiche.</p>
+        <div class="imagebox "><a href="img-b4.4.html" id="b4.4"><img alt="Das Magento Dashboard, das zeitgleich als Startseite fungiert" id="img-b4.4" src="bilderklein/kleinabbildung-4-4.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 4.4</b>    Das Magento Dashboard, das zeitgleich als Startseite fungiert</p>
+        <p class="standard">Im linken Bereich des Dashboards erhalten Sie folgende Informationen bzw. Kennzahlen:</p>
+        <ul>
+            <li>
+                <span class="bold">Gesamteinnahmen</span><br/>Gesamtumsatz, d. h. die Summe aller Bestellungen, die der Online-Shop seit Beginn generiert hat
+            </li>
+            <li>
+                <span class="bold">Durchschnittlicher Bestellumsatz</span><br/>die durchschnittliche Höhe einer Bestellung
+            </li>
+            <li>
+                <span class="bold">Letzte Bestellungen</span><br/>einen kurzen Überblick über die zuletzt getätigten Bestellungen
+            </li>
+            <li>
+                <span class="bold">Letzte Suchbegriffe</span><br/>die zuletzt im Frontend verwendeten Suchbegriffe
+            </li>
+            <li>
+                <span class="bold">Top-Suchbegriffe</span><br/>die beliebtesten Suchbegriffe Ihrer Kunden und Besucher
+            </li>
+        </ul>
+        <p class="standard">Diese Kennzahlen ermöglichen Ihnen in der Praxis nur einen groben Überblick. Der durchschnittliche Bestellumsatz ist in der Tat eine relativ wichtige Kennzahl, und im Dashboard können Sie diese sehr gut überwachen. Die restlichen Kennzahlen an dieser Stelle sind jedoch begrenzt interessant, da Sie daraus nicht wirklich Handlungen und Aktionen ableiten können, beispielsweise bei den letzten Suchbegriffen.</p>
+        <p class="standard">Der rechte Bereich des Magento Dashboards hat hingegen einen etwas stärkeren Detaillierungsgrad, denn Sie können folgende Informationen entnehmen:</p>
+        <ul>
+            <li>
+                <span class="bold">Einnahmen</span><br/>Höhe der an diesem Tag generierten Umsätze
+            </li>
+            <li>
+                <span class="bold">Steuer</span><br/>Höhe der an diesem Tag fakturierten Steuer
+            </li>
+            <li>
+                <span class="bold">Versand</span><br/>Höhe der an diesem Tag fakturierten Versandkosten
+            </li>
+            <li>
+                <span class="bold">Menge</span><br/>Anzahl der Artikel, die an diesem Tag verkauft wurden
+            </li>
+            <li>
+                <span class="bold">Bestseller</span><br/>Auflistung der am häufigsten verkauften Produkte
+            </li>
+            <li>
+                <span class="bold">Meistgesehene Produkte</span><br/>Auflistung der am häufigsten angesehenen Produkte
+            </li>
+            <li>
+                <span class="bold">Neue Kunden</span><br/>Auflistung der neuen Kunden
+            </li>
+            <li>
+                <span class="bold">Kunden</span><br/>Auflistung der Kunden
+            </li>
+        </ul>
+        <p class="standard">Der rechte Bereich innerhalb des Dashboards zielt auf eine etwas detailliertere Auswertung der Kennzahlen ab. So sehen Sie eine Auflistung der aktuellen Bestseller oder auch neuen Kunden. Zudem erhalten Sie gezielte Informationen zu den generierten Umsätzen des laufenden Tages. In der Praxis wird Sie speziell diese Information interessieren, nämlich wie viel Umsatz am jeweiligen Tag generiert wurde.</p>
+        <p class="standard">Neben der reinen Darstellung von Zahlen können Sie zusätzlich ein Diagramm aktivieren. Unter dem Button <span class="screenelement smallcaps">Daten neu laden</span>, mit dessen Hilfe Sie durch einen Klick die Kennzahlen des Dashboards aktualisieren können, befindet sich ein Link mit der Bezeichnung <span class="screenelement smallcaps">Diagramm ist deaktiviert. Um das Diagramm zu aktivieren, klicken Sie hier</span>. Klicken Sie an dieser Stelle auf das Wort <span class="screenelement smallcaps">hier</span>, worauf Sie in eine Konfigurationsmaske geleitet werden. Innerhalb dieser Maske ist der Reiter <span class="screenelement smallcaps">Dashboard</span> aufgeklappt, der die Option <span class="screenelement smallcaps">Tabellen aktivieren</span> enthält. Aktivieren Sie diese Option, indem Sie bei der Checkbox <span class="screenelement smallcaps">Use system value</span> den Haken entfernen, um dadurch bei dem Dropdown-Feld die Option <span class="screenelement smallcaps">Ja</span> auswählen zu können. Speichern Sie bitte anschließend die Konfiguration, indem Sie auf den Button <span class="screenelement smallcaps">Konfiguration speichern</span> klicken. Gehen Sie daraufhin wieder in das Dashboard, in dem der Satz <span class="screenelement smallcaps">Diagramm ist deaktiviert. Um das Diagramm zu aktivieren, klicken Sie hier</span> nun nicht mehr sichtbar ist. An dieser Stelle sehen Sie jetzt zwei Reiter namens <span class="screenelement smallcaps">Bestellungen</span> und <span class="screenelement smallcaps">Beträge</span>, die Ihnen, sofern Daten vorliegen, entsprechende Diagramme darstellen. Werfen Sie hierfür einen Blick auf <span class="crossreference "><a href="04_002.html#b4.5">Abbildung 4.5</a></span>, die Ihnen genau diese Reiter anzeigt.</p>
+        <div class="imagebox "><a href="img-b4.5.html" id="b4.5"><img alt="Nach Aktivierung der Diagramme erscheinen neue Reiter sowie eine Einschränkung des Zeitraums." id="img-b4.5" src="bilderklein/kleinabbildung-4-5.png"/></a></div>
+        
+    
+        <p class="caption "><b>Abbildung 4.5</b>    Nach Aktivierung der Diagramme erscheinen neue Reiter sowie eine Einschränkung des Zeitraums.</p>
+        <p class="standard">Sobald Sie im späteren Verlauf dieses Buches Bestellungen erzeugen, Produkte anlegen und mit dem Online-Shop arbeiten, können Sie sich selbst ein Bild von dem Magento Dashboard machen. Denn wie Sie sehen ist es zum jetzigen Zeitpunkt doch noch relativ leer, es werden keine Diagramme dargestellt, und für viele Kennzahlen gibt es keine Informationen. Aktuell fehlt Ihrem Online-Shop noch etwas Leben, was sich jedoch von Kapitel zu Kapitel immer mehr ändern wird.</p>
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>

@@ -1,0 +1,178 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+                    <head><meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
+                        <meta content="text/html; charset=utf-8" name="content-type"/>
+                        <meta content="Rheinwerk Computing :: Magento 2 - Steuerregeln und Währungen" name="title"/>
+                        <meta content="Alexander Steireif" name="author"/>
+                        <meta content="Rheinwerk Verlag" name="publisher"/>
+                        <meta content="© Rheinwerk Verlag GmbH, Bonn 2018" name="copyright"/>
+                        <meta content="Magento 2 - Das umfassende Handbuch - Steuerregeln und Währungen" name="description"/>
+                        <meta content="de" name="language"/>
+                        <meta content="Magento" lang="de" name="keywords"/>
+                        <title>Rheinwerk Computing :: Magento 2 - Steuerregeln und Währungen</title>
+                        <link href="common/styles.css" rel="stylesheet" type="text/css"/>
+<meta content="urn:uuid:af77211e-e8a6-4306-b79c-a3b240186b59" name="Adept.expected.resource"/>
+                    </head>
+                    
+                    
+                            <body>
+                                <div class="use_antiqua_font" id="main"><h1 class="t1" id="u6">6    Steuerregeln<a class="indexanchor" id="i06_00"/> und Währungen<a class="indexanchor" id="i06_01"/></h1><p class="introductorynote">Als weltweit verbreitete E-Commerce-Lösung beherrscht Magento den Umgang mit verschiedensten Steuerregeln und Währungen so gut wie kein anderes System. Diese enorme Flexibilität führt jedoch zwangsläufig zu einer gewissen Komplexität. Lassen Sie uns daher diese beiden Themen im Folgenden im Detail beleuchten.</p><p class="standard">Mit Magento verfügen Sie über die ideale technologische Basis, um weltweit Produkte und Dienstleistungen zu vertreiben. Denn Magento beherrscht sowohl den Umgang mit verschiedenen Währungen als auch mit verschiedensten Steuerregeln. Speziell die Steuerberechnung ist ein äußerst wichtiges Thema, denn Sie müssen in den meisten Ländern Ihren Kunden innerhalb des Online-Shops detaillierte Informationen darüber bereitstellen, welcher Steuersatz in welcher Höhe geltend gemacht wird. Je nach Land unterscheidet sich dabei der Steuersatz, und Ihr Online-Shop muss abhängig vom gewählten Land die korrekten Steuerinformationen errechnen.</p><p class="standard">Im internationalen Handelt spielen zudem Währungen eine immer wichtigere Rolle. Es ist mittlerweile nicht ungewöhnlich, Produkte direkt in Online-Shops aus Großbritannien oder den USA zu bestellen. Im Umkehrschluss bestellen natürlich auch Personen aus diesen Ländern in deutschen Online-Shops. Umso wichtiger ist es in einem solchen Fall, den Kunden direkt Preise in der heimischen Währung anzuzeigen.</p><p class="standard">Magento beherrscht beide Disziplinen in Perfektion. Im Folgenden erfahren Sie, welche Konfigurationsschritte notwendig sind, wie Sie die deutschen Steuerregeln konfigurieren und zusätzliche Währungen hinzufügen.</p>
+        <h2 class="t2" id="u6.1">6.1    Steuerregeln</h2>
+        <p class="standard">Nach der Installation von Magento, sprich an dem Punkt, an dem Sie sich gerade befinden, hat Magento noch keinerlei Informationen darüber, wie Steuern berechnet werden sollen. Dementsprechend geht Magento von keinerlei Steuer auf Produkte und Dienstleistungen aus und verzichtet auf jegliche Berechnung. Damit können Sie faktisch keine Produkte oder Dienstleistungen vertreiben, da keine Steuern errechnet und dargestellt werden, wodurch Sie die gesetzlichen Anforderungen in diesem Bereich nicht erfüllen.</p>
+        <p class="standard">Lassen Sie uns daher mit der Konfiguration der in Deutschland existenten Mehrwertsteuer beginnen und nachgelagert noch eine Steuerregel für das europäische Ausland definieren. Anhand dieser beiden konkreten Beispiele werden Sie in der Lage sein, jede erdenkliche Steuerregel, die Sie benötigen, anzulegen und zu konfigurieren.</p>
+        
+            <h3 class="t3" id="u6.1.1">6.1.1    Steuerzonen und -sätze</h3>
+            <p class="standard">Falls Sie aktuell nicht im Magento-Backend angemeldet sind, melden Sie sich bitte mit Ihren Zugangsdaten im Administrationsbereich an. Klicken Sie daraufhin in der linken Navigationsleiste auf den Punkt <span class="screenelement smallcaps">Shops</span> und anschließend auf <span class="screenelement smallcaps">Steuerzonen und -sätze</span><a class="indexanchor" id="i06_02"/>. Daraufhin werden Sie eine Ansicht wie in <span class="crossreference "><a href="06_001.html#b6.1">Abbildung 6.1</a></span> vorfinden, in der Sie bereits zwei vorkonfigurierte Steuerzonen bzw. Steuersätze finden.</p>
+            <div class="imagebox "><a href="img-b6.1.html" id="b6.1"><img alt="Out of the box verfügt Magento über zwei Steuerzonen und Steuersätze, die sich auf die USA beziehen." id="img-b6.1" src="bilderklein/kleinabbildung-6-neu-1.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.1</b>    Out of the box verfügt Magento über zwei Steuerzonen und Steuersätze, die sich auf die USA beziehen.</p>
+            <p class="standard">Die bereits im System vorhandenen Steuerzonen bzw. -sätze können Sie an dieser Stelle ignorieren, da diese sich ausschließlich auf die USA beziehen und Ihnen daher an dieser Stelle nicht weiterhelfen. Theoretisch können Sie die beiden Einträge auch ohne negative Auswirkungen löschen, müssen dies jedoch nicht tun.</p>
+            <p class="standard">Klicken Sie nun auf den großen orangefarbenen Button <span class="screenelement smallcaps">Neuen Steuersatz hinzufügen</span>. Daraufhin gelangen Sie zu einer neuen Eingabemaske, in der Sie steuersatzbezogene Informationen hinterlegen können. Das erste Eingabefeld namens <span class="screenelement smallcaps">Steueridentifizierer</span><a class="indexanchor" id="i06_03"/> speichert einen Freitext. Sie können theoretisch irgendeine Bezeichnung eingeben, es empfiehlt sich jedoch, eine möglichst genaue Beschreibung der definierten Steuer zu hinterlegen. Ich empfehle Ihnen an dieser Stelle die Bezeichnung »19 % MwSt. Deutschland« zu verwenden. Nach der Eingabe des Steueridentifizierers möchte Magento wissen, ob Sie einen PLZ-Bereich hinterlegen möchten. Das würde dann sinnvoll sein, wenn sich die Mehrwertsteuer je nach Postleitzahl unterscheidet. In Deutschland existiert eine solche Situation nicht, in den USA kann es hingegen vorkommen, da die Mehrwertsteuer von den jeweiligen Bundesstaaten definiert wird und sich daher innerhalb der USA unterscheidet. Diese Komplexität besteht zum Glück in Deutschland nicht, da die Mehrwertsteuersätze bundesweit identisch sind. Setzen Sie dementsprechend bei dieser Checkbox keinen Haken.</p>
+            <p class="standard">Nachgelagert können Sie definieren, für welche Postleitzahl<a class="indexanchor" id="i06_04"/>, wohlgemerkt nicht für einen Bereich an Postleitzahlen, der Steuersatz gilt. Hinterlegen Sie an dieser Stelle bitte den Wert *. Das Zeichen * bedeutet, dass der Steuersatz für alle Postleitzahlen gilt und keine Einschränkung vorgenommen wird. Selbigen Wert können Sie bei der Auswahl des Bundeslandes hinterlegen, da Sie an dieser Stelle ebenfalls keine Eingrenzung vornehmen müssen. Ganz egal, ob Baden-Württemberg, Bayern oder Berlin, die Mehrwertsteuer ist in jedem Bundesland identisch.</p>
+            <p class="standard">Bei der vorletzten Option <span class="screenelement smallcaps">Land</span><a class="indexanchor" id="i06_05"/> wählen Sie Deutschland aus, und bei der <span class="screenelement smallcaps">Prozentrate</span> hinterlegen Sie den Wert 19. Daraufhin sollte der Steuersatz bei Ihnen genau wie in <span class="crossreference "><a href="06_001.html#b6.2">Abbildung 6.2</a></span> dargestellt aussehen. Speichern Sie anschließend den Steuersatz, indem Sie auf den Button <span class="screenelement smallcaps">Satz speichern</span> klicken, der sich am rechten oberen Bildschirmrand befindet.</p>
+            <div class="imagebox "><a href="img-b6.2.html" id="b6.2"><img alt="Im ersten Schritt wird ein Mehrwertsteuersatz von 19 % angelegt." id="img-b6.2" src="bilderklein/kleinabbildung-6-neu-2.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.2</b>    Im ersten Schritt wird ein Mehrwertsteuersatz von 19 % angelegt.</p>
+            <p class="standard">Dadurch haben Sie den ersten Steuersatz in Höhe von 19 % für das Land Deutschland angelegt, auch wenn dies aktuell noch keinerlei Einfluss auf die Steuerberechnung hat. Zu jedem Steuersatz benötigen Sie noch eine entsprechende Steuerregel, die Sie gleich noch anlegen werden. Bevor ich mich jedoch dem Thema Steuerregeln widme, bitte ich Sie an dieser Stelle, noch weitere Steuersätze anzulegen, da Sie diese im Verlauf des Kapitels noch benötigen werden. Legen Sie daher folgende Datensätze äquivalent zum gerade angelegten Steuersatz an.</p>
+            <ul>
+                <li>
+                    7 % MwSt. in Deutschland
+                    <ul>
+                        <li>
+                            Steueridentifizierer: 7 % MwSt. Deutschland
+                        </li>
+                        <li>
+                            PLZ/Postleitzahl als Bereich: nicht angehakt
+                        </li>
+                        <li>
+                            PLZ/Postleitzahl: *
+                        </li>
+                        <li>
+                            Bundesland: *
+                        </li>
+                        <li>
+                            Land: Deutschland
+                        </li>
+                        <li>
+                            Prozentrate: 7
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    20 % MwSt. Vereinigtes Königreich
+                    <ul>
+                        <li>
+                            Steueridentifizierer: 20 % MwSt. Vereinigtes Königreich
+                        </li>
+                        <li>
+                            PLZ /Postleitzahl als Bereich: nicht angehakt
+                        </li>
+                        <li>
+                            PLZ/Postleitzahl: *
+                        </li>
+                        <li>
+                            Bundesland: kann nicht ausgewählt werden
+                        </li>
+                        <li>
+                            Land: Vereinigtes Königreich
+                        </li>
+                        <li>
+                            Prozentrate: 20
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    5 % MwSt. Vereinigtes Königreich
+                    <ul>
+                        <li>
+                            Steueridentifizierer: 5 % MwSt. Vereinigtes Königreich
+                        </li>
+                        <li>
+                            PLZ/Postleitzahl als Bereich: nicht angehakt
+                        </li>
+                        <li>
+                            PLZ/Postleitzahl: *
+                        </li>
+                        <li>
+                            Bundesland: kann nicht ausgewählt werden
+                        </li>
+                        <li>
+                            Land: Vereinigtes Königreich
+                        </li>
+                        <li>
+                            Prozentrate: 5
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="standard">Als Ergebnis sollten Sie insgesamt vier Steuersätze für zwei Länder angelegt haben. Sie haben sowohl für Deutschland als auch für Großbritannien (Vereinigtes Königreich) zwei Steuersätze angelegt. Hierbei handelt es sich um den vollen sowie den reduzierten Mehrwertsteuersatz. Anhand von <span class="crossreference "><a href="06_001.html#b6.3">Abbildung 6.3</a></span> können Sie das Ergebnis nochmals prüfen, denn die Ansicht sollte bei Ihnen nun genauso aussehen.</p>
+            <p class="standard">Nachdem Sie die vier Steuersätze angelegt haben, greifen diese noch nicht innerhalb von Magento, wie ich bereits angedeutet hatte. Im Prinzip hat Magento zum aktuellen Zeitpunkt nur die Information, dass es in zwei Ländern zwei unterschiedliche Steuersätze geben kann. Damit Magento aber tatsächlich den korrekten Mehrwertsteuerbetrag errechnen kann, müssen Sie noch eine sogenannte Steuerregel anlegen.</p>
+            <div class="imagebox "><a href="img-b6.3.html" id="b6.3"><img alt="Die Auflistung der Steuersätze sollte bei Ihnen nun identisch aussehen." id="img-b6.3" src="bilderklein/kleinabbildung-6-neu-3.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.3</b>    Die Auflistung der Steuersätze sollte bei Ihnen nun identisch aussehen.</p>
+        
+        
+            <h3 class="t3" id="u6.1.2">6.1.2    Steuerregeln<a class="indexanchor" id="i06_06"/></h3>
+            <p class="standard">Klicken Sie innerhalb des Magento-Backends in der linken Navigationsleiste auf <span class="screenelement smallcaps">Shops</span> und anschließend auf <span class="screenelement smallcaps">Steuerregeln</span>. Sie gelangen daraufhin zu einer Ansicht, die keinen Eintrag enthält. Magento besitzt von Haus aus keinerlei Steuerregeln und kann aus diesem Grund auch zum jetzigen Zeitpunkt keine Mehrwertsteuer ausgeben, geschweige denn errechnen.</p>
+            <p class="standard">Am oberen Bildschirmrand befindet sich der Button <span class="screenelement smallcaps">Neue Steuerregel hinzufügen</span>, auf den Sie an dieser Stelle klicken. Daraufhin gelangen Sie zu einer Konfigurationsmaske wie in <span class="crossreference "><a href="06_001.html#b6.4">Abbildung 6.4</a></span>.</p>
+            <p class="standard">Damit Ihr Magento-System im Frontend bzw. Backend mit den Steuersätzen umgehen kann, müssen Sie abschließend eine korrekte Regel anlegen. Hinterlegen Sie im Feld <span class="screenelement smallcaps">Namen</span> den Wert »Vollbesteuerte Artikel«. Sie haben die Möglichkeit, einen beliebigen Wert als Namen zu hinterlegen, wie Sie jedoch ein wenig später sehen werden, ergibt der von mir gewählte Begriff Sinn.</p>
+            <p class="standard">Im nächsten Multi-Select-Feld erhalten Sie eine Auflistung aller im System befindlichen Steuersätze. Wenn Sie die zwei amerikanischen Steuersätze nicht gelöscht haben, werden Sie an dieser Stelle insgesamt sechs Elemente sehen. Wählen Sie nun die beiden Steuersätze »19 % MwSt. Deutschland« bzw. »20 % MwSt. Vereinigtes Königreich« aus. Ich gruppiere an dieser Stelle bewusst die beiden Mehrwertsteuersätze, die sich auf vollbesteuerte Artikel beziehen, da ich für alle vollbesteuerten Artikel eine Steuerregel anlegen möchte.</p>
+            <p class="standard">Wenn Sie jetzt ein wenig nach unten scrollen, gelangen Sie zum Konfigurationsabschnitt <span class="screenelement smallcaps">Zusätzliche Einstellungen</span>, den Sie an dieser Stelle gern öffnen können. Innerhalb dieses Bereiches können Sie eine neue Kundensteuerklasse hinzufügen bzw. die bestehende mit dem Namen <span class="screenelement smallcaps">Retail Customer</span> editieren. Kundensteuerklassen sind an dieser Stelle eher uninteressant, auch wenn ich Ihnen gern den Zusammenhang erkläre. Jeder Kundengruppe kann eine Steuerklasse zugewiesen werden (das Thema Kundengruppen wird in <span class="crossreference "><a href="09_001.html#u9">Kapitel 9</a></span>, »<span class="crossreference ">Kundenkonto und Kundenverwaltung</span>«, behandelt). Dadurch haben Sie die Möglichkeit, auf Basis der Kundengruppe unterschiedliche Mehrwertsteuersätze errechnen zu lassen. Damit löst sich die Steuerberechnung stellenweise vom Zielland, da plötzlich Kundeninformationen ebenfalls eine Rolle spielen. Relevant wird dieses Thema dann, wenn Sie sowohl im B2C- als auch im B2B-Commerce aktiv sind und Unternehmen und Privatpersonen im Ausland beliefern. An dieser Stelle müssen Sie jedoch nur im Hinterkopf behalten, dass jeder Steuerregel auch eine Kundensteuerklasse zugewiesen werden kann und diese bei der Kundengruppe gespeichert wird.</p>
+            <div class="imagebox "><a href="img-b6.4.html" id="b6.4"><img alt="Bei der Anlage einer Steuerregel müssen die unterschiedlichsten Informationen ausgefüllt werden." id="img-b6.4" src="bilderklein/kleinabbildung-6-neu-4.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.4</b>    Bei der Anlage einer Steuerregel müssen die unterschiedlichsten Informationen ausgefüllt werden.</p>
+            <p class="standard">Die Produktsteuerklasse, der nächste Punkt, ist dabei schon ein wenig wichtiger. Legen Sie eine neue Steuerklasse an, indem Sie auf NEUE<a class="indexanchor" id="i06_07"/><span class="screenelement smallcaps"> Steuerklasse hinzufügen</span> klicken. Als Namen verwenden Sie bitte den Begriff »Vollbesteuerte Artikel«. In diesem Zuge können Sie zudem die Produktsteuerklasse »Minderbesteuerte Artikel« anlegen. Achten Sie nun darauf, in dem Multi-Select-Feld nur den Eintrag »Vollbesteuerte Artikel« anzuwählen, bzw. wählen Sie die restlichen Optionen ab.</p>
+            <p class="standard">Bei der Priorität können Sie eine Priorisierung bei der Anwendung der Steuerregeln festlegen. Eine Priorisierung ergibt Sinn, wenn Sie mehrere zutreffende Steuerregeln haben, sprich ein Produkt mehrfach besteuert werden würde. Diese Konstellation gibt es jedoch in Deutschland bzw. in der Europäischen Union nicht, weswegen Sie die Priorität bei 0 belassen können. Auch die nächste Option namens <span class="screenelement smallcaps">Berechne nur Zwischensumme</span> können Sie getrost überspringen. Haken Sie diese Option an, würde die gesamte Steuerberechnung auf Basis der Warenkorb-Zwischensumme durchgeführt werden und nicht auf Basis der einzelnen Produkte.</p>
+            <p class="standard">Am Ende der Konfigurationsmaske haben Sie zudem die Möglichkeit, Steuerregeln zu exportieren und zu importieren. Diese Funktionalität kann praktisch sein, wenn Sie für Kunden umfangreiche und komplexe Steuerregeln angelegt haben und diese auf verschiedenen Systemen wie einem Testsystem ausrollen möchten. Dadurch ersparen Sie sich den manuellen Anlageprozess und greifen letztendlich nur auf die exportierte Steuerregel-Datei zurück.</p>
+            <p class="standard">Klicken Sie jetzt auf <span class="screenelement smallcaps">Regel speichern</span>, um die soeben definierte Steuerregel im System zu hinterlegen. Da Sie jetzt ausschließlich die Regel für vollbesteuerte Artikel angelegt haben, müssen Sie eine weitere Steuerregel hinzufügen. Bei dieser neuen Steuerregel verwenden Sie bitte folgende Parameter:</p>
+            <ul>
+                <li>
+                    Name: Minderbesteuerte Artikel
+                </li>
+                <li>
+                    Steuersatz: 7 % MwSt. Deutschland, 5 % MwSt. Vereinigtes Königreich
+                </li>
+                <li>
+                    Kundensteuerklasse: Retail Customer
+                </li>
+                <li>
+                    Produktsteuerklasse: Minderbesteuerte Artikel
+                </li>
+            </ul>
+            <p class="standard">Sie können anhand von <span class="crossreference "><a href="06_001.html#b6.5">Abbildung 6.5</a></span> überprüfen, ob Ihre Einstellungen den Vorgaben entsprechen, und bei Bedarf die bestehenden Steuerregeln editieren.</p>
+            <div class="imagebox "><a href="img-b6.5.html" id="b6.5"><img alt="Für eine korrekt funktionierende Steuerberechnung benötigen Sie in Magento in Summe zwei Steuerregeln." id="img-b6.5" src="bilderklein/kleinabbildung-6-neu-5.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.5</b>    Für eine korrekt funktionierende Steuerberechnung benötigen Sie in Magento in Summe zwei Steuerregeln.</p>
+            <p class="standard">Nachdem Sie die zweite Steuerregel angelegt haben, ist Magento in der Lage, korrekt die Mehrwertsteuer zu errechnen. Dabei deckt Magento sogar voll- sowie minderbesteuerte Artikel ab. Auch die Berechnung für die Mehrwertsteuer bei einem Verkauf in das Vereinigte Königreich ist angelegt.</p>
+            <p class="standard">Das Steuersystem in Magento ist, ganz nüchtern betrachtet, weit weniger komplex, als es am Anfang den Anschein hat. Im ersten Schritt müssen Sie die verschiedenen Steuersätze für die jeweiligen Länder anlegen. Das war letztendlich auch der erste Schritt, den Sie unternommen haben. Wenn Sie in weiteren Ländern verkaufen möchten, müssen Sie einfach weitere Steuersätze definieren. Hierfür reicht die Definition eines beliebigen Namens sowie eines Steuersatzes und Landes. Mithilfe der Steuerregel definieren Sie daraufhin, welcher Steuersatz beim Kauf von Produkten mit einer bestimmten Produktsteuerklasse angewendet werden soll.</p>
+            <div class="box_standard">
+                <h6 class="boxheading">Steuerklasse bei einem Artikel hinterlegen</h6>
+                <p class="standard">Wie Sie die Steuerklasse bei einem Produkt hinterlegen, erfahren Sie in <span class="crossreference "><a href="07_001.html#u7">Kapitel 7</a></span>, »<span class="crossreference ">Aufbau und Verwaltung des Produktsortiments</span>«, das den Aufbau des Produktkatalogs behandelt. In diesem nächsten Kapitel zeige ich Ihnen die genaue Stelle innerhalb der Produktdatenverwaltung und die Auswahloption der Produktsteuerklasse.</p>
+            </div>
+            <p class="standard">Diese Informationen reichen Magento, um den korrekten Mehrwertsteuersatz zu ermitteln.</p>
+        
+        
+            <h3 class="t3" id="u6.1.3">6.1.3    Import/Export Steuersätze<a class="indexanchor" id="i06_08"/></h3>
+            <p class="standard">Bei der Konfiguration der Steuerregeln haben Sie die Möglichkeit eines Exportes bzw. Importes der Datensätze bereits kennengelernt. Was bei den Steuerregeln möglich war, fehlte leider bei der Anlage der Steuersätze. Die Möglichkeit, Steuersätze zu exportieren bzw. importieren, existiert aber grundsätzlich. Diese befindet sich einfach an einer anderen Stelle und kann nicht im Kontext der Verwaltung der Steuersätze aufgerufen werden.</p>
+            <p class="standard">Wenn Sie innerhalb des Magento-Backends auf <span class="screenelement smallcaps">System</span> und anschließend auf <span class="screenelement smallcaps">Import/Export Steuersätze</span> klicken, gelangen Sie zu einer speziellen Oberfläche, die sich ausschließlich mit dem Import sowie Export der Steuersätze beschäftigt. Über diese spezielle Ansicht können Sie per Knopfdruck die im System hinterlegten Steuersätze exportieren und selbstverständlich erneut importieren. Die Optionen und Möglichkeiten, die Ihnen an dieser Stelle zur Verfügung stehen, sind relativ selbsterklärend, weswegen ich Sie an dieser Stelle nicht mit ausschweifenden Ausführungen langweilen möchte. Merken Sie sich an dieser Stelle nur, dass Steuerregeln direkt bei der Verwaltung der Steuerregeln exportiert und importiert werden können. Möchten Sie hingegen Steuersätze exportieren bzw. importieren, ist dies nicht innerhalb der Verwaltung der Steuersätze möglich, sondern muss über diese speziell geschaffene Ansicht realisiert werden, die Sie im Hauptnavigationspunkt <span class="screenelement smallcaps">System</span> vorfinden.</p>
+        
+        
+            <h3 class="t3" id="u6.1.4">6.1.4    Steuer</h3>
+            <p class="standard">Sie stellen sich an dieser Stelle sicherlich die Frage, auf Basis welcher Information Magento den Steuersatz des Vereinigten Königreiches bzw. anderer Länder anwendet. Theoretisch gibt es hierfür mehrere Ansätze, so könnte die Rechnungs- oder Lieferadresse dafür ausschlaggebend sein. Öffnen Sie hierfür die bereits bekannte Systemkonfiguration, indem Sie innerhalb des Magento-Backends auf <span class="screenelement smallcaps">Shops</span> und im Anschluss auf <span class="screenelement smallcaps">Konfiguration</span> klicken. Innerhalb der Tab-Navigation auf der linken Seite klicken Sie auf den Punkt <span class="screenelement smallcaps">Steuer</span>, um die Steuerkonfiguration zu öffnen.</p>
+            <p class="standard">Die allgemeine Steuerkonfiguration von Magento haben Sie bereits in <span class="crossreference "><a href="04_004.html#u4.4">Abschnitt 4.4</a></span>. kennengelernt. Nun möchte ich Ihnen zeigen, wie Sie die passenden Regeln anlegen. Im ersten Konfigurationsabschnitt haben Sie die Möglichkeit, Steuerklassen zu definieren. Wie Sie vorhin gesehen haben, existieren in Magento jetzt verschiedene Steuerklassen. Zum einen gibt es vollbesteuerte Artikel, zum anderen minderbesteuerte Artikel. Im ersten Fall würden in Deutschland 19 % MwSt. fällig werden, im letzten Fall nur 7 % MwSt. Hinterlegen Sie nun sowohl bei der Steuerklasse für den Versand als auch bei der Artikelsteuerklasse die Steuerklasse »Vollbesteuerte Artikel«, es sei denn, es gibt in Ihrem konkreten Fall eine Abweichung. Die Kundensteuerklasse können Sie bei der Standardeinstellung belassen, da hier keinerlei Änderungen durchgeführt wurden.</p>
+            <p class="standard">Scrollen Sie weiter nach unten zum Konfigurationsabschnitt <span class="screenelement smallcaps">Berechnung</span>, denn diese Optionen sind nun in der Tat für Sie äußerst relevant. Mit der Option <span class="screenelement smallcaps">Steuerberechnung basierend auf</span> können Sie nun definieren, auf welcher Basis der Mehrwertsteuersatz angewandt wird. Wählen Sie die <span class="screenelement smallcaps">Versandadresse</span>, zählt immer das Land der Lieferanschrift. Tätigt ein Kunde eine Bestellung und gibt bei der Rechnungsanschrift eine deutsche Adresse, bei der Versandanschrift eine Adresse im Vereinigten Königreich an, gibt Magento den Steuersatz des Vereinigten Königreiches aus. Alternativ hierzu können Sie die Option <span class="screenelement smallcaps">Rechnungsadresse</span> wählen. Beim oben genannten Beispiel würde dann der deutsche Mehrwertsteuersatz gelten, selbst wenn die Ware in das Vereinigte Königreich geliefert wird. Bei der dritten Option <span class="screenelement smallcaps">Versandherkunft</span> zählt immer die Mehrwertsteuer des Landes, in dem sich der Online-Shop-Betreiber befindet, ganz gleich, in welches Land die Lieferung bzw. Rechnungsstellung erfolgt. Welche dieser Optionen für Sie die richtige ist, hängt ganz von Ihrem Unternehmen und der individuellen Situation ab. Wenn Sie ausschließlich aus Deutschland geschäftstätig werden, die Ware aus Deutschland versenden und auch die Rechnungsstellung über ein deutsches Unternehmen läuft, können Sie Waren ins Ausland mit dem deutschen Mehrwertsteuersatz fakturieren. Die Situation ändert sich dann, wenn Sie im Ausland Niederlassungen betreiben. Es hängt also ganz von Ihrer individuellen Situation ab, in den meisten Fällen ist jedoch die Option <span class="screenelement smallcaps">Versandherkunft</span> korrekt, wenn der Online-Shop-Betreiber keine Niederlassungen bzw. Firmen im Ausland unterhält.</p>
+            <p class="standard">Die nachgelagerten Optionen befassen sich primär mit der Darstellung der Steuer bzw. der Produktpreise, wie Sie in <span class="crossreference "><a href="06_001.html#b6.6">Abbildung 6.6</a></span> erkennen können.</p>
+            <div class="imagebox "><a href="img-b6.6.html" id="b6.6"><img alt="Ob Ihre Produktpreise inklusive oder exklusive Steuer angezeigt werden, definieren Sie in den nachgelagerten Konfigurationsoptionen." id="img-b6.6" src="bilderklein/kleinabbildung-6-neu-6.png"/></a></div>
+        
+    
+            <p class="caption "><b>Abbildung 6.6</b>    Ob Ihre Produktpreise inklusive oder exklusive Steuer angezeigt werden, definieren Sie in den nachgelagerten Konfigurationsoptionen.</p>
+            <p class="standard">Geschafft! Sie haben die in Deutschland relevanten Mehrwertsteuersätze in Form von Steuerregeln definiert und zudem gesehen, wie Sie Steuersätze aus anderen Ländern abbilden können. Sie haben damit den Grundstein für den Verkauf Ihrer Produkte und Dienstleistungen gelegt, da Magento ab sofort korrekt mit Steuern umgehen und diese errechnen kann.</p>
+        
+    </div><p class="signatur"/>
+                            </body>
+                        
+                </html>
